@@ -64,6 +64,8 @@ $uri['icon_flag_24'] = '/icon/flag_24/';
 $uri['icon_flag_32'] = '/icon/flag_32/';
 $uri['icon_flag_48'] = '/icon/flag_48/';
 
+$uri['contactable'] = '/contact/send';
+
 array_walk($uri, create_function('&$v,$k', '$v = LL_ROOT_URI . $v;'));
 
 $uri['icon_quartz'] = 'http://shared.life-link.org/icons/quartz/';

@@ -119,7 +119,7 @@ function register_session_var($names, $default_values) {
 				// store COOKIE
 				$_SESSION[$key] = $_COOKIE[$key];
 			} else {
-				$expires = (isset($session[$key . '_expires'])) ? $session[$key . '_expires'] : $_SESSION[$key . '_expires'];
+				$expires = (isset($session[$key . '_expires'])) ? $session[$key . '_expires'] : @$_SESSION[$key . '_expires'];
 				if (! $expires) {
 					// there is no expiration time, keep or store default
 					$_SESSION[$key] = (isset($_SESSION[$key])) ? $_SESSION[$key] : $value;

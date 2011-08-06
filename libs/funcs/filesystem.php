@@ -19,6 +19,7 @@
  * @return mixed
  */
 function read_media_dir($folder, $extra = NULL) {
+	$result = array();
 	extract($extra);
 	
 	if (isset($filter_extensions)) {

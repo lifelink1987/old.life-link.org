@@ -62,7 +62,7 @@ function is_mobile() {
 		return $is_mobile;
 	}
 	
-	$op = strtolower($_SERVER['HTTP_X_OPERAMINI_PHONE']);
+	$op = strtolower(@$_SERVER['HTTP_X_OPERAMINI_PHONE']);
 	$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
 	$ac = strtolower($_SERVER['HTTP_ACCEPT']);
 	
@@ -80,7 +80,7 @@ function is_bot() {
 		return $is_bot;
 	}
 	
-	$op = strtolower($_SERVER['HTTP_X_OPERAMINI_PHONE']);
+	$op = strtolower(@$_SERVER['HTTP_X_OPERAMINI_PHONE']);
 	$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
 	$ac = strtolower($_SERVER['HTTP_ACCEPT']);
 	$ip = $_SERVER['REMOTE_ADDR'];

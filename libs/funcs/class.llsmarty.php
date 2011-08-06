@@ -369,7 +369,7 @@ class LLSmarty extends CustomSmarty {
 	public function function_variable($extra = array()) {
 		$dbVariables = DbVariables::get_instance();
 		
-		if ($extra['var']) {
+		if (isset($extra['var'])) {
 			$this->assign($extra['var'], $dbVariables->get($extra['name']));
 		} else {
 			return $dbVariables->get($extra['name']);
@@ -525,7 +525,7 @@ class LLSmarty extends CustomSmarty {
 	 */
 	public function function_get_random_reaction($extra = array()) {
 		$dbReactions = DbReactions::get_instance();
-		$geopip_record = geoip_remote_addr();
+		$geoip_record = geoip_remote_addr();
 		$where = array();
 		if ($geoip_record) {
 			$where['country'] = $geopip_record->country_name;

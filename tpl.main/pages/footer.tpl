@@ -6,7 +6,7 @@
 			<h1><em>the</em> Latest</h1>
 			<ul class="links">
 				{foreach from=$rss_news item=rss_news_item name=rss_news}
-				<li><a href="{$rss_news_item.link}"{if strlen($rss_news_item.title) > 40} title="{$rss_news_item.title}"{/if}>{$rss_news_item.title|truncate:40:'...'}<span>Read more &amp; give feedback</span></a></li>
+				<li><a href="{$rss_news_item.link}"{if strlen($rss_news_item.title) > 35} title="{$rss_news_item.title}"{/if}>{$rss_news_item.title|truncate:35:'...'}<span>Read more &amp; give feedback</span></a></li>
 				{/foreach}
 			</ul>
 			<h1><em>our</em> Online Community</h1>
@@ -20,7 +20,7 @@
 		<div class="column width1 sitemap">
 			<h1><em>the</em> Sitemap</h1>
 			<ul>
-				<li><a href="{$uri.host}">Home</a></li>
+				<li><a href="{$uri.home}">Home</a></li>
 				<li>&nbsp;</li>
 				<li><em>in</em> Practice</li>
 				<li>&middot; <a href="{$uri.friendship_schools}">Schools &amp; Actions</a></li>
@@ -52,9 +52,11 @@
 				<li><em>or</em> <a href="{$uri.contact}">click here to write us!</a></li>
 			</ul>
 			<ul>
-				<li>&copy; 2010 Life-Link<br />
-					Friendship-Schools Association</li>
-				<li>Website ver. {$version} - rev. {$version_minor}</li>
+				<li>&copy; 1985-{$smarty.now|date_format:"%Y"}<br />
+					Life-Link Friendship-Schools<br />
+					Association</li>
+				<li>{$version}<br />
+					rev. {$version_minor}</li>
 			</ul>
 		</div>
 		<div class="column width1 facts">

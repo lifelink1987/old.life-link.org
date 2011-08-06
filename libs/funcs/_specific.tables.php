@@ -111,7 +111,7 @@ class DbActions extends DbTable {
 	}
 
 	function get($where) {
-		if (is_numeric($where) && $this->_cache[$where]) {
+		if (is_numeric($where) && isset($this->_cache[$where])) {
 			return $this->_cache[$where];
 		} else {
 			$action = parent::get($where);
