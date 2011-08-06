@@ -90,6 +90,7 @@ class DbTable extends ExtendedClass {
 		}
 		
 		//Build up condition part of query based on available data content
+		$cond = '';
 		$where = (array) $where;
 		if (count($where)) {
 			foreach ($where as $cond_column => $cond_value) {
@@ -141,6 +142,7 @@ class DbTable extends ExtendedClass {
 
 	public function gets($where = array(), $orderby = NULL, $limit = NULL) {
 		//Build WHERE conditions
+		$cond = '';
 		$where = (array) $where;
 		if (count($where)) {
 			foreach ($where as $cond_column => $cond_value) {
@@ -265,6 +267,7 @@ class DbTable extends ExtendedClass {
 		}
 		
 		//Build up condition part of query based on available data content
+		$cond = '';
 		$where = (array) $where;
 		if (count($where)) {
 			foreach ($where as $cond_column => $cond_value) {
@@ -324,6 +327,7 @@ class DbTable extends ExtendedClass {
 		}
 		
 		//Build up condition part of query based on available data content
+		$cond = '';
 		$where = (array) $where;
 		if (count($where)) {
 			foreach ($where as $cond_column => $cond_value) {
@@ -370,6 +374,7 @@ class DbTable extends ExtendedClass {
 		}
 		
 		//Build up condition part of query based on available data content
+		$cond = '';
 		$where = (array) $where;
 		if (count($where)) {
 			foreach ($where as $cond_column => $cond_value) {
@@ -435,6 +440,7 @@ class DbTable extends ExtendedClass {
 		}
 		
 		//Build up condition part of query based on available data content
+		$cond = '';
 		$where = (array) $where;
 		if (count($where)) {
 			foreach ($where as $cond_column => $cond_value) {
