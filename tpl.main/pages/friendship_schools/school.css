@@ -1,0 +1,11 @@
+/* CSS Document */
+
+#slider {
+	width:400px;
+	height:240px;
+	margin-bottom:1em;
+}
+
+#sidebar .contact {
+	white-space:normal;
+}

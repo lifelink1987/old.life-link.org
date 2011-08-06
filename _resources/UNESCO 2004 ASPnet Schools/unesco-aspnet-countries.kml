@@ -1,0 +1,1236 @@
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Folder>
+  <Placemark>
+    <description><![CDATA[Joined = 1990<br/>Country = Albania<br/>Total = 21<br/>]]></description>
+    <name>Albania (1990) 21</name>
+      <Point>
+        <coordinates>20,41</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Algeria<br/>Total = 7<br/>]]></description>
+    <name>Algeria (1997) 7</name>
+      <Point>
+        <coordinates>3,28</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2001<br/>Country = Andorra<br/>Total = 2<br/>]]></description>
+    <name>Andorra (2001) 2</name>
+      <Point>
+        <coordinates>1.5,42.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Angola<br/>Total = 3<br/>]]></description>
+    <name>Angola (1998) 3</name>
+      <Point>
+        <coordinates>18.5,-12.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1958<br/>Country = Argentina<br/>Total = 116<br/>]]></description>
+    <name>Argentina (1958) 116</name>
+      <Point>
+        <coordinates>-64,-34</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1989<br/>Country = Armenia<br/>Total = 20<br/>]]></description>
+    <name>Armenia (1989) 20</name>
+      <Point>
+        <coordinates>45,40</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Aruba<br/>Total = 1<br/>]]></description>
+    <name>Aruba (1998) 1</name>
+      <Point>
+        <coordinates>-69.9667,12.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Australia<br/>Total = 56<br/>]]></description>
+    <name>Australia (1966) 56</name>
+      <Point>
+        <coordinates>133,-27</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1954<br/>Country = Austria<br/>Total = 44<br/>]]></description>
+    <name>Austria (1954) 44</name>
+      <Point>
+        <coordinates>13.3333,47.3333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Azerbaijan<br/>Total = 18<br/>]]></description>
+    <name>Azerbaijan (1985) 18</name>
+      <Point>
+        <coordinates>47.5,40.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1981<br/>Country = Bahrain<br/>Total = 7<br/>]]></description>
+    <name>Bahrain (1981) 7</name>
+      <Point>
+        <coordinates>50.55,26</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1968<br/>Country = Bangladesh<br/>Total = 36<br/>]]></description>
+    <name>Bangladesh (1968) 36</name>
+      <Point>
+        <coordinates>90,24</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1999<br/>Country = Barbados<br/>Total = 10<br/>]]></description>
+    <name>Barbados (1999) 10</name>
+      <Point>
+        <coordinates>-59.5333,13.1667</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1967<br/>Country = Belarus<br/>Total = 12<br/>]]></description>
+    <name>Belarus (1967) 12</name>
+      <Point>
+        <coordinates>28,53</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Belgium/Flemish<br/>Total = 14<br/>]]></description>
+    <name>Belgium/Flemish (1953) 14</name>
+      <Point>
+        <coordinates>4,50.8333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Belgium/French<br/>Total = 29<br/>]]></description>
+    <name>Belgium/French (1953) 29</name>
+      <Point>
+        <coordinates>4,50.8333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1999<br/>Country = Belize<br/>Total = 3<br/>]]></description>
+    <name>Belize (1999) 3</name>
+      <Point>
+        <coordinates>-88.75,17.25</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Benin<br/>Total = 93<br/>]]></description>
+    <name>Benin (1978) 93</name>
+      <Point>
+        <coordinates>2.25,9.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1969<br/>Country = Bolivia<br/>Total = 11<br/>]]></description>
+    <name>Bolivia (1969) 11</name>
+      <Point>
+        <coordinates>-65,-17</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1995<br/>Country = Bosnia and Herzegovina<br/>Total = 41<br/>]]></description>
+    <name>Bosnia and Herzegovina (1995) 41</name>
+      <Point>
+        <coordinates>18,44</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Botswana<br/>Total = 10<br/>]]></description>
+    <name>Botswana (1998) 10</name>
+      <Point>
+        <coordinates>24,-22</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1976<br/>Country = Brazil<br/>Total = 287<br/>]]></description>
+    <name>Brazil (1976) 287</name>
+      <Point>
+        <coordinates>-55,-10</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1965<br/>Country = Bulgaria<br/>Total = 49<br/>]]></description>
+    <name>Bulgaria (1965) 49</name>
+      <Point>
+        <coordinates>25,43</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1994<br/>Country = Burkina Faso<br/>Total = 160<br/>]]></description>
+    <name>Burkina Faso (1994) 160</name>
+      <Point>
+        <coordinates>-2,13</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Cambodia<br/>Total = 10<br/>]]></description>
+    <name>Cambodia (1997) 10</name>
+      <Point>
+        <coordinates>105,13</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1969<br/>Country = Cameroon<br/>Total = 22<br/>]]></description>
+    <name>Cameroon (1969) 22</name>
+      <Point>
+        <coordinates>12,6</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1955<br/>Country = Canada<br/>Total = 29<br/>]]></description>
+    <name>Canada (1955) 29</name>
+      <Point>
+        <coordinates>-95,60</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Cape Verde<br/>Total = 6<br/>]]></description>
+    <name>Cape Verde (1997) 6</name>
+      <Point>
+        <coordinates>-24,16</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1975<br/>Country = Central African Republic<br/>Total = 34<br/>]]></description>
+    <name>Central African Republic (1975) 34</name>
+      <Point>
+        <coordinates>21,7</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1982<br/>Country = Chad<br/>Total = 107<br/>]]></description>
+    <name>Chad (1982) 107</name>
+      <Point>
+        <coordinates>19,15</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1958<br/>Country = Chile<br/>Total = 85<br/>]]></description>
+    <name>Chile (1958) 85</name>
+      <Point>
+        <coordinates>-71,-30</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = China<br/>Total = 6<br/>]]></description>
+    <name>China (1998) 6</name>
+      <Point>
+        <coordinates>105,35</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1976<br/>Country = Colombia<br/>Total = 55<br/>]]></description>
+    <name>Colombia (1976) 55</name>
+      <Point>
+        <coordinates>-72,4</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2000<br/>Country = Comoros<br/>Total = 2<br/>]]></description>
+    <name>Comoros (2000) 2</name>
+      <Point>
+        <coordinates>44.25,-12.1667</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Congo<br/>Total = 40<br/>]]></description>
+    <name>Congo (1997) 40</name>
+      <Point>
+        <coordinates>15,-1</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Cook Islands<br/>Total = 12<br/>]]></description>
+    <name>Cook Islands (1997) 12</name>
+      <Point>
+        <coordinates>-159.767,-21.2333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1981<br/>Country = Costa Rica<br/>Total = 176<br/>]]></description>
+    <name>Costa Rica (1981) 176</name>
+      <Point>
+        <coordinates>-84,10</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Côte d'Ivoire<br/>Total = 14<br/>]]></description>
+    <name>Côte d'Ivoire (1996) 14</name>
+      <Point>
+        <coordinates>-5,8</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1993<br/>Country = Croatia<br/>Total = 15<br/>]]></description>
+    <name>Croatia (1993) 15</name>
+      <Point>
+        <coordinates>15.5,45.1667</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1983<br/>Country = Cuba<br/>Total = 62<br/>]]></description>
+    <name>Cuba (1983) 62</name>
+      <Point>
+        <coordinates>-80,21.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1968<br/>Country = Cyprus<br/>Total = 15<br/>]]></description>
+    <name>Cyprus (1968) 15</name>
+      <Point>
+        <coordinates>33,35</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Czech Republic<br/>Total = 55<br/>]]></description>
+    <name>Czech Republic (1966) 55</name>
+      <Point>
+        <coordinates>15.5,49.75</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1989<br/>Country = Democratic Republic of Congo<br/>Total = 138<br/>]]></description>
+    <name>Democratic Republic of Congo (1989) 138</name>
+      <Point>
+        <coordinates>25,0</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1957<br/>Country = Denmark<br/>Total = <br/>]]></description>
+    <name>Denmark (1957) </name>
+      <Point>
+        <coordinates>10,56</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1982<br/>Country = Dominica<br/>Total = 10<br/>]]></description>
+    <name>Dominica (1982) 10</name>
+      <Point>
+        <coordinates>-61.3333,15.4167</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1972<br/>Country = Dominican Republic<br/>Total = 36<br/>]]></description>
+    <name>Dominican Republic (1972) 36</name>
+      <Point>
+        <coordinates>-70.6667,19</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Ecuador<br/>Total = 23<br/>]]></description>
+    <name>Ecuador (1953) 23</name>
+      <Point>
+        <coordinates>-77.5,-2</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1960<br/>Country = Egypt<br/>Total = 53<br/>]]></description>
+    <name>Egypt (1960) 53</name>
+      <Point>
+        <coordinates>30,27</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1993<br/>Country = El Salvador<br/>Total = 23<br/>]]></description>
+    <name>El Salvador (1993) 23</name>
+      <Point>
+        <coordinates>-88.9167,13.8333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1968<br/>Country = Equatorial Guinea<br/>Total = 17<br/>]]></description>
+    <name>Equatorial Guinea (1968) 17</name>
+      <Point>
+        <coordinates>10,2</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Estonia<br/>Total = 6<br/>]]></description>
+    <name>Estonia (1985) 6</name>
+      <Point>
+        <coordinates>26,59</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Ethiopia<br/>Total = 46<br/>]]></description>
+    <name>Ethiopia (1998) 46</name>
+      <Point>
+        <coordinates>38,8</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Fiji<br/>Total = 52<br/>]]></description>
+    <name>Fiji (1997) 52</name>
+      <Point>
+        <coordinates>175,-18</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1960<br/>Country = Finland<br/>Total = 76<br/>]]></description>
+    <name>Finland (1960) 76</name>
+      <Point>
+        <coordinates>26,64</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = France<br/>Total = 150<br/>]]></description>
+    <name>France (1953) 150</name>
+      <Point>
+        <coordinates>2,46</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1994<br/>Country = Gabon<br/>Total = 37<br/>]]></description>
+    <name>Gabon (1994) 37</name>
+      <Point>
+        <coordinates>11.75,-1</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Gambia<br/>Total = 10<br/>]]></description>
+    <name>Gambia (1997) 10</name>
+      <Point>
+        <coordinates>-16.5667,13.4667</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Georgia<br/>Total = 28<br/>]]></description>
+    <name>Georgia (1985) 28</name>
+      <Point>
+        <coordinates>43.5,42</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Germany<br/>Total = 111<br/>]]></description>
+    <name>Germany (1953) 111</name>
+      <Point>
+        <coordinates>9,51</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1961<br/>Country = Ghana<br/>Total = 73<br/>]]></description>
+    <name>Ghana (1961) 73</name>
+      <Point>
+        <coordinates>-2,8</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Greece<br/>Total = 144<br/>]]></description>
+    <name>Greece (1978) 144</name>
+      <Point>
+        <coordinates>22,39</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1984<br/>Country = Grenada<br/>Total = 13<br/>]]></description>
+    <name>Grenada (1984) 13</name>
+      <Point>
+        <coordinates>-61.6667,12.1167</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1965<br/>Country = Guatemala<br/>Total = 18<br/>]]></description>
+    <name>Guatemala (1965) 18</name>
+      <Point>
+        <coordinates>-90.25,15.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1984<br/>Country = Guinea<br/>Total = 13<br/>]]></description>
+    <name>Guinea (1984) 13</name>
+      <Point>
+        <coordinates>-10,11</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1981<br/>Country = Guyana<br/>Total = 41<br/>]]></description>
+    <name>Guyana (1981) 41</name>
+      <Point>
+        <coordinates>-59,5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Haiti<br/>Total = 21<br/>]]></description>
+    <name>Haiti (1978) 21</name>
+      <Point>
+        <coordinates>-72.4167,19</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1967<br/>Country = Honduras<br/>Total = 31<br/>]]></description>
+    <name>Honduras (1967) 31</name>
+      <Point>
+        <coordinates>-86.5,15</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1958<br/>Country = Hungary<br/>Total = 32<br/>]]></description>
+    <name>Hungary (1958) 32</name>
+      <Point>
+        <coordinates>20,47</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2003<br/>Country = Iceland<br/>Total = 1<br/>]]></description>
+    <name>Iceland (2003) 1</name>
+      <Point>
+        <coordinates>-18,65</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = India<br/>Total = 46<br/>]]></description>
+    <name>India (1997) 46</name>
+      <Point>
+        <coordinates>77,20</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1956<br/>Country = Indonesia<br/>Total = 66<br/>]]></description>
+    <name>Indonesia (1956) 66</name>
+      <Point>
+        <coordinates>120,-5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2001<br/>Country = Irak<br/>Total = 4<br/>]]></description>
+    <name>Irak (2001) 4</name>
+      <Point>
+        <coordinates>44,33</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2003<br/>Country = Iran<br/>Total = 17<br/>]]></description>
+    <name>Iran (2003) 17</name>
+      <Point>
+        <coordinates>53,32</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1965<br/>Country = Ireland<br/>Total = 13<br/>]]></description>
+    <name>Ireland (1965) 13</name>
+      <Point>
+        <coordinates>-8,53</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1957<br/>Country = Israel<br/>Total = 23<br/>]]></description>
+    <name>Israel (1957) 23</name>
+      <Point>
+        <coordinates>34.75,31.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Italy<br/>Total = 267<br/>]]></description>
+    <name>Italy (1966) 267</name>
+      <Point>
+        <coordinates>12.8333,42.8333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1980<br/>Country = Jamaica<br/>Total = 4<br/>]]></description>
+    <name>Jamaica (1980) 4</name>
+      <Point>
+        <coordinates>-77.5,18.25</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Japan<br/>Total = 18<br/>]]></description>
+    <name>Japan (1953) 18</name>
+      <Point>
+        <coordinates>138,36</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Jordan<br/>Total = 83<br/>]]></description>
+    <name>Jordan (1978) 83</name>
+      <Point>
+        <coordinates>36,31</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Kazakhstan<br/>Total = 29<br/>]]></description>
+    <name>Kazakhstan (1985) 29</name>
+      <Point>
+        <coordinates>68,48</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Kenya<br/>Total = 9<br/>]]></description>
+    <name>Kenya (1966) 9</name>
+      <Point>
+        <coordinates>38,1</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Kiribati<br/>Total = 14<br/>]]></description>
+    <name>Kiribati (1998) 14</name>
+      <Point>
+        <coordinates>173,1.4167</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Kuwait<br/>Total = 29<br/>]]></description>
+    <name>Kuwait (1997) 29</name>
+      <Point>
+        <coordinates>47.6581,29.3375</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Kyrgyzstan<br/>Total = 15<br/>]]></description>
+    <name>Kyrgyzstan (1985) 15</name>
+      <Point>
+        <coordinates>75,41</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Lao<br/>Total = 37<br/>]]></description>
+    <name>Lao (1996) 37</name>
+      <Point>
+        <coordinates>105,18</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Latvia<br/>Total = 26<br/>]]></description>
+    <name>Latvia (1985) 26</name>
+      <Point>
+        <coordinates>25,57</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1994<br/>Country = Lebanon<br/>Total = 44<br/>]]></description>
+    <name>Lebanon (1994) 44</name>
+      <Point>
+        <coordinates>35.8333,33.8333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2003<br/>Country = Lesotho<br/>Total = 2<br/>]]></description>
+    <name>Lesotho (2003) 2</name>
+      <Point>
+        <coordinates>28.5,-29.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1995<br/>Country = Liberia<br/>Total = 13<br/>]]></description>
+    <name>Liberia (1995) 13</name>
+      <Point>
+        <coordinates>-9.5,6.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2004<br/>Country = Libyan Arab Jamahiriya<br/>Total = 5<br/>]]></description>
+    <name>Libyan Arab Jamahiriya (2004) 5</name>
+      <Point>
+        <coordinates>17,25</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Lithuania<br/>Total = 23<br/>]]></description>
+    <name>Lithuania (1985) 23</name>
+      <Point>
+        <coordinates>24,56</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1999<br/>Country = Luxemburg<br/>Total = 3<br/>]]></description>
+    <name>Luxemburg (1999) 3</name>
+      <Point>
+        <coordinates>6.1667,49.75</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Macedonia (The Former Republic of Yugoslavia)<br/>Total = 5<br/>]]></description>
+    <name>Macedonia (The Former Republic of Yugoslavia) (1997) 5</name>
+      <Point>
+        <coordinates>22,41.8333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1994<br/>Country = Madagascar<br/>Total = 30<br/>]]></description>
+    <name>Madagascar (1994) 30</name>
+      <Point>
+        <coordinates>47,-20</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1990<br/>Country = Malawi<br/>Total = 15<br/>]]></description>
+    <name>Malawi (1990) 15</name>
+      <Point>
+        <coordinates>34,-13.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1965<br/>Country = Malaysia<br/>Total = 26<br/>]]></description>
+    <name>Malaysia (1965) 26</name>
+      <Point>
+        <coordinates>112.5,2.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1986<br/>Country = Mali<br/>Total = 153<br/>]]></description>
+    <name>Mali (1986) 153</name>
+      <Point>
+        <coordinates>-4,17</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Malta<br/>Total = 57<br/>]]></description>
+    <name>Malta (1966) 57</name>
+      <Point>
+        <coordinates>14.5833,35.8333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Marshall Islands<br/>Total = 7<br/>]]></description>
+    <name>Marshall Islands (1998) 7</name>
+      <Point>
+        <coordinates>168,9</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Mauritania<br/>Total = 20<br/>]]></description>
+    <name>Mauritania (1978) 20</name>
+      <Point>
+        <coordinates>-12,20</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1972<br/>Country = Mauritius<br/>Total = 7<br/>]]></description>
+    <name>Mauritius (1972) 7</name>
+      <Point>
+        <coordinates>57.55,-20.2833</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Mexico<br/>Total = 170<br/>]]></description>
+    <name>Mexico (1978) 170</name>
+      <Point>
+        <coordinates>-102,23</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2001<br/>Country = Micronesia (Federal States of)<br/>Total = 3<br/>]]></description>
+    <name>Micronesia (Federal States of) (2001) 3</name>
+      <Point>
+        <coordinates>158.25,6.9167</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Moldova<br/>Total = 7<br/>]]></description>
+    <name>Moldova (1985) 7</name>
+      <Point>
+        <coordinates>29,47</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1983<br/>Country = Mongolia<br/>Total = 4<br/>]]></description>
+    <name>Mongolia (1983) 4</name>
+      <Point>
+        <coordinates>105,46</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1959<br/>Country = Morocco<br/>Total = 91<br/>]]></description>
+    <name>Morocco (1959) 91</name>
+      <Point>
+        <coordinates>-5,32</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Mozambique<br/>Total = 28<br/>]]></description>
+    <name>Mozambique (1996) 28</name>
+      <Point>
+        <coordinates>35,-18.25</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1965<br/>Country = Myanmar<br/>Total = 4<br/>]]></description>
+    <name>Myanmar (1965) 4</name>
+      <Point>
+        <coordinates>98,22</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1992<br/>Country = Namibia<br/>Total = 15<br/>]]></description>
+    <name>Namibia (1992) 15</name>
+      <Point>
+        <coordinates>17,-22</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Nauru<br/>Total = 6<br/>]]></description>
+    <name>Nauru (1998) 6</name>
+      <Point>
+        <coordinates>166.917,-0.5333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1969<br/>Country = Nepal<br/>Total = 9<br/>]]></description>
+    <name>Nepal (1969) 9</name>
+      <Point>
+        <coordinates>84,28</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1993<br/>Country = Nertherlands<br/>Total = 8<br/>]]></description>
+    <name>Nertherlands (1993) 8</name>
+      <Point>
+        <coordinates>5.75,52.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1989<br/>Country = New Zealand<br/>Total = 66<br/>]]></description>
+    <name>New Zealand (1989) 66</name>
+      <Point>
+        <coordinates>174,-41</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1992<br/>Country = Nicaragua<br/>Total = 13<br/>]]></description>
+    <name>Nicaragua (1992) 13</name>
+      <Point>
+        <coordinates>-85,13</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Niger<br/>Total = <br/>]]></description>
+    <name>Niger (1996) </name>
+      <Point>
+        <coordinates>8,16</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Nigeria<br/>Total = 41<br/>]]></description>
+    <name>Nigeria (1996) 41</name>
+      <Point>
+        <coordinates>8,10</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Niue<br/>Total = 2<br/>]]></description>
+    <name>Niue (1997) 2</name>
+      <Point>
+        <coordinates>-169.867,-19.0333</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Norway<br/>Total = 56<br/>]]></description>
+    <name>Norway (1953) 56</name>
+      <Point>
+        <coordinates>10,62</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Oman<br/>Total = 3<br/>]]></description>
+    <name>Oman (1997) 3</name>
+      <Point>
+        <coordinates>57,21</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Pakistan<br/>Total = 238<br/>]]></description>
+    <name>Pakistan (1953) 238</name>
+      <Point>
+        <coordinates>70,30</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2001<br/>Country = Palau<br/>Total = 3<br/>]]></description>
+    <name>Palau (2001) 3</name>
+      <Point>
+        <coordinates>134.5,7.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Palestine<br/>Total = 38<br/>]]></description>
+    <name>Palestine (1996) 38</name>
+      <Point>
+        <coordinates>35.25,32</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1984<br/>Country = Panama<br/>Total = 36<br/>]]></description>
+    <name>Panama (1984) 36</name>
+      <Point>
+        <coordinates>-80,9</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Papua New Guinea<br/>Total = 31<br/>]]></description>
+    <name>Papua New Guinea (1996) 31</name>
+      <Point>
+        <coordinates>147,-6</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Paraguay<br/>Total = 16<br/>]]></description>
+    <name>Paraguay (1985) 16</name>
+      <Point>
+        <coordinates>-58,-23</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1996<br/>Country = Peru<br/>Total = 58<br/>]]></description>
+    <name>Peru (1996) 58</name>
+      <Point>
+        <coordinates>-76,-10</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Philippines<br/>Total = 152<br/>]]></description>
+    <name>Philippines (1953) 152</name>
+      <Point>
+        <coordinates>122,13</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1956<br/>Country = Poland<br/>Total = 100<br/>]]></description>
+    <name>Poland (1956) 100</name>
+      <Point>
+        <coordinates>20,52</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1984<br/>Country = Portugal<br/>Total = 54<br/>]]></description>
+    <name>Portugal (1984) 54</name>
+      <Point>
+        <coordinates>-8,39.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1983<br/>Country = Qatar<br/>Total = 38<br/>]]></description>
+    <name>Qatar (1983) 38</name>
+      <Point>
+        <coordinates>51.25,25.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1961<br/>Country = Republic of Korea<br/>Total = 50<br/>]]></description>
+    <name>Republic of Korea (1961) 50</name>
+      <Point>
+        <coordinates>127.5,37</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1970<br/>Country = Romania<br/>Total = 62<br/>]]></description>
+    <name>Romania (1970) 62</name>
+      <Point>
+        <coordinates>25,46</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Russian Federation<br/>Total = 160<br/>]]></description>
+    <name>Russian Federation (1966) 160</name>
+      <Point>
+        <coordinates>100,60</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Rwanda<br/>Total = 20<br/>]]></description>
+    <name>Rwanda (1998) 20</name>
+      <Point>
+        <coordinates>30,-2</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1982<br/>Country = Saint Lucia<br/>Total = 20<br/>]]></description>
+    <name>Saint Lucia (1982) 20</name>
+      <Point>
+        <coordinates>-61.1333,13.8833</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1986<br/>Country = Saint Vincent and Grenadines<br/>Total = 10<br/>]]></description>
+    <name>Saint Vincent and Grenadines (1986) 10</name>
+      <Point>
+        <coordinates>-61.2,13.25</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Samoa<br/>Total = 73<br/>]]></description>
+    <name>Samoa (1997) 73</name>
+      <Point>
+        <coordinates>-172.333,-13.5833</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2001<br/>Country = Sao Tomé e Principe<br/>Total = 1<br/>]]></description>
+    <name>Sao Tomé e Principe (2001) 1</name>
+      <Point>
+        <coordinates>7,1</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Saudi Arabia<br/>Total = 1<br/>]]></description>
+    <name>Saudi Arabia (1997) 1</name>
+      <Point>
+        <coordinates>45,25</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1979<br/>Country = Senegal<br/>Total = 104<br/>]]></description>
+    <name>Senegal (1979) 104</name>
+      <Point>
+        <coordinates>-14,14</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Serbia &amp; Montenegro<br/>Total = 35<br/>]]></description>
+    <name>Serbia &amp; Montenegro (1998) 35</name>
+      <Point>
+        <coordinates>21,44</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1975<br/>Country = Sierra Leone<br/>Total = 5<br/>]]></description>
+    <name>Sierra Leone (1975) 5</name>
+      <Point>
+        <coordinates>-11.5,8.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Slovakia<br/>Total = 19<br/>]]></description>
+    <name>Slovakia (1966) 19</name>
+      <Point>
+        <coordinates>19.5,48.6667</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1993<br/>Country = Slovenia<br/>Total = 37<br/>]]></description>
+    <name>Slovenia (1993) 37</name>
+      <Point>
+        <coordinates>15,46</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Solomon Islands<br/>Total = 7<br/>]]></description>
+    <name>Solomon Islands (1997) 7</name>
+      <Point>
+        <coordinates>159,-8</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1999<br/>Country = South Africa<br/>Total = 18<br/>]]></description>
+    <name>South Africa (1999) 18</name>
+      <Point>
+        <coordinates>24,-29</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1958<br/>Country = Spain<br/>Total = 171<br/>]]></description>
+    <name>Spain (1958) 171</name>
+      <Point>
+        <coordinates>-4,40</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1958<br/>Country = Sri Lanka<br/>Total = 25<br/>]]></description>
+    <name>Sri Lanka (1958) 25</name>
+      <Point>
+        <coordinates>81,7</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Sudan<br/>Total = 61<br/>]]></description>
+    <name>Sudan (1978) 61</name>
+      <Point>
+        <coordinates>30,15</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1995<br/>Country = Swaziland<br/>Total = 6<br/>]]></description>
+    <name>Swaziland (1995) 6</name>
+      <Point>
+        <coordinates>31.5,-26.5</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Sweden<br/>Total = 27<br/>]]></description>
+    <name>Sweden (1953) 27</name>
+      <Point>
+        <coordinates>15,62</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1953<br/>Country = Switzerland<br/>Total = 65<br/>]]></description>
+    <name>Switzerland (1953) 65</name>
+      <Point>
+        <coordinates>8,47</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1983<br/>Country = Syria<br/>Total = 2<br/>]]></description>
+    <name>Syria (1983) 2</name>
+      <Point>
+        <coordinates>28,35</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Tajikistan<br/>Total = 6<br/>]]></description>
+    <name>Tajikistan (1985) 6</name>
+      <Point>
+        <coordinates>71,39</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1958<br/>Country = Thailand<br/>Total = 127<br/>]]></description>
+    <name>Thailand (1958) 127</name>
+      <Point>
+        <coordinates>100,15</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1981<br/>Country = Togo<br/>Total = 100<br/>]]></description>
+    <name>Togo (1981) 100</name>
+      <Point>
+        <coordinates>1.1667,8</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1997<br/>Country = Tokelau<br/>Total = 3<br/>]]></description>
+    <name>Tokelau (1997) 3</name>
+      <Point>
+        <coordinates>-172,-9</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Tonga<br/>Total = 22<br/>]]></description>
+    <name>Tonga (1998) 22</name>
+      <Point>
+        <coordinates>-175,-20</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1987<br/>Country = Trinidad and Tobago<br/>Total = 44<br/>]]></description>
+    <name>Trinidad and Tobago (1987) 44</name>
+      <Point>
+        <coordinates>-61,11</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1978<br/>Country = Tunisia<br/>Total = 47<br/>]]></description>
+    <name>Tunisia (1978) 47</name>
+      <Point>
+        <coordinates>9,34</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1986<br/>Country = Turkey<br/>Total = 19<br/>]]></description>
+    <name>Turkey (1986) 19</name>
+      <Point>
+        <coordinates>35,39</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Turkmenistan<br/>Total = 1<br/>]]></description>
+    <name>Turkmenistan (1985) 1</name>
+      <Point>
+        <coordinates>60,40</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1998<br/>Country = Tuvalu<br/>Total = 6<br/>]]></description>
+    <name>Tuvalu (1998) 6</name>
+      <Point>
+        <coordinates>178,-8</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1965<br/>Country = Uganda<br/>Total = 22<br/>]]></description>
+    <name>Uganda (1965) 22</name>
+      <Point>
+        <coordinates>32,1</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1971<br/>Country = Ukraine<br/>Total = 43<br/>]]></description>
+    <name>Ukraine (1971) 43</name>
+      <Point>
+        <coordinates>32,49</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2000<br/>Country = United Arab Emirates<br/>Total = 42<br/>]]></description>
+    <name>United Arab Emirates (2000) 42</name>
+      <Point>
+        <coordinates>54,24</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = United Republic of Tanzania<br/>Total = 8<br/>]]></description>
+    <name>United Republic of Tanzania (1985) 8</name>
+      <Point>
+        <coordinates>35,-6</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1969<br/>Country = United States of America<br/>Total = 27<br/>]]></description>
+    <name>United States of America (1969) 27</name>
+      <Point>
+        <coordinates>-97,38</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1966<br/>Country = Uruguay<br/>Total = 87<br/>]]></description>
+    <name>Uruguay (1966) 87</name>
+      <Point>
+        <coordinates>-56,-33</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Uzbekistan<br/>Total = 26<br/>]]></description>
+    <name>Uzbekistan (1985) 26</name>
+      <Point>
+        <coordinates>64,41</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1999<br/>Country = Vanuatu<br/>Total = 4<br/>]]></description>
+    <name>Vanuatu (1999) 4</name>
+      <Point>
+        <coordinates>167,-16</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1985<br/>Country = Venezuela<br/>Total = 205<br/>]]></description>
+    <name>Venezuela (1985) 205</name>
+      <Point>
+        <coordinates>-66,8</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1995<br/>Country = Viet Nam<br/>Total = 21<br/>]]></description>
+    <name>Viet Nam (1995) 21</name>
+      <Point>
+        <coordinates>106,16</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 2000<br/>Country = Yemen<br/>Total = 13<br/>]]></description>
+    <name>Yemen (2000) 13</name>
+      <Point>
+        <coordinates>48,15</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1968<br/>Country = Zambia<br/>Total = 34<br/>]]></description>
+    <name>Zambia (1968) 34</name>
+      <Point>
+        <coordinates>30,-15</coordinates>
+      </Point>
+  </Placemark>
+  <Placemark>
+    <description><![CDATA[Joined = 1991<br/>Country = Zimbabwe<br/>Total = 79<br/>]]></description>
+    <name>Zimbabwe (1991) 79</name>
+      <Point>
+        <coordinates>30,-20</coordinates>
+      </Point>
+  </Placemark>
+</Folder>
+</kml>

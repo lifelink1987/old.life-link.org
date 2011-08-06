@@ -1,0 +1,9 @@
+[submodule "libs/jsmin"]
+	path = libs/jsmin
+	url = git://github.com/rgrove/jsmin-php.git
+[submodule "libs/magpierss"]
+	path = libs/magpierss
+	url = git://github.com/kellan/magpierss.git
+[submodule "libs/nicedog"]
+	path = libs/nicedog
+	url = git://github.com/bastos/nicedog.git

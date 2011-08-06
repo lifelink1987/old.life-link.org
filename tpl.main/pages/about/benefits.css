@@ -1,0 +1,13 @@
+/* CSS Document */
+
+.column > div.headingbox:first-child > div {
+	height:175px;
+}
+
+.column > div.headingbox:first-child + div.headingbox > div {
+	height:125px;
+}
+
+.column > div.headingbox:first-child + div.headingbox + div.headingbox > div {
+	height:125px;
+}

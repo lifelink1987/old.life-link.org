@@ -1,0 +1,117 @@
+/* CSS Document */
+	
+#contact {
+	#contactable {
+		background-image:url($tpl_uri/img/layout/contact.png);
+		cursor:pointer;
+		height:102px;
+		left:0;
+		margin-left:-5px;
+		position:fixed;
+		top:102px;
+		width:44px;
+		z-index:4;
+	}
+	
+	#contactForm {
+		self {
+			background-color:$llgreen;
+			border:2px solid $white;
+			color:$white;
+			height:450px;
+			left:0;
+			margin-left:-400px;
+			margin-top:-160px;
+			overflow:hidden;
+			padding-left:30px;
+			position:fixed;
+			top:200px;
+			width:360px;
+			z-index:4;
+		}
+	
+		input:not([type=submit]):not([type=reset]):not([type=button]),
+		select,
+		textarea {
+			width:325px;
+			padding:0px;
+			margin-bottom:10px;
+			border:5px solid $white;
+		}
+		
+		label {
+			margin-bottom:0;
+			top:0;
+		}
+		
+		p {
+			text-indent:0;
+		}
+		
+		input[type=submit] {
+			width:325px;
+			padding:5px;
+			cursor:pointer;
+			text-transform:uppercase;
+			font-weight:bold;
+			font-family:$arial_font;
+			margin-top:10px;
+			margin-left:0;
+			float:none;
+		}
+		
+		input.error,
+		select.error,
+		textarea.error {
+			border:5px solid $black;
+		}
+		
+		#loading {
+			background: url($tpl_uri/img/layout/loader.gif) no-repeat;
+			width:55px;
+			height:55px;
+			margin: 100px auto;
+			display:none;
+		}
+		
+		#callback {
+			color: #FFF;
+			width:325px;
+			margin: 100px auto;	
+			display:none;
+		}
+		
+		.holder {
+			margin:0 auto;
+			padding-top:20px;	
+		}	
+	}
+}
+
+body.msie_6,
+body.msie_7 {
+	#contactable {
+		margin-left:-5px; 
+		position:absolute;
+		margin-top:10px;
+	}
+	
+	#contactForm {
+		self {
+			margin-left:-434px;
+			width:394px;
+		}
+	
+		.disclaimer {
+			margin-left:20px;
+		}
+		
+		label {
+			margin-left:20px;
+		}
+	}
+	
+	.holder {
+		margin-left:20px;
+	}
+}

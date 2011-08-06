@@ -1,0 +1,10 @@
+/* CSS Document */
+
+#content section.theory_step ul li,
+#content section.action ul li {
+	margin-top:1em;
+}
+
+#content section.in_action ul {
+	font-size:16px;
+}

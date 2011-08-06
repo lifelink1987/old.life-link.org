@@ -1,0 +1,4 @@
+/libs/image_data/*
+/libs/magpierss_data/*
+/libs/smarty_data/*
+*.bak

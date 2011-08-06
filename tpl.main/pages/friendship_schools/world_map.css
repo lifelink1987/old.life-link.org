@@ -1,0 +1,12 @@
+/* CSS Document */
+
+#map_canvas {
+	height:400px;
+	width:100%;
+}
+
+.kml_group > h2 {
+	display:inline-block;
+	padding:0 10px;
+	vertical-align:top;
+}

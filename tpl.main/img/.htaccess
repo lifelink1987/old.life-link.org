@@ -1,0 +1,5 @@
+Header unset ETag
+FileETag None
+Header set Expires "Tue, 16 Jun 2020 20:00:00 GMT"
+Header set Cache-Control "private, max-age=10800, pre-check=10800"
+Header set Pragma "private"

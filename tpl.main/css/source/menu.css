@@ -1,0 +1,178 @@
+/* Navigation */
+
+#nav {
+	self {
+		position:relative;
+		z-index:2;
+		text-align:center;
+		margin-bottom:30px;
+	}
+
+	> ul.ldd_menu {
+		self {
+			margin:0 auto;
+			padding:0 5px;
+			display:inline-block;
+			height:$menu_height;
+			background-color:$llgreen;
+			list-style:none;
+			font-family:$trebuchet_font;
+			border:1px solid $lightgreen;
+			box-shadow:0px 3px 4px $darkllgreen;
+			-webkit-box-shadow:0px 3px 4px $darkllgreen;
+			-moz-box-shadow:0px 3px 4px $darkllgreen;
+			cursor:default;
+			border-radius:5px;	
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+		}
+	
+		a {
+			text-decoration:none;
+		}
+		
+		> li {
+			self {
+				float:left;
+				position:relative;
+			}
+			
+			> span {
+				self {
+					display:block;
+					float:left;
+					color:$white;
+					background-color:$llgreen;
+					height:$menu_height;
+					line-height:$menu_height;
+					cursor:default;
+					padding:0px 10px;
+					text-shadow:0px 0px 1px $white;
+					border-right:1px solid $lightgreen;
+					min-width:125px;
+				}
+				
+				> a {
+					color:$white;
+					display:block;
+				}
+			}
+		}
+		
+		> li:first-child > span > a {
+			text-align:right;
+		}
+		
+		> li:last-child > span {
+			border-right:none;
+		}
+	
+		/* Submenu */
+		> li > div.ldd_submenu {
+			self {
+				position:absolute;
+				top:$menu_height;
+				left:0px;
+				font-size:10px;
+				background: $llgreen;
+				border-top:1px solid $lightgreen;
+				box-shadow:0px 3px 4px $darkllgreen inset;
+				-webkit-box-shadow:0px 3px 4px $darkllgreen inset;
+				-moz-box-shadow:0px 3px 4px $darkllgreen inset;
+				/*padding-bottom:1px;*/
+				border-bottom:1px solid $lightgrey;
+				border-radius: 0px 0px 5px 5px;
+				-webkit-border-radius: 0px 0px 5px 5px;
+				-moz-border-radius: 0px 0px 5px 5px;
+				display:none;
+			}
+			
+			> ul {
+				self {
+					list-style:none;
+					float:left;
+					border-left:1px solid $lightgreen;
+					margin:10px 0px 10px 10px;
+					padding:10px;
+					width:110px;
+				}
+			
+				> li.ldd_heading {
+					font-family: $georgia_font;
+					font-size: 13px;
+					font-style: italic;
+					color:$lightgreen;
+					text-shadow:0px 0px 1px $lightgreen;
+					padding:0px 0px 10px 3px;
+					white-space:nowrap;
+				}
+				
+				> li a {
+					font-family:$arial_font;
+					font-size:10px;
+					font-weight:bold;
+					line-height:10px;
+					color:$white;
+					padding:1px 3px;
+				}
+				
+				> li a:hover {
+					border-radius:2px;
+					-webkit-border-radius:2px;
+					-moz-border-radius:2px;
+					background:$white;
+					color:$llgreen;
+				}
+			}
+			
+			/* Subfoot */
+			a.ldd_subfoot {
+				background-color:$watergrey;
+				color:$grey;
+				display:block;
+				clear:both;
+				padding:10px 20px;
+				text-transform:uppercase;
+				font-family:$arial_font;
+				font-size:12px;
+				box-shadow:0px 2px 2px $grey inset;
+				-webkit-box-shadow:0px 2px 2px $grey inset;
+				-moz-box-shadow:0px 2px 2px $grey inset;
+				/*float:left;
+				display:block;
+				width:508px;
+				margin-left:1px;
+				margin-right:1px;
+				*/
+			}
+			
+			a.ldd_subfoot + a.ldd_subfoot {
+				box-shadow:0px 1px 1px $grey inset;
+				-webkit-box-shadow:0px 1px 1px $grey inset;
+				-moz-box-shadow:0px 1px 1px $grey inset;
+			}
+			
+			a.ldd_subfoot:hover {
+				background-color:$white;
+			}
+			
+			a.ldd_subfoot:last-child {
+				border-radius: 0px 0px 3px 3px;
+				-webkit-border-radius: 0px 0px 3px 3px;
+				-moz-border-radius: 0px 0px 3px 3px;
+			}
+		}
+		
+		> li > div.ldd_submenu.ldd_submenu_columns3 {
+			width:440px;
+		}
+		
+		> li > div.ldd_submenu.ldd_submenu_columns2 {
+			width:290px;
+		}
+		
+		> li > div.ldd_submenu.ldd_submenu_columns1 {
+			width:140px;
+		}
+	}
+}

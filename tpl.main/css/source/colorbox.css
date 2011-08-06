@@ -1,0 +1,213 @@
+/* Colorbox */
+#cboxOverlay {
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:$white;
+	top:0;
+	left:0;
+	z-index:9999;
+	overflow:hidden;
+}
+
+#colorbox {
+	self {
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:9999;
+		overflow:hidden;
+		font-family:$trebuchet_font;
+	}
+	
+	#cboxWrapper {
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:9999;
+		overflow:hidden;
+	}
+	
+	#cboxTopLeft {
+		width:25px;
+		height:25px;
+		background:url($tpl_uri/img/colorbox/border1.png) 0 0 no-repeat;
+	}
+	
+	#cboxTopCenter {
+		height:25px;
+		background:url($tpl_uri/img/colorbox/border1.png) 0 -50px repeat-x;
+	}
+	
+	#cboxTopRight {
+		width:25px;
+		height:25px;
+		background:url($tpl_uri/img/colorbox/border1.png) -25px 0 no-repeat;
+	}
+	
+	#cboxBottomLeft {
+		clear:left;
+		width:25px;
+		height:25px;
+		background:url($tpl_uri/img/colorbox/border1.png) 0 -25px no-repeat;
+	}
+	
+	#cboxBottomCenter {
+		height:25px;
+		background:url($tpl_uri/img/colorbox/border1.png) 0 -75px repeat-x;
+	}
+	
+	#cboxBottomRight {
+		width:25px;
+		height:25px;
+		background:url($tpl_uri/img/colorbox/border1.png) -25px -25px no-repeat;
+	}
+	
+	#cboxMiddleLeft {
+		clear:left;
+		width:25px;
+		background:url($tpl_uri/img/colorbox/border2.png) 0 0 repeat-y;
+	}
+	
+	#cboxMiddleRight {
+		width:25px;
+		background:url($tpl_uri/img/colorbox/border2.png) -25px 0 repeat-y;
+	}
+	
+	#cboxContent {
+		self {
+			position:relative;
+			overflow:hidden;
+			background:#fff;
+		}
+
+		#cboxLoadedContent {
+			self {
+				overflow:auto;
+				margin-bottom:20px;
+			}
+			
+			iframe {
+				display:block;
+				width:100%;
+				height:100%;
+				border:0;
+			}
+		}
+		
+		#cboxTitle {
+			margin:0;
+			position:absolute;
+			bottom:20px;
+			left:0;
+			color:$darkgrey;
+			width:100%;
+			background-color:$white;
+			overflow:hidden;
+			white-space:nowrap;
+			font-weight:bold;
+			border-top:1px solid $grey;
+		}
+		
+		#cboxTitle em {
+			font-weight:lighter;
+		}
+		
+		#cboxCurrent {
+			position:absolute;
+			bottom:0px;
+			left:100px;
+			color:$darkgrey;
+		}
+		
+		#cboxSlideshow {
+			position:absolute;
+			bottom:0px;
+			right:42px;
+			color:$grey;
+			cursor:pointer;
+		}
+		
+		#cboxPrevious {
+			position:absolute;
+			bottom:0px;
+			left:0;
+			color:$grey;
+			cursor:pointer;
+		}
+		
+		#cboxNext {
+			position:absolute;
+			bottom:0px;
+			left:63px;
+			color:$grey;
+			cursor:pointer;
+		}
+		
+		#cboxLoadingOverlay {
+			background:url($tpl_uri/img/layout/loader.gif) 5px 5px no-repeat #fff;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+		}
+		
+		#cboxLoadingGraphic {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+		}
+		
+		#cboxClose {
+			position:absolute;
+			bottom:0;
+			right:0;
+			display:block;
+			color:$grey;
+			cursor:pointer;
+		}
+	}
+}
+
+.cboxIE {
+	#cboxTopLeft {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderTopLeft.png, sizingMethod='scale');
+	}
+	
+	.cboxIE #cboxTopCenter {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderTopCenter.png, sizingMethod='scale');
+	}
+	
+	.cboxIE #cboxTopRight {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderTopRight.png, sizingMethod='scale');
+	}
+	
+	.cboxIE #cboxBottomLeft {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderBottomLeft.png, sizingMethod='scale');
+	}
+	
+	.cboxIE #cboxBottomCenter {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderBottomCenter.png, sizingMethod='scale');
+	}
+	
+	.cboxIE #cboxBottomRight {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderBottomRight.png, sizingMethod='scale');
+	}
+	
+	.cboxIE #cboxMiddleLeft {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderMiddleLeft.png, sizingMethod='scale');
+	}
+	
+	.cboxIE #cboxMiddleRight {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=$tpl_uri/img/colorbox/internet_explorer/borderMiddleRight.png, sizingMethod='scale');
+	}
+}

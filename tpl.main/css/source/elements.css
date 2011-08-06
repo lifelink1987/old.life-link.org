@@ -1,0 +1,274 @@
+/* Common Elements */
+
+
+/* Division Line */
+div.byline,
+#content div.byline {
+	self {
+		margin:0 auto;
+		text-align:center;
+		height:1px;
+		background-color:$lightgrey;
+		background:-moz-linear-gradient(
+			left center,
+			rgb(255,255,255) 0%,
+			rgb(204,204,204) 47%,
+			rgb(255,255,255) 49%,
+			rgb(255,255,255) 51%,
+			rgb(204,204,204) 53%,
+			rgb(255,255,255) 100%
+		);
+		background-image:-webkit-gradient(
+			linear,
+			left top,
+			right top,
+			color-stop(0, rgb(255,255,255)),
+			color-stop(0.47, rgb(204,204,204)),
+			color-stop(0.49, rgb(255,255,255)),
+			color-stop(0.51, rgb(255,255,255)),
+			color-stop(0.53, rgb(204,204,204)),
+			color-stop(1, rgb(255,255,255))
+		);
+	}
+	
+	> span {
+		font-size:14px;
+		position:relative;
+		left:1px;
+		top:-10px;
+		text-shadow:0px 0px 5px $black;
+		color:$white;
+	}
+}
+
+#content div.byline.big {
+	height:2px;
+}
+
+/* Heading Box */
+div.headingbox,
+#content div.headingbox {
+	self {
+		margin-bottom:2em;
+	}
+	
+	> h1 {
+		border-radius:5px 5px 0px 0px !important;
+		-webkit-border-radius:5px 5px 0px 0px !important;
+		-moz-border-radius:5px 5px 0px 0px !important;
+		padding:5px 10px !important;
+		margin-bottom:0px !important;
+		font-family:$georgia_font !important;
+		font-size:16px !important;
+		line-height:16px !important;
+		color:$white;
+		text-shadow:0px 0px 2px $white;
+		background-color:$grey;
+	}
+	
+	> div {
+		border-radius:0px 0px 5px 5px !important;
+		-webkit-border-radius:0px 0px 5px 5px !important;
+		-moz-border-radius:0px 0px 5px 5px !important;
+		font-size:11px;
+		background-color:$watergrey;
+		padding:10px;
+	}
+}
+
+/* White Box */
+div.white_box,
+#content div.white_box {
+	display:inline-block;
+	box-shadow:0px 0px 10px $lightgrey;
+	-webkit-box-shadow:0px 0px 10px $lightgrey;
+	-moz-box-shadow:0px 0px 10px $lightgrey;
+	border:15px solid $white;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+
+#content div.headingbox + p {
+	margin-top:0em;
+}
+
+/* Background */
+.bkground_loader {
+	background:$white url($tpl_uri/img/layout/loader.gif) no-repeat 50% 50% !important;
+}
+.bkground_leaf {
+	background:$white url($tpl_uri/img/layout/leaf.png) no-repeat 50% 50% !important;
+}
+
+/* Forms */
+input:not([type=button]):not([type=reset]):not([type=submit]),
+select,
+textarea {
+	color:$darkgrey;
+}
+
+
+optgroup {
+	font-style:normal;
+	font-weight:bold;
+}
+
+form.filter {
+	input:not([type=button]):not([type=reset]):not([type=submit]),
+	select,
+	textarea {
+		font-size:11px;
+	}
+}
+
+#form-country option {
+	padding-left:20px;
+	height:16px;
+	line-height:16px;
+}
+
+form label.double {
+	input,
+	select {
+		display:inline-block;
+	}
+}
+
+label.ui-widget {
+	width:auto;
+}
+
+form label.double.width1 {
+	input,
+	select {
+		max-width:100px;
+	}
+}
+
+form input[type=button],
+form input[type=reset],
+form input[type=submit] {
+	float:left;
+	margin-left:18px;
+	height:38px;
+}
+
+#more_results_loading {
+	background:url($tpl_uri/img/layout/loader.gif) 50% 50% no-repeat;
+}
+
+/* Lists */
+ul:first-child,
+ol:first-child {
+	margin-top:0px;
+}
+
+ul:last-child,
+ol:last-child {
+	margin-bottom:0px;
+}
+
+ul,
+ol {
+	top:0px;
+}
+
+/* List of Links */
+ul.links,
+#content ul.links {
+	self {
+		list-style:none;
+	}
+	
+	> li {
+		self {
+			margin-bottom:2em;
+			clear:both;
+		}
+		
+		> a > span {
+			float:left;
+			padding:0 3px;
+		}
+	}
+}
+
+
+/* Visibility */
+.secret {
+	display:none !important;
+}
+
+.invisible {
+	visibility:hidden !important;
+}
+
+/* Alignment */
+.left,
+.left > p,
+.left > li {
+	text-align:left;
+}
+
+.center,
+.center > p,
+.center > li {
+	text-align:center;
+}
+
+.right,
+.right > p,
+.right > li {
+	text-align:right;
+}
+
+.justify,
+.justify > p,
+.justify > li {
+	text-align:justify;
+}
+
+.bcenter {
+	margin:0 auto;
+}
+
+/* Images */
+img.icon {
+	vertical-align:text-bottom;
+}
+
+img.left {
+	float:left;
+	margin-right:5px;
+}
+
+img.right {
+	float:right;
+	margin-left:5px;
+}
+
+div.flag_16 {
+	height:16px;
+	width:16px;
+}
+
+div.flag_24 {
+	height:24px;
+	width:24px;
+}
+
+div.flag_32 {
+	height:32px;
+	width:32px;
+}
+
+div.flag_48 {
+	height:48px;
+	width:48px;
+}
+
+/* Misc */
+sup, sub {
+	font-size:70%;
+}

@@ -1,0 +1,50 @@
+/* Variables */
+
+vars {
+	/* Green Colors */
+	$watergreen = #F7FBF7;	//[RGB: 176-208-176]
+	$lightgreen = #B0D0B0;	//[RGB: 247-251-247]
+	$llgreen = #006A33;		//[RGB:   0-106- 51]
+	$darkllgreen = #00381B;	//[RGB:   0- 56- 27]
+	
+	/* Yellow Colors */
+	$wateryellow = #FDFFB4;
+	$yellow = #FCF90D;
+	
+	/* Orange Colors */
+	$waterorange = #FDFF84;
+	$lightorange = #FCC90D;
+	$orange = #FC990D;
+	
+	/* Non Colors */
+	$white = #FFF;
+	$watergrey = #EEE;
+	$lightgrey = #CCC;
+	$grey = #666;
+	$darkgrey = #333;
+	$black = #000;
+	
+	/* Font */
+	$trebuchet_font = "Trebuchet MS", Arial, Helvetica, sans-serif;
+	$georgia_font = Georgia, "Times New Roman", Times, serif;
+	$arial_font = Arial, Helvetica, sans-serif;
+	$times_font = "Times New Roman", Times, serif;
+	
+	/* Body */
+	$body_img = $tpl_uri/img/layout/bg.png;
+	
+	/* Page */
+	$page_width = 990px;
+	
+	/* Header */
+	$header_height = 65px;
+	
+	/* Menu */
+	$menu_height = 30px;
+	
+	/* Content */
+	
+	/* Sidebar */
+	
+	/* Footer */
+}

@@ -1,0 +1,13 @@
+/* CSS Document */
+
+#slider {
+	width:400px;
+	height:240px;
+	margin-bottom:1em;
+}
+
+#content {
+	.statistics {
+		color:$lightgrey;
+	}
+}

@@ -1,0 +1,25 @@
+#<FilesMatch "^index.php$">
+#	Order Deny,Allow
+#	Deny from all
+#	AuthName "Restricted Access"
+#	AuthType Basic
+#	AuthUserFile /home/lifelink/.htpasswd
+#	Require valid-user
+#	Allow from 213.101.210.81
+#	Allow from 193.15.69.40
+#	Allow from 127.0.0.1
+#	Allow from ::1
+#	Satisfy Any
+#</FilesMatch>
+
+<Files ~ "\.tpl$">
+	Order Allow,Deny
+	Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule> 

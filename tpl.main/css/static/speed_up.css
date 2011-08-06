@@ -1,0 +1,13 @@
+#page {
+	box-shadow:none !important;
+	-webkit-box-shadow:none !important;	
+	-moz-box-shadow:none !important;
+	border-radius:0px !important;
+	-webkit-border-radius:0px !important;
+	-moz-border-radius:0px !important;
+	text-shadow:none !important;
+}
+
+.byline span {
+	color:#ccc !important;
+}

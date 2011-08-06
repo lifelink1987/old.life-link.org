@@ -1,0 +1,107 @@
+/* Layout */
+body {
+	background: url($body_img) repeat-x scroll center top $lightgrey;
+	cursor:default;
+	-webkit-user-select:none;
+	-moz-user-select:-moz-none;
+	overflow-x:hidden;
+}
+
+a {
+ cursor:pointer !important;
+}
+
+a:focus, a:active {
+	outline:1px dotted $llgreen;
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em {
+	font-family:$georgia_font;
+}
+
+/* Page */
+#page {
+	margin:0 auto;
+	border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	-moz-border-radius:0 0 10px 10px;
+	background-color: $white;
+	border:1px solid $lightgrey;
+	border-top:none;
+}
+
+#overlay {
+	display:none;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	position:fixed;
+	z-index:3;
+	background-color:$white;
+	opacity:0.9;
+}
+
+/* General Links */
+#content,
+#sidebar,
+#footer,
+#cboxTitle {	
+	a {
+		color:$llgreen;
+		text-decoration:none;
+		padding:0 3px;
+		border-radius:2px;
+		-webkit-border-radius:2px;
+		-moz-border-radius:2px;
+		white-space:nowrap;
+	}
+	
+	a:hover {
+		background-color:$llgreen;
+		color:$white;
+	}
+}
+
+#content,
+#sidebar {
+	a {
+		border-bottom:1px dotted $lightgreen;
+		background-color:$watergreen;
+	}
+	
+	a:hover {
+		border-bottom:1px solid $white;
+	}
+	
+	a.simple {
+		border-bottom:0;
+		padding:0;
+		border-radius:0;
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+	}
+}
+
+/* ColorBox */
+#cboxContent {
+	.secret {
+		display:inherit;
+	}
+	
+	p {
+		min-height:1em;
+	}
+}
+
+/* TipTip */
+#tiptip_content {
+	font-size:16px;
+	font-family:$trebuchet_font;
+}

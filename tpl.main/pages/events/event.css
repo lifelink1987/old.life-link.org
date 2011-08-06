@@ -1,0 +1,8 @@
+/* CSS Document */
+
+.logo {
+	width:400px;
+	height:240px;
+	margin-bottom:1em;
+	background: url($tpl_uri/img/layout/leaf.png) no-repeat 50% 50%;
+}

@@ -1,0 +1,96 @@
+/* Sidebar */
+
+#sidebar {
+	self {
+		margin-top:50px;
+		overflow:hidden;
+		margin-left:0px;
+	}
+	
+	> section {
+		self {
+			margin:0 10px;
+		}
+		
+		self.related,
+		self.toc {
+			width:1000px;
+		}
+		
+		> h1 {
+			font-family:$georgia_font;
+			font-size:16px;
+			line-height:16px;
+			color:$grey;
+			text-shadow:0px 0px 2px $lightgrey;
+			border-bottom:1px solid $watergrey;
+			display:inline-block;
+			margin-bottom:5px;
+			padding:0px 15px;
+			word-spacing:0.1em;
+		}
+		
+		> div {
+			self {
+				color:$grey;
+				padding-left:25px;
+			}
+			
+			> h2 {
+				color:$grey;
+				word-spacing:0.1em;
+				font-family:$georgia_font;
+				font-size:14px;
+				line-height:14px;
+				margin-bottom:8px;
+				margin-top:0px;
+				margin-left:-6px;
+			}
+			
+			> ul {
+				margin-top:0px;
+				list-style:none;
+			}
+			
+			> ul,
+			> ol {
+				margin-left:0px;
+			}
+		}
+		
+		form {
+			self {
+				overflow:visible;
+				padding-top:5px;
+			}
+			
+			input[type=text],
+			input[type=password],
+			input[type=email],
+			input[type=url],
+			input[type=select],
+			input[type=search],
+			input[type=file],
+			select,
+			ul.ui-autocomplete {
+				width:190px;
+			}
+		}
+	}
+	
+	> section.facebook {
+		self {
+			margin:0 -20px;
+		}
+		
+		iframe {
+			height:72px !important;
+		}
+	}
+}
+
+#sidebar_country_autocomplete_menu,
+#sidebar_school_autocomplete_menu,
+#sidebar_action_autocomplete_menu {
+	width:190px !important;
+}

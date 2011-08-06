@@ -1,0 +1,130 @@
+/* Content */
+
+#content {
+	self {
+		-webkit-user-select:auto;
+		-moz-user-select:text;
+	}
+	
+	/* Do not display sidebar additions; handled by JavaScript */
+	> section.sidebar {
+		display:none;
+	}
+	
+	/* Basic no-border sections */
+	> section.basic {
+		> h1 {
+			margin:0 -30px;
+			margin-top:-35px;
+/*			margin-bottom:8px;*/
+			padding:10px 40px;
+			text-align:center;
+		}
+	}
+	
+	/* Bordered sections */
+	> section:not(.basic) {
+		self {
+			box-shadow:0px 0px 3px $lightgrey;
+			-webkit-box-shadow:0px 0px 3px $lightgrey;
+			-moz-box-shadow:0px 0px 3px $lightgrey;
+			border:1px solid $white;
+			border-left:none;
+			border-right:none;
+			padding:20px;
+			margin:0 50px;
+		}
+	}
+	
+	> section:not(.basic):first-child {
+		self {
+			margin-top:20px;
+			border-top:none;
+			border-radius:5px 5px 0px 0px;
+			-webkit-border-radius:5px 5px 0px 0px;
+			-moz-border-radius:5px 5px 0px 0px;
+		}
+	}
+	
+	> section + section:not(.basic):last-child {
+		border-bottom:none;
+		margin-bottom:20px;
+		border-radius:0px 0px 5px 5px;
+		-webkit-border-radius:0px 0px 5px 5px;
+		-moz-border-radius:0px 0px 5px 5px;
+	}
+	
+	/* Subtitle */
+	> section > h1 + .byline + .center {
+		color:$lightgrey;
+		margin-top:-10px;
+		margin-bottom:20px;
+	}
+	
+	> section > h1 + .byline + h3 {
+		line-height:19px;
+	}
+	
+	/* Subheadings in columns */
+	> section.colgroup {
+		> h1 + .byline + .column,
+		> h1 + .byline + .column + .column,
+		> h1 + .byline + .column + .column + .column {
+			self {
+				margin-top:-8px;
+			}
+			
+			h2 {
+				text-align:center;
+				color:$lightgrey;
+				margin-top:-10px;
+				margin-bottom:-8px;
+			}
+		}
+		
+		/* Elevate subheadings if main heading is short */
+		> h1.short + .byline + .column,
+		> h1.short + .byline + .column + .column,
+		> h1.short + .byline + .column + .column + .column {
+			self {
+				margin-top:-38px;
+			}
+		}
+	}
+	
+	/* Columns with percentage width */
+	.colgroup.inline {
+		self {
+			float:none;
+		}
+	
+		.column {
+			display:inline-block;
+			float:none;
+			vertical-align:top;
+		}
+		
+		.column.width50 {
+			width:47.5%;
+			margin-right:-4px;
+		}
+		
+		.column.width25 {
+			width:21.25%;
+			margin-right:-2px;
+		}
+		
+		.column.width75 {
+			width:73.75%;
+			margin-right:-4px;
+		}
+		
+		.column.width50 + .column.width50,
+		.column.width25 + .column.width25 + .column.width25 + .column.width25,
+		.column.width25 + .column.width75,
+		.column.width75 + .column.width25 {
+			margin-left:5%;
+			margin-right:0px;
+		}
+	}
+}
