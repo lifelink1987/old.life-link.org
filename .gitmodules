@@ -6,4 +6,4 @@
 	url = git://github.com/kellan/magpierss.git
 [submodule "libs/nicedog"]
 	path = libs/nicedog
-	url = git://github.com/bastos/nicedog.git
+	url = git://github.com/andreineculau/nicedog.git
