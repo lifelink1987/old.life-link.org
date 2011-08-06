@@ -88,6 +88,8 @@ function get_rss_news() {
 		if (! $note) {
 			$facebook_rss_items[$i]['description'] = '';
 		}
+		
+		$facebook_rss_items[$i]['title'] = strip_tags($facebook_rss_items[$i]['title']);
 	}
 	
 	return $facebook_rss_items;
