@@ -9,7 +9,7 @@ define('LL_TIMEZONE', 'Europe/Stockholm');
  * Host
  */
 define('LL_SERVERS', 'www.life-link.org,life-link.org');
-define('LL_DEBUG_SERVERS', 'localhost,beta.life-link.se');
+define('LL_DEBUG_SERVERS', 'localhost,andrei-macpro,beta.life-link.se');
 define('LL_AT_HOME', in_array($_SERVER['SERVER_NAME'], explode(',', LL_SERVERS)));
 define('LL_AT_HOME_DEBUG', in_array($_SERVER['SERVER_NAME'], explode(',', LL_DEBUG_SERVERS)));
 if ($_GET['force_debug']) {
@@ -47,7 +47,7 @@ define('LL_ROOT', $root);
 /*
  * Site's URI root
  */
-define('LL_ROOT_URI', @array_shift(explode('/',strtolower($_SERVER['SERVER_PROTOCOL']))) . '://' . $_SERVER['SERVER_NAME'] . implode('/', $script_url));
+define('LL_ROOT_URI', @array_shift(explode('/',strtolower($_SERVER['SERVER_PROTOCOL']))) . '://' . $_SERVER['SERVER_NAME'] . (($_SERVER['SERVER_PORT'] != 80)?':' . $_SERVER['SERVER_PORT']:'') . implode('/', $script_url));
 
 /*
  * Site's request URI
@@ -77,15 +77,9 @@ define('MAGPIE_CACHE_DIR', LL_ROOT . '/libs/magpierss_data/');
 define('IMAGE_CACHE_DIR', LL_ROOT . '/libs/image_data/');
 
 /*
- * Major version
+ * Major and minor version (revision)
  */
-define('LL_VERSION', 2010);
-define('LL_VERSION_STATUS', 'beta');
-
-/*
- * Minor version (revision)
- */
-define('LL_VERSION_MINOR', (int) @file_get_contents(LL_ROOT . '/libs/config/revision.php'));
+require_once 'revision.php';
 
 /*
  * Unset temporary variables

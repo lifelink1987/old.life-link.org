@@ -13,7 +13,7 @@ define('LL_CACHE', LL_AT_HOME);
 /*
  * Database settings
  */
-define('LL_DB_HOST', 'sql.life-link.se');
+define('LL_DB_HOST', 'sql.life-link.info');
 define('LL_DB_PORT', '3306');
 define('LL_DB_USER', 'lifelink_basic');
 define('LL_DB_PASS', 'ducmG2JJ');
