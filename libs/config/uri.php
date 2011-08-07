@@ -56,6 +56,10 @@ $uri['board'] = '/board';
 
 $uri['partnerships'] = '/misc/partnerships';
 $uri['logo'] = '/misc/logo';
+$uri['what_is_lifelink'] = '/friendship_schools/what_is_lifelink';
+$uri['contact_newspaper'] = '/friendship_schools/contact_a_newspaper';
+$uri['engage_schools'] = '/friendship_schools/engage_schools_near_you';
+$uri['engage_community'] = '/friendship_schools/engage_your_community';
 
 $uri['icon_file'] = '/icon/file/';
 $uri['icon_social'] = '/icon/social/';

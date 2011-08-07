@@ -96,6 +96,15 @@
 		<h2>Explore</h2>
 		<div>
 			<div class="headingbox">
+				<h1>What is Life-Link</h1>
+				<div>
+					<a href="{$uri.what_is_lifelink}">
+						<div><img src="{$tpl_uri}/img/layout/leaf.png" width="64"></div>
+						Get an overview of what Life-Link Friendship-Schools stands for.
+					</a>
+				</div>
+			</div>
+			<div class="headingbox">
 				<h1>Proposed Care Actions</h1>
 				<div>
 					<a href="{$uri.actions}">
@@ -132,7 +141,7 @@
 		<h2>Engage</h2>
 		<div>
 			<div class="headingbox">
-				<h1>Enroll your school</h1>
+				<h1>Enroll your School</h1>
 				<div>
 					<a href="{$uri.report}">
 						<div><img src="{$uri.icon_quartz}book.png"></div>
@@ -141,18 +150,18 @@
 				</div>
 			</div>
 			<div class="headingbox">
-				<h1>Engage schools near you</h1>
+				<h1>Engage Schools near You</h1>
 				<div>
-					<a href="#">
+					<a href="{$uri.engage_schools}">
 						<div><img src="{$uri.icon_quartz}books.png"></div>
 						Spread the word to other schools in your city or country.
 					</a>
 				</div>
 			</div>
 			<div class="headingbox">
-				<h1>Engage your community</h1>
+				<h1>Engage your Community</h1>
 				<div>
-					<a href="#">
+					<a href="{$uri.engage_community}">
 						<div><img src="{$uri.icon_quartz}comment.png"></div>
 						Talk and write to parents, teachers and officials about Life-Link and its benefits.
 					</a>
@@ -164,23 +173,32 @@
 		<h2>Support</h2>
 		<div>
 			<div class="headingbox">
-				<h1>Contact a newspaper</h1>
+				<h1>Contact a Newspaper</h1>
 				<div>
-					<a href="#">
+					<a href="{$uri.contact_newspaper}">
 						<div><img src="{$uri.icon_quartz}news.png"></div>
 						Write a story on how you benefit from the Life-Link programme.
 					</a>
 				</div>
 			</div>
 			<div class="headingbox">
-				<h1>Contact us</h1>
+				<h1>Show the Leaf</h1>
+				<div>
+					<a href="{$uri.logo}">
+						<div><img src="{$tpl_uri}/img/layout/leaf.png" width="64"></div>
+						Use the Life-Link rose leaf whenever and wherever you speak of our actions.
+					</a>
+				</div>
+			</div>
+			<!--<div class="headingbox">
+				<h1>Contact Us</h1>
 				<div>
 					<a href="#">
 						<div><img src="{$uri.icon_quartz}book_address.png"></div>
 						Drop us a line or report a new performed action.
 					</a>
 				</div>
-			</div>
+			</div>-->
 			<div class="headingbox">
 				<h1>Donate</h1>
 				<div>
