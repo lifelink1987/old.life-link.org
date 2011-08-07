@@ -52,7 +52,7 @@
 				<li><em>or</em> <a href="{$uri.contact}">click here to write us!</a></li>
 			</ul>
 			<ul>
-				<li>&copy; 1985-{$smarty.now|date_format:"%Y"}<br />
+				<li>&copy; 1987-{$smarty.now|date_format:"%Y"}<br />
 					Life-Link Friendship-Schools<br />
 					Association</li>
 				<li>{$version}<br />
@@ -71,7 +71,7 @@
 							A small rose leaf<br />
 							<br />
 							<b>1</b> Office<br />
-							<b>15</b> <a href="{$uri.board}">Board Members</a><br />
+							<b>15</b> <a href="{$uri.board}">on Board</a><br />
 							<br />
 							<b>Supporters</b><br />
 							world-wide! <a href="{$uri.support}">You?</a>
