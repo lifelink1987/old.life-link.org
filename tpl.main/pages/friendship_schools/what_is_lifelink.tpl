@@ -10,7 +10,7 @@
 	<p>This independent peace education programme was initiated 1987 as a Medical Doctor's "antidote" to the pessimism documented among children in response to the prospect of nuclear war and environmental degradation. Today we have as proof the rich experience from students, teachers and schools worldwide that this programme can bring inspiration, hope and optimism for the future into the school's curriculum.</p>
 </section>
 <section class="justify">
-	<h2 class="center">Intended audience</h2>
+	<h2 class="center" id="more">Intended audience</h2>
 
 	<p>Preferably lower and upper secondary school students (ages 12-19). Educators at primary schools have also found the programme useful for their young students.</p>
 </section>
