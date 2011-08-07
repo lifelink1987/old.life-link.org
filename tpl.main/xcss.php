@@ -43,6 +43,7 @@ if (file_exists($files_cache) && (time() - filemtime($files_cache) < CACHE_LIFE)
 	}
 }
 
+$input_xcss = '';
 foreach ($files as $key => $file) {
 	$input_xcss = $input_xcss . file_get_contents($file);
 }
