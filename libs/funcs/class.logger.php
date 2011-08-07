@@ -402,7 +402,7 @@ class Logger extends ExtendedClass {
 	 */
 	public function log_flow($moment, $message, $id = NULL) {
 		$moment = strtolower($moment);
-		$mem = '<b>Memory Usage</b>: ' . convert_memory(memory_get_usage()) . ' / <b>Peak</b>: ' . convert_memory(memory_get_peak_usage());
+		$mem = 'Memory Usage: ' . convert_memory(memory_get_usage()) . ' / Peak: ' . convert_memory(memory_get_peak_usage());
 		switch ($moment) {
 			case 'start':
 				$id = count($this->_timings) + 1;
