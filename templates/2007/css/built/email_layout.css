@@ -1,0 +1,18 @@
+/* CSS Document */
+
+body
+{
+	background-color: #FFFFFF;
+	margin-left: 0;
+	margin-right: auto;
+	text-align: left;
+}
+
+#page-content
+{
+	padding: 20px;
+	color: #444444;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Geneva, sans-serif;
+	/*font-size: 92%;*/
+}
+

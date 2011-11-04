@@ -1,0 +1,22 @@
+/* CSS Document */
+
+/* printed */
+.page_printed ul.language
+{
+	margin: 0;
+	display: block;
+	border-bottom: 1px solid <$lightgreen>;
+}
+
+.page_printed ul.language li
+{
+	width: 100px;
+	display: block;
+	float: left;
+}
+
+.page_printed ul.language li.title
+{
+	font-weight: bold;
+	clear: left;
+}

@@ -1,0 +1,294 @@
+/* CSS Document */
+
+#page-content hr,
+#page-content .hr
+{
+	border: 0 <$white> none;
+	padding: 0;
+	color: <$lightorange>;
+	background-color: <$lightorange>;
+	height: 1px;
+	line-height: 1px;
+	margin: 2px;
+	_margin: 0;
+	display: block;
+	overflow: hidden;
+}
+
+#page-content p,
+.panel .bd p
+{
+	margin-bottom: 0.5em;
+	text-align: justify;
+	display: block;
+}
+
+#page-content strong,
+#page-content em
+{
+	color: <$black>;
+}
+
+#page-content blockquote
+{
+	padding-left: 1em;
+}
+
+#page-content .indent
+{
+	margin-left: 2em;
+}
+
+#page-content .sectionlinks
+{
+	position: absolute;
+	visibility: hidden;
+}
+
+#page-content .summary
+{
+/*	overflow: auto !important;
+	overflow-y: auto !important;
+*/	overflow: hidden;
+	overflow-x: hidden !important;
+	max-height: 90px;
+	min-height: 90px;
+	_height: 90px;
+	padding: 2px;
+	border-bottom: 1px solid <$lightorange>;
+}
+
+#page-content .hidden
+{
+	display: none;
+}
+
+/* Headings */
+#page-content h1,
+#page-content .h1
+{
+	font-family: <$font_family_heading>;
+	font-size: 152%;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: <$llgreen>;
+	border-bottom: 1px <$lightgrey> solid; 
+}
+
+#page-content h2,
+#page-content .h2
+{
+	font-family: <$font_family_heading>;
+	font-size: 122%;
+	font-weight: normal;
+	color: <$llgreen>;
+}
+
+#page-content h3,
+#page-content .h3
+{
+	font-size: 107%;
+	font-weight: bold;
+}
+
+#page-content h1
+{
+	margin-bottom: 0.5em;
+}
+
+#page-content h3,
+#page-content h2
+{
+	margin-bottom: 1em;
+}
+
+#page-content h2 + h3
+{
+	margin-top: -1em;
+}
+
+/* Links */
+#page-content a
+{
+	text-decoration: underline;
+	color: <$llgreen>;
+/*	border-bottom: 1px solid <$llgreen>;
+	font-style: italic;*/
+}
+
+#page-content a:hover
+{
+/*	border-bottom: 1px solid <$orange>;
+	text-decoration: underline;*/
+	text-decoration: none;
+}
+
+#page-content a.doc
+{
+	padding-left: 20px;
+	background: transparent url(<$tpl.icons.word>) no-repeat;
+}
+
+#page-content a.pdf
+{
+	padding-left: 20px;
+	background: transparent url(<$tpl.icons.acrobat>) no-repeat;
+}
+
+#page-content a.jpg,
+#page-content a.gif,
+#page-content a.png
+{
+	padding-left: 20px;
+	background: transparent url(<$tpl.icons.picture>) no-repeat;
+}
+
+#page-content a.xls,
+#page-content a.cvs
+{
+	padding-left: 20px;
+	background: transparent url(<$tpl.icons.excel>) no-repeat;
+}
+
+#page-content a.ppt,
+#page-content a.pps
+{
+	padding-left: 20px;
+	background: transparent url(<$tpl.icons.powerpoint>) no-repeat;
+}
+
+#page-content a.zip,
+#page-content a.rar,
+#page-content a.ace
+{
+	padding-left: 20px;
+	background: transparent url(<$tpl.icons.compressed>) no-repeat;
+}
+
+#page-content a.mail
+{
+	padding-right: 20px;
+	background: transparent url(<$tpl.icons.mail>) no-repeat 100% 0;
+}
+
+#sidebar a
+{
+	text-decoration: none;
+	color: <$llgreen>;
+	border-bottom: 1px solid <$llgreen>;
+}
+
+#sidebar a:hover
+{
+	border-bottom: 1px solid <$orange>;
+}
+
+/* Lists */
+#page-content ul,
+#page-content ol
+{
+	margin-bottom: 5px;
+}
+
+#page-content ul
+{
+	list-style: disc;
+	list-style-position: inside;
+}
+
+#page-content ol
+{
+	list-style-position: inside;
+	list-style-type: decimal;
+}
+
+#page-content li
+{
+	text-align: left;
+}
+
+#page-content dl dd
+{
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+#page-content dl dt
+{
+	padding-bottom: 2px;
+}
+
+/* Tooltip */
+.tt
+{
+	z-index: 600;
+}
+
+/* Panels */
+div.mask
+{
+	background-color: <$white>;
+}
+
+div.panel div.hd
+{
+	background-color: <$llgreen>;
+}
+
+/* Wait */
+#wait .bd
+{
+	text-align: center;
+}
+
+/* YUI Grid correction */
+.yui-gb .yui-u, 
+.yui-gc .yui-u, 
+.yui-gd .yui-u{margin-left:1.8%;*margin-left:1.790%;} 
+
+#page-content .yui-u {
+	padding-bottom: 1px;
+}
+
+/* YUI Calendar */
+#page-content .yui-calendar a
+{
+	text-decoration: none;
+	color: #003DB8;
+}
+
+#page-content .yui-calendar a:hover
+{
+	color: #FFFFFF;
+}
+
+/* LLCLEAR */
+#page-content span.llclear
+{
+	height: 0;
+	line-height: 0;
+}
+
+#page-content span.llclear.h05
+{
+	height: 0.5em;
+	line-height: 0.5em;
+}
+
+#page-content span.llclear.h10
+{
+	height: 1em;
+	line-height: 1em;
+}
+
+#page-content span.llclear.h20
+{
+	height: 2em;
+	line-height: 2em;
+}
+
+#page-content span.llclear.h30
+{
+	height: 3em;
+	line-height: 3em;
+}

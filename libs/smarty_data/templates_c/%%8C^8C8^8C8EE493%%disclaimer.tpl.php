@@ -1,0 +1,6 @@
+<?php /* Smarty version 2.6.16, created on 2011-06-15 10:42:27
+         compiled from official:pages/website/disclaimer.tpl */ ?>
+<div id="llpagetitle">Disclaimer</div>
+<p>The information provided within the site of Life-Link Friendship-Schools is for educational purposes only. References to commercial products or trade names are made with the understanding that no discrimination is intended, nor is there endorsement by any of the agencies involved.</p>
+<p>While reasonable efforts have been made to ensure the accuracy of information, it is subject to change without notice and cannot be guaranteed to be current. Furthermore, the authors of this site do not have editorial oversight for all documents referenced here and cannot be held responsible for their content.</p>
+<p>Users may find links to independently managed WWW servers. Questions and comments regarding these WWW servers should be directed to the webmaster or administrator of the respective server who is responsible for its content.</p>

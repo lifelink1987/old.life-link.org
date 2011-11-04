@@ -1,0 +1,317 @@
+/* CSS Document */
+
+/* grey */
+
+.llboxwhite
+{
+	background-color: <$white>;
+	border-color: <$black>;
+}
+
+.llboxwatergrey
+{
+	background-color: <$watergrey>;
+	border-color: <$lightgrey>;
+}
+
+.llboxlightgrey
+{
+	background-color: <$lightgrey>;
+	border-color: <$grey>;
+}
+
+.llboxgrey
+{
+	background-color: <$grey>;
+	border-color: <$black>;
+}
+
+.llboxblack
+{
+	background-color: <$black>;
+}
+
+/* green */
+.llboxwatergreen
+{
+	background-color: <$watergreen>;
+	border-color: <$lightgreen>;
+}
+
+.llboxlightgreen
+{
+	background-color: <$lightgreen>;
+	border-color: <$llgreen>;
+}
+
+.llboxllgreen
+{
+	background-color: <$llgreen>;
+}
+
+/* orange */
+.llboxyellow
+{
+	background-color: <$yellow>;
+	border-color: <$lightorange>;
+}
+
+.llboxlightyellow
+{
+	background-color: <$wateryellow>;
+	border-color: <$lightorange>;
+}
+
+.llboxlightorange
+{
+	background-color: <$lightorange>;
+	border-color: <$orange>;
+}
+
+.llboxorange
+{
+	background-color: <$orange>;
+	border-color: <$black>;
+}
+
+/* box - others */
+.llboxbd
+{
+	padding: 8px;
+}
+.llboxbdsmall
+{
+	padding: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.llboxtextwhite,
+.llboxtextwhite a
+{
+	color: <$white>;
+}
+
+.llboxtextblack,
+.llboxtextblack a
+{
+	color: <$black>;
+}
+
+/* others */
+
+.llborderb
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.llbordert
+{
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.llborderl
+{
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+.llborderr
+{
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.llborder
+{
+	border-style: solid;
+	border-width: 1px;
+}
+
+.llbordernone
+{
+	border: none !important;
+}
+
+/* Official CSS elements follow */
+
+.LL_box0
+{
+	background-color: <$llgreen>;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: <$white>;
+}
+
+.LL_box0counter
+{
+	background-color: <$white>;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: <$black>;
+}
+
+.LL_box1
+{
+	background-color: <$lightgreen>;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: <$black>;
+}
+
+.LL_box1counter
+{
+	background-color: <$white>;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: <$black>;
+}
+
+/* End */
+
+.LL_box2
+{
+	background-color: <$lightgreen>;
+	border: 1px solid <$white>;
+	margin: 5px -1px;
+	/*width: 100%;*/
+	color: <$white>;
+}
+
+.LL_box3
+{
+	background-color: <$watergreen>;
+	border: 1px solid <$lightgreen>;
+	margin: 5px -1px;
+	/*width: 100%;*/
+	color: <$black>;
+}
+
+.LL_box4
+{
+	background-color: <$watergrey>;
+	border: 1px solid <$lightgrey>;
+	margin: 5px -1px;
+	/*width: 100%;*/
+	color: <$black>;
+}
+
+.LL_box0 a,
+.LL_box2 a
+{
+	color: <$white>;
+	border-bottom: 1px dashed <$white>;
+}
+
+.LL_box0counter a,
+.LL_box1counter a,
+.LL_box1 a,
+.LL_box3 a,
+.LL_box4 a
+{
+	color: <$llgreen>;
+	border-bottom: 1px dashed <$lightgreen>;
+}
+
+.LL_box0 .LL_box,
+.LL_box1 .LL_box,
+.LL_box0counter .LL_box,
+.LL_box1counter .LL_box,
+.LL_box2 .LL_box,
+.LL_box3 .LL_box,
+.LL_box4 .LL_box
+{
+	padding: 0px 10px;
+	display: block;
+}
+
+.LL_box2 .LL_box,
+.LL_box3 .LL_box,
+.LL_box4 .LL_box
+{
+	padding: 10px;
+}
+
+.LL_box0 .bottom,
+.LL_box1 .bottom,
+.LL_box0counter .bottom,
+.LL_box1counter .bottom
+{
+	position: absolute;
+	margin-top: 5px;
+}
+
+.LL_box2 .bottom,
+.LL_box3 .bottom,
+.LL_box4 .bottom
+{
+	position: absolute;
+	margin-top: 10px;
+}
+
+.LL_box0 div.bottom,
+.LL_box1 div.bottom,
+.LL_box2 div.bottom,
+.LL_box3 div.bottom,
+.LL_box4 div.bottom
+{
+	color: <$black>;
+	padding: 1px;
+}
+
+.LL_box0counter div.bottom,
+.LL_box1counter div.bottom
+{
+	color: <$white>;
+	padding: 1px;
+}
+
+.LL_box0 div.bottom a,
+.LL_box1 div.bottom a,
+.LL_box2 div.bottom a,
+.LL_box3 div.bottom a,
+.LL_box4 div.bottom a,
+.LL_box0 a.bottom,
+.LL_box1 a.bottom,
+.LL_box2 a.bottom,
+.LL_box3 a.bottom,
+.LL_box4 a.bottom
+{
+	color: <$llgreen> !important;
+	border-bottom: 1px dashed <$lightgreen>;
+	font-size: 85%;
+}
+
+.LL_box0 div.bottom a:hover,
+.LL_box1 div.bottom a:hover,
+.LL_box2 div.bottom a:hover,
+.LL_box3 div.bottom a:hover,
+.LL_box4 div.bottom a:hover,
+.LL_box0 a.bottom:hover,
+.LL_box1 a.bottom:hover,
+.LL_box2 a.bottom:hover,
+.LL_box3 a.bottom:hover,
+.LL_box4 a.bottom:hover
+{
+	border-bottom: 1px solid <$lightgreen>;
+}
+
+.LL_box0counter div.bottom a,
+.LL_box1counter div.bottom a,
+.LL_box0counter a.bottom,
+.LL_box1counter a.bottom
+{
+	color: <$white> !important;
+	border-bottom: 1px dashed <$white>;
+	font-size: 85%;
+}
+
+.LL_box0counter div.bottom a:hover,
+.LL_box1counter div.bottom a:hover,
+.LL_box0counter a.bottom:hover,
+.LL_box1counter a.bottom:hover
+{
+	border-bottom: 1px none <$white>;
+}

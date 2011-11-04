@@ -1,0 +1,176 @@
+/* CSS Document */
+
+/* Headings */
+#llpagetitle
+{
+	font-family: <$font_family_heading>;
+	font-size: 197%;
+	font-weight: lighter;
+	font-style: italic;
+	color: <$black>;
+	border-bottom: 1px <$lightorange> dotted;
+	margin-bottom: 15px;
+}
+
+#llpagesuptitle,
+#llpagesubtitle
+{
+	font-family: <$font_family_heading>;
+	font-size: 114%;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+#llpagesuptitle
+{
+	color: <$black>;
+}
+
+#llpagesubtitle
+{
+	margin-top: -15px;
+	margin-bottom: 15px;
+}
+
+/* Margin and Padding */
+#page-content .llmarginl
+{
+	margin-left: 20px !important;
+}
+
+#page-content .llmarginr
+{
+	margin-right: 20px !important;
+}
+
+#page-content .llpaddingl
+{
+	padding-left: 20px !important;
+}
+
+#page-content .llpaddingr
+{
+	padding-right: 20px !important;
+}
+
+#page-content .llspaced
+{
+	padding-bottom: 10px !important;
+}
+
+/* Text */
+#page-content .lljustify
+{
+	text-align: justify !important;
+}
+
+#page-content .llinline
+{
+	display: inline !important;
+}
+
+#page-content .lltextl
+{
+	text-align: left !important;
+}
+
+#page-content .lltextr
+{
+	text-align: right !important;
+}
+
+#page-content .lltextc
+{
+	text-align: center !important;
+}
+
+#page-content .lltextt
+{
+	vertical-align: top !important;
+}
+
+#page-content .lltextb
+{
+	vertical-align: bottom !important;
+}
+
+#page-content .lltextm
+{
+	vertical-align: middle !important;
+}
+
+#page-content .lltextsmall
+{
+	font-size: 85%;
+}
+
+/* Block */
+#page-content .llinlineblock
+{
+	display: inline-block !important;
+}
+
+#page-content .llblock
+{
+	display: block !important;
+}
+
+#page-content .lloverflow
+{
+	overflow: auto !important;
+	_overflow-y: auto !important;
+	_overflow-x: hidden !important;
+}
+
+#page-content .llblockl
+{
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+
+#page-content .llblockr
+{
+	margin-left: auto !important;
+	margin-right: 0 !important;
+}
+
+#page-content .llblockc
+{
+	margin: 0 auto !important;
+}
+
+#page-content .llfloatl
+{
+	float: left !important;
+}
+
+#page-content .llfloatr
+{
+	float: right !important;
+}
+
+#page-content .llclearl
+{
+	clear: left !important;
+}
+
+#page-content .llclearr
+{
+	clear: right !important;
+}
+
+#page-content .llclear
+{
+	clear: both !important;
+	display: block !important;
+	overflow: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+/* Border */
+#page-content .llbordernone
+{
+	border: none !important;
+}
+

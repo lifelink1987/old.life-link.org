@@ -1,0 +1,187 @@
+/* CSS Document */
+
+/* header/footer */
+ul.llheaderh,
+ul.llfooterh,
+ul.llheaderv,
+ul.llfooterv
+{
+	font-size: 85%;
+	border-bottom: 1px solid #FCC90D;
+	list-style-position: inside;
+	margin: 0px;
+	_border-bottom: 0px;
+}
+
+ul.llfooterh
+{
+	margin-bottom: 5px;
+}
+
+ul.llheaderv,
+ul.llfooterv
+{
+	border-left: 1px solid #FCC90D;
+	_border-left: 0px;
+}
+
+/* header and footer list items */
+ul.llheaderh li,
+ul.llfooterh li
+{
+	display: inline;
+	_border-bottom: 1px solid #FCC90D;
+	_zoom: 1;
+}
+
+
+ul.llheaderh li.lltitle,
+ul.llfooterh li.lltitle,
+ul.llheaderv li.lltitle,
+ul.llfooterv li.lltitle
+{
+	font-weight: bold;
+	padding: 0 5px;
+}
+
+ul.llheaderv li.lltitle,
+ul.llfooterv li.lltitle
+{
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+ul.llheaderh a,
+ul.llfooterh a,
+ul.llheaderv a,
+ul.llfooterv a
+{
+	border-bottom: 0px;
+	padding: 0 5px;
+}
+
+ul.llheaderv a,
+ul.llfooterv a
+{
+	padding-left: 20px;
+	_border-left: 1px solid #FCC90D;
+}
+	
+ul.llheaderh a:hover,
+ul.llfooterh a:hover,
+ul.llheaderv a:hover,
+ul.llfootervh a:hover
+{
+	background-color: #FCC90D;
+	color: #000000;
+	border-bottom: 0px;
+}
+
+ul.llheaderv a:hover,
+ul.llfooterv a:hover
+{
+	_border-left: 1px solid #FCC90D;
+}
+
+ul.llheaderh li.current a,
+ul.llfooterh li.current a,
+ul.llheaderv li.current a,
+ul.llfootervh li.current a
+{
+	background-color: #FCC90D;
+	color: #000000;
+	cursor: default;
+}
+
+ul.llheaderhsub,
+ul.llfooterhsub
+{
+	padding-top: 1px;
+	_padding-top: 0px;
+	clear: both;
+	float: right;
+}
+
+/* others */
+
+ul.llbullets,
+ul.llbulletss
+{
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+ul.llbulletss
+{
+	font-size: 85%;
+}
+
+ul.llbullets li,
+ul.llbulletss li
+{
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+ul.llbullets li.lltitle,
+ul.llbulletss li.lltitle
+{
+	padding-right: 5px;
+	list-style-type: none;
+	font-style: normal;
+	font-weight: normal;
+	list-style-image: none;
+}
+
+ul.llbulletss li.lltitle
+{
+	font-size: 118% !important;
+}
+
+/* types of bullets */
+ul.llbulletarrow
+{
+	list-style-image: url(/templates/classic2/bullets/arrow_white_on_white.gif);
+}
+
+ul.llbulletpagenext
+{
+	list-style-image: url(/templates/classic2/icons/page_next.gif);
+}
+
+ul.llbulletred
+{
+	list-style-image: url(/templates/classic2/bullets/dot_red_on_white.gif);
+}
+
+ul.llbulletleaf
+{
+	list-style-image: url(/templates/classic2/bullets/leaf_small.gif);
+}
+
+ul.llbulletnone
+{
+	list-style-image: none;
+	list-style-type: none;
+}
+
+/* other list items */
+
+ul.llbulletbold li,
+ol.llbulletbold li
+{
+	font-weight: bold;
+}
+
+ul.llbulletitalic li,
+ol.llbulletitalic li
+{
+	font-style: italic;
+}
+
+li.llspaced
+{
+	padding-bottom: 10px !important;
+}
+
+/* End */

@@ -1,0 +1,84 @@
+<IfModule mod_rewrite.c>
+	ErrorDocument 404 /404.php
+	RewriteEngine On
+	RewriteBase /
+	
+	#Google mail
+	RewriteCond %{REQUEST_URI} ^/(gmail|mail)/?$
+	RewriteRule . https://mail.google.com/a/life-link.org [L,R=301,NC]
+
+
+# INTERNAL ALIAS
+
+################
+
+#Redirection blog -> live
+	RewriteCond %{REQUEST_URI} ^/blog/?$
+	RewriteRule . /live [L,R,NC]
+
+#Redirection photo/photos -> gallery
+#	RewriteCond %{REQUEST_URI} ^/photo/?$
+#	RewriteRule . /gallery [L,R,NC]
+
+#Redirection gallery -> Dreamhost
+	RewriteCond %{REQUEST_URI} ^/gallery/
+	RewriteRule /gallery/?(.*) http://media.life-link.se/$1 [L,NC]
+
+#Redirection db -> admin/db
+	RewriteCond %{REQUEST_URI} ^/db/?$
+	RewriteRule . /admin/db [L,R,NC]
+
+#Redirection office -> admin/istration
+	RewriteCond %{REQUEST_URI} ^/office/?$
+	RewriteRule . /admin/istration [L,R,NC]
+
+#Redirection esd -> esd.php
+	RewriteCond %{REQUEST_URI} ^/esd/?$
+	RewriteRule . http://earthcare.life-link.org [L,R=301,NC]
+
+#Fake 404 document
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule 404.php /home.php [L,R]
+
+	
+	
+# OLD!!!!	
+# EXTERNAL ALIAS
+
+################
+
+#Add WWW
+#	RewriteCond %{HTTP_HOST} ^life\-link\.org$ [NC]
+#	RewriteRule ^.*$ http://www.life-link.org%{REQUEST_URI} [R=301,L]
+	
+
+#Google Calendar
+	RewriteCond %{REQUEST_URI} ^/(gcal|calendar)/?$
+	RewriteRule . https://calendar.google.com/a/life-link.org [L,R,NC]
+
+#Google Documents
+	RewriteCond %{REQUEST_URI} ^/(gdocs|documents)/?$
+	RewriteRule . https://docs.google.com/a/life-link.org [L,R,NC]
+
+#Old Webmail
+	RewriteCond %{REQUEST_URI} ^/webmail/?$
+	RewriteRule . http://webmail.webbhotellsgruppen.se [L,R,NC]
+
+#Trafic.ro statistics
+	RewriteCond %{REQUEST_URI} ^/trafic/?$
+	RewriteRule /trafic/(.*) http://stat.trafic.ro/stat/lifelinkorg/$1 [L,R,NC]
+
+#Crystone Email Administration
+	RewriteCond %{REQUEST_URI} ^/cpanel/webmail/?$
+	RewriteRule . http://mailadmin.mailkluster.webbhotellsgruppen.se/cgi-bin/qmailadmin [L,R,NC]
+
+#Google Email Administration
+	RewriteCond %{REQUEST_URI} ^/cpanel/gmail/?$
+	RewriteRule . https://www.google.com/a/life-link.org [L,R,NC]
+
+#Crystone Control Panel
+	RewriteCond %{REQUEST_URI} ^/cpanel/?$
+	RewriteRule . http://manage.crystone.se/controlpanel3/ [L,R,NC]
+</IfModule>
+

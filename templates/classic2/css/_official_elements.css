@@ -1,0 +1,121 @@
+/* CSS Document */
+
+.llmarginl
+{
+	margin-left: 20px !important;
+}
+
+.llmarginr
+{
+	margin-right: 20px !important;
+}
+
+.llpaddingl
+{
+	padding-left: 20px !important;
+}
+
+.llpaddingr
+{
+	padding-right: 20px !important;
+}
+
+.lljustify
+{
+	text-align: justify !important;
+}
+
+.llinline
+{
+	display: inline !important;
+}
+
+.llinlineblock
+{
+	display: inline-block !important;
+}
+
+.llblock
+{
+	display: block !important;
+}
+
+.lloverflow
+{
+	overflow: auto !important;
+	_overflow-y: auto !important;
+	_overflow-x: hidden !important;
+}
+
+.lltextl
+{
+	text-align: left !important;
+}
+
+.lltextr
+{
+	text-align: right !important;
+}
+
+.lltextc
+{
+	text-align: center !important;
+}
+
+.lltextt
+{
+	vertical-align: top !important;
+}
+
+.lltextb
+{
+	vertical-align: bottom !important;
+}
+
+.lltextm
+{
+	vertical-align: middle !important;
+}
+
+.llblockl
+{
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+
+.llblockr
+{
+	margin-left: auto !important;
+	margin-right: 0 !important;
+}
+
+.llblockc
+{
+	margin: 0 auto !important;
+}
+
+.llfloatl
+{
+	float: left !important;
+}
+
+.llfloatr
+{
+	float: right !important;
+}
+
+.llclearl
+{
+	clear: left !important;
+}
+
+.llclearr
+{
+	clear: right !important;
+}
+
+.llclear
+{
+	clear: both !important;
+	display: block !important;
+}

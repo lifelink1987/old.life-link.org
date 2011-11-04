@@ -1,0 +1,62 @@
+/* CSS Document */
+
+body
+{
+	background-color: <$white>;
+	overflow-x: hidden;
+}
+
+#custom-doc
+{
+	width: 1250px;
+	margin-left: 0;
+	margin-right: auto;
+	text-align: left;
+	//visibility: hidden;
+}
+
+#page-header
+{
+	width: <$page_width>px;
+	height: <$page_header_height>px;
+	background-image: url(<$page_header>);
+	background-repeat: no-repeat;
+}
+
+#page-header-menu
+{
+	top: 96px;
+	left: 65px;
+	position: absolute;
+	z-index: 50;
+}
+
+#page-content
+{
+	background-image: url(<$page_content>);
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	padding-right: 65px;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	width: <$page_width-40-65>px;
+	_height: <$page_content_height-30-10>px; 
+	min-height: <$page_content_height-30-10>px;
+	color: <$grey>;
+	font-family: <$font_family>;
+	/*font-size: 92%;*/
+}
+
+#page-content #related
+{
+	display: none;
+}
+
+#page-footer
+{
+	width: <$page_width>px;
+	_height: <$page_footer_height>px;
+	min-height: <$page_footer_height>px;
+	background-image: url(<$page_footer>);
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,60 @@
+/* CSS Document */
+
+.llpagetitle
+{
+	text-decoration: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 175%;
+	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+	color: #006A33;
+	margin: 5px 0px;
+}
+
+.llpagesuptitle,
+.llpagesubtitle
+{
+	text-decoration: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 130%;
+	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+	color: #006A33;
+	margin: 2px 0px;
+}
+
+.llpagesuptitle
+{
+	margin-bottom: -5px;
+}
+
+.llpagesubtitle
+{
+	margin-top: -5px;
+}
+
+h1,
+.h1
+{
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 125%;
+	font-weight: normal;
+}
+
+h2,
+.h2
+{
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 114%;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+h3,
+.h3
+{
+	font-size: 107%;
+	font-weight: bold;
+}

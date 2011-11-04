@@ -1,0 +1,5 @@
+#AddEncoding gzip .gz
+#AddType "application/javascript;charset=UTF-8" .js.gz
+#AddType "application/javascript;charset=UTF-8" .js
+
+#SetOutputFilter DEFLATE

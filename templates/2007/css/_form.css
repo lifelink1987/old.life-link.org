@@ -1,0 +1,194 @@
+/* CSS Document */
+
+#page-content button
+{
+	font-size: 85%;
+	padding: 0 5px;
+	vertical-align: middle;
+}
+
+#page-content * button
+{
+	overflow: visible;
+}
+
+#page-content button.submit
+{
+	font-size: 114%;
+}
+
+#page-content form
+{
+	font-family: arial,helvetica,clean,sans-serif;
+}
+
+#page-content fieldset
+{
+	background-color: <$waterorange>;
+	border-bottom: 1px <$lightorange> solid;
+	padding: 5px;
+	font-size: 92%;
+}
+
+#page-content input,
+#page-content select
+{
+	vertical-align: middle;
+}
+
+#page-content textarea,
+#page-content select,
+#page-content input
+{
+	padding: 0;
+	border: 1px solid <$lightgrey>;
+}
+
+#page-content select optgroup
+{
+	font-style: normal;
+}
+
+#page-content form.major select optgroup,
+#page-content form.major select option
+{
+	font-size: 92%;
+}
+
+#page-content input:focus,
+#page-content textarea:focus,
+#page-content select:focus,
+#page-content form.major input.focus,
+#page-content form.major textarea.focus,
+#page-content form.major select.focus
+{
+	border: 1px solid <$lightorange>;
+	outline: 1px solid <$lightorange>;
+}
+
+#page-content label
+{
+	margin: 0;
+	border-bottom: 1px <$grey> dotted;
+}
+
+#page-content legend
+{
+	padding: 0;
+}
+
+#page-content form input.email,
+#page-content form input.website
+{
+	text-transform: lowercase;
+}
+
+#page-content form input.zipcode
+{
+	text-transform: uppercase;
+}
+
+#page-content form input.captcha
+{
+	text-transform: uppercase;
+}
+
+#page-content form .fieldHelp
+{
+	display: none;
+	position: absolute;
+	font-size: 85%;
+	padding-bottom: 2px;
+}
+
+#page-content .fieldHelp .bd
+{
+	outline: 1px solid <$lightorange>;
+	background-color: <$lightorange>;
+	color: <$black>;
+	border-bottom: 1px <$waterorange> solid;
+	text-align: left;
+	padding: 5px;
+}
+
+#page-content .fieldHelp .bd hr
+{
+	color: <$grey>;
+	background-color: <$grey>;
+}
+
+#page-content .autocomplete
+{
+	position: absolute;
+	z-index: 50;
+}
+
+#page-content .autocomplete .yui-ac-content
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 10em;
+	border: 0;
+	border-top: 1px solid <$lightorange>;
+	outline: 1px solid <$lightorange>;
+	background-color: <$white>;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+}
+
+#page-content .autocomplete .yui-ac-content .yui-ac-bd
+{
+	padding: 1px;
+}
+
+#page-content .autocomplete ul
+{
+	padding: 0;
+	margin-bottom: 0;
+	list-style: none;
+	list-style-position: outside;
+}
+
+#page-content .autocomplete li
+{
+	padding: 0;
+	cursor: default;
+	white-space: nowrap;
+}
+
+#page-content .autocomplete li.yui-ac-highlight
+{
+	background-color: <$lightorange>;
+}
+
+/* Major Form*/
+#page-content form.major label
+{
+	border: 0;
+}
+
+#page-content form.major input,
+#page-content form.major textarea,
+#page-content form.major select
+{
+	width: 99%;
+	font-size: 114%;
+}
+
+#page-content form.major dl dt
+{
+	line-height: 1.5em;
+}
+
+#page-content form.major dl dt em
+{
+	color: <$llgreen>;
+	font-size: 174%;
+	font-weight: bold;
+	vertical-align: middle;
+	line-height: 0em;
+	_vertical-align: top;
+}

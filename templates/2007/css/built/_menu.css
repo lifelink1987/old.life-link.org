@@ -1,0 +1,191 @@
+/* CSS Document */
+
+#menu
+{
+	display: none;
+}
+
+#menu li.yuimenubaritem
+{
+	height: 15px;
+}
+
+#page-header-menu div.yuimenubar li.hassubmenu em.submenuindicator.selected
+{
+	background-position:0 -24px;
+	margin:0 0 0 10px;
+}
+
+#page-header-menu div.yuimenubar li.hassubmenu em.submenuindicator
+{
+	background-position:0 -32px;
+}
+
+#page-header-menu div.yuimenubar li.hassubmenu em.submenuindicator.disabled
+{
+	background-position:0 -40px;
+}
+
+#page-header-menu div.yuimenu li.hassubmenu em.submenuindicator
+{
+	background-position:0 0;
+	margin:0 -16px 0 10px;
+}
+
+#page-header-menu div.yuimenu li.hassubmenu em.submenuindicator.selected
+{
+	background-position:0 -8px;
+}
+
+#page-header-menu div.yuimenu li.hassubmenu em.submenuindicator.disabled
+{
+	background-position:0 -16px;
+}
+
+div.yuimenu ul,
+div.yuimenubar ul
+{
+	list-style: none !important;
+}
+
+div.yuimenu a,
+div.yuimenubar a
+{
+	border: none;
+}
+
+div.yuimenu a:hover,
+div.yuimenubar a:hover
+{
+	border: none;
+}
+
+div.yuimenubar
+{
+	background-color: transparent;
+	color: #FFFFFF;
+}
+
+div.yuimenu
+{
+	background-color: #FFFFFF;
+	border: 1px #DDDDDD solid;
+	border-left: 1px #000000 solid;
+	border-top: 0px;
+	color: #000000;
+}
+
+div.yuimenu.sectionlinks
+{
+	border: 1px #006A33 solid;
+}
+
+div.yuimenu div.yuimenu
+{
+	border: 1px #FCC90D solid;
+}
+
+div.yuimenu ul,
+div.yuimenubar ul
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+div.yuimenu li.yuimenuitem,
+div.yuimenubar li.yuimenubaritem
+{
+	margin: 0px;
+}
+
+div.yuimenubar li.yuimenubaritem
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+div.yuimenubar li a
+{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+div.yuimenu li a
+{
+	color: #000000;
+	font-weight: normal;
+}
+
+div.yuimenubar li.yuimenubaritem
+{
+	border: 0px;
+	border-left: 1px #000000 solid;
+}
+
+div.yuimenubar li.yuimenubaritem.first
+{
+	border-left: 0;
+}
+
+/* hover menubar item with no submenu */
+div.yuimenubar li.selected
+{
+	background-color: #FFFFFF;
+}
+
+div.yuimenubar li.selected a.selected
+{
+	color: #000000;
+}
+
+/* hover menu item with submenu */
+div.yuimenu li.hassubmenu.selected
+{
+	background-color: #FCC90D;
+}
+
+div.yuimenu li.hassubmenu.selected a.selected
+{
+	color: #000000;
+}
+
+/* hover menu item with no submenu */
+div.yuimenu li.selected
+{
+	background-color: #000000;
+}
+
+div.yuimenu li.selected a.selected,
+div.yuimenu li.hassubmenu li.selected a.selected
+{
+	color: #FFFFFF;
+}
+
+#page-content div.yuimenu.sectionlinks li.selected
+{
+	background-color: #006A33;
+}
+
+#page-content div.yuimenu.sectionlinks li a
+{
+	text-decoration: none;
+	border: 0;
+	font-style: normal;
+}
+
+#page-content div.yuimenu.sectionlinks li.selected a.selected
+{
+	color: #FFFFFF;
+}
+
+/* Exception - sectionlinks menu */
+#page-content div.sectionlinks div.bd
+{
+	padding: 0;
+}
+#page-content div.sectionlinks div.bd ul
+{
+	margin-bottom: 0;
+	list-style: none;
+	list-style-position: outside;
+}

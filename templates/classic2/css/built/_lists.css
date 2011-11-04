@@ -1,0 +1,18 @@
+/* CSS Document */
+
+ul,
+ol
+{
+	margin-bottom: 5px;
+}
+
+ol
+{
+	list-style-position: inside;
+	list-style-type: decimal;
+}
+
+li
+{
+	text-align: left;
+}

@@ -1,0 +1,62 @@
+/* CSS Document */
+
+body
+{
+	background-color: #FFFFFF;
+	overflow-x: hidden;
+}
+
+#custom-doc
+{
+	width: 1250px;
+	margin-left: 0;
+	margin-right: auto;
+	text-align: left;
+	//visibility: hidden;
+}
+
+#page-header
+{
+	width: 790px;
+	height: 130px;
+	background-image: url(/templates/2007/images/page-header.jpg);
+	background-repeat: no-repeat;
+}
+
+#page-header-menu
+{
+	top: 96px;
+	left: 65px;
+	position: absolute;
+	z-index: 50;
+}
+
+#page-content
+{
+	background-image: url(/templates/2007/images/page-content.jpg);
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	padding-right: 65px;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	width: 685px;
+	_height: 680px; 
+	min-height: 680px;
+	color: #444444;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Geneva, sans-serif;
+	/*font-size: 92%;*/
+}
+
+#page-content #related
+{
+	display: none;
+}
+
+#page-footer
+{
+	width: 790px;
+	_height: 40px;
+	min-height: 40px;
+	background-image: url(/templates/2007/images/page-footer.jpg);
+	background-repeat: no-repeat;
+}

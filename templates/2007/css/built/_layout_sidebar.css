@@ -1,0 +1,148 @@
+/* CSS Document */
+
+#sidebar
+{
+	width: 450px;
+	_height: 750px;
+	min-height: 750px;
+	background-image: url(/templates/2007/images/sidebar.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 790px;
+	top: 0px;
+	padding-left: 10px;
+}
+
+#sidebar-content
+{
+	padding-top: 150px;
+	width: 179px;
+	border-right: 1px solid #DDDDDD;
+	margin-left: 5px;
+	overflow: hidden;
+	color: #444444;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Geneva, sans-serif;
+}
+
+#sidebar-header
+{
+	height: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	position: absolute;
+	width: 174px;
+}
+
+#template-level
+{
+	width: 174px;
+	position: absolute;
+	background-color: #FFFFFF;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+	font-size: 85%;
+	text-align: right;
+}
+
+#sidebar-content .block h2
+{
+	font-family: "Trebuchet MS", Helvetica, Tahoma, Geneva, sans-serif;
+	font-size: 122%;
+	color: #FC990D;
+	background-color: #000000;
+	padding-left: 10px;
+	margin-top: 10px;
+	padding-bottom: 1px;
+}
+
+#sidebar-content .block h2 a
+{
+	color: #FFFFFF;
+	border-bottom: none;
+}
+
+#sidebar-content .block h2 a:hover
+{
+	text-decoration: underline;
+	border-bottom: none;
+}
+
+#sidebar-content .block ul,
+#sidebar-content .block dl dd
+{
+	padding-left: 20px;
+}
+
+#sidebar-content .block ul ul,
+#sidebar-content .block dl dt
+{
+	padding-left: 10px;
+}
+
+#sidebar-content .block strong
+{
+	color: #000000;
+}
+
+/* Related */
+
+#sidebar-content #related h2
+{
+	background-color: #DDDDDD;
+	color: #000000;
+}
+
+/* Website */
+
+#sidebar-content #website
+{
+	font-size: 84%;
+}
+
+#sidebar-content #website h2
+{
+	font-size: 100%;
+}
+
+/* Agenda */
+#sidebar-content #recent-agenda,
+#sidebar-content #future-agenda,
+#sidebar-content #live
+{
+	font-size: 92%;
+}
+
+#sidebar-content #recent-agenda div.h2,
+#sidebar-content #future-agenda div.h2,
+#sidebar-content #live div.h2
+{
+	font-size: 114%;
+}
+
+/* Sitemap */
+#sidebar-content #sitemap ul li
+{
+	color: #000000;
+	text-transform: uppercase;
+}
+
+#sidebar-content #sitemap ul li ul li
+{
+	color: #444444;
+	text-transform: none;
+}
+
+/* Scroller */
+#sidebar-content dl.scroll
+{
+	clip: rect(0, 179, 100, 0);
+	height: 100px;
+	overflow: hidden;
+}
+
+#sidebar-content dl.scroll dt,
+#sidebar-content dl.scroll dd
+{
+	display: none;
+}

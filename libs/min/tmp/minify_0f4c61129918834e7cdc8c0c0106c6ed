@@ -1,0 +1,94 @@
+
+/* yui_config.js */
+
+/* 1  */ // JavaScript Document
+/* 2  */ 
+/* 3  */ if (YAHOO.widget)
+/* 4  */ {
+/* 5  */ 	if (YAHOO.widget.Overlay)
+/* 6  */ 	{
+/* 7  */ 		YAHOO.widget.Overlay.prototype.center = function() {
+/* 8  */ 			var elementWidth = this.element.offsetWidth;
+/* 9  */ 			var elementHeight = this.element.offsetHeight;
+/* 10 */ 			var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+/* 11 */ 			var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+/* 12 */ 			var viewPortWidth = YAHOO.util.Dom.getViewportWidth();
+/* 13 */ 			var viewPortHeight = YAHOO.util.Dom.getViewportHeight();
+/* 14 */ 		
+/* 15 */ 			if (!this.targetElement) {
+/* 16 */ 				var x = (viewPortWidth / 2) - (elementWidth / 2) + scrollX;
+/* 17 */ 				var y = (viewPortHeight / 2) - (elementHeight / 2) + scrollY;
+/* 18 */ 			}
+/* 19 */ 			else {
+/* 20 */ 				var cover = this.targetElement;
+/* 21 */ 				var coverXY = YAHOO.util.Dom.getXY(cover);
+/* 22 */ 				var coverWidth = YAHOO.util.Dom.get(cover).offsetWidth;
+/* 23 */ 				var coverHeight = YAHOO.util.Dom.get(cover).offsetHeight;
+/* 24 */ 				var x1 = Math.max(scrollX, coverXY[0]);
+/* 25 */ 				var y1 = Math.max(scrollY, coverXY[1]);
+/* 26 */ 				var x2 = Math.min(scrollX+viewPortWidth, coverXY[0]+coverWidth);
+/* 27 */ 				var y2 = Math.min(scrollY+viewPortHeight, coverXY[1]+coverHeight);
+/* 28 */ 				var x = (x2-x1-elementWidth) / 2 + x1;
+/* 29 */ 				var y = (y2-y1-elementHeight) / 2 + y1;
+/* 30 */ 				x = Math.max(scrollX, x);
+/* 31 */ 				y = Math.max(scrollY, y);
+/* 32 */ 			}
+/* 33 */ 			this.element.style.left = parseInt(x, 10) + "px";
+/* 34 */ 			this.element.style.top = parseInt(y, 10) + "px";
+/* 35 */ 			this.syncPosition();
+/* 36 */ 		
+/* 37 */ 			this.cfg.refireEvent("iframe");
+/* 38 */ 		};
+/* 39 */ 	}
+/* 40 */ 	
+/* 41 */ 	if (YAHOO.widget.Panel)
+/* 42 */ 	{
+/* 43 */ 		YAHOO.widget.Panel.prototype.sizeMask = function() {
+/* 44 */ 			if (this.mask) {
+/* 45 */ 				if (!this.targetElement) {
+/* 46 */ 					YAHOO.util.Dom.setStyle(this.mask, 'height', YAHOO.util.Dom.getDocumentHeight());
+/* 47 */ 					YAHOO.util.Dom.setStyle(this.mask, 'width', YAHOO.util.Dom.getDocumentWidth());
+/* 48 */ 				} else {
+/* 49 */ 					var cover = this.targetElement;
+/* 50 */ 					var xy = YAHOO.util.Dom.getXY(cover);
+
+/* yui_config.js */
+
+/* 51 */ 					var coverWidth = YAHOO.util.Dom.get(cover).offsetWidth;
+/* 52 */ 					var coverHeight = YAHOO.util.Dom.get(cover).offsetHeight;
+/* 53 */ 					YAHOO.util.Dom.setStyle(this.mask, 'height', coverHeight);
+/* 54 */ 					YAHOO.util.Dom.setStyle(this.mask, 'width', coverWidth);
+/* 55 */ 					YAHOO.util.Dom.setXY(this.mask, xy);
+/* 56 */ 				}
+/* 57 */ 			}
+/* 58 */ 		};
+/* 59 */ 		
+/* 60 */ 		/* attach panel to div, not just document.body */
+/* 61 */ 		function fixMask() {
+/* 62 */ 			if (this.mask) {
+/* 63 */ 				if (this.targetElement)
+/* 64 */ 				{
+/* 65 */ 					var cover = this.targetElement;
+/* 66 */ 				}
+/* 67 */ 				else {
+/* 68 */ 					var cover = this.element.parentNode.id;
+/* 69 */ 				}
+/* 70 */ 				var xy = YAHOO.util.Dom.getXY(cover);
+/* 71 */ 				this.mask.style.height = YAHOO.util.Dom.get(cover).offsetHeight + 'px';
+/* 72 */ 				this.mask.style.width = YAHOO.util.Dom.get(cover).offsetWidth + 'px';
+/* 73 */ 				YAHOO.util.Dom.setXY(this.mask, xy);
+/* 74 */ 			}
+/* 75 */ 		}
+/* 76 */ 		
+/* 77 */ 		/* panel to top-left: 0px, 0px */
+/* 78 */ 		function fixHide() {
+/* 79 */ 			this.cfg.setProperty('x', 0);
+/* 80 */ 			this.cfg.setProperty('y', 0);
+/* 81 */ 		}
+/* 82 */ 	}
+/* 83 */ }
+/* 84 */ 
+/* 85 */ YAHOO.namespace('ext');
+/* 86 */ if (typeof Ext == "undefined") {
+/* 87 */ 	Ext=YAHOO.ext;
+/* 88 */ }

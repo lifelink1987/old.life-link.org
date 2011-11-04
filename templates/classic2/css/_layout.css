@@ -1,0 +1,129 @@
+/* CSS Document */
+
+body
+{
+	background-color: <$white>;
+	overflow: hidden;
+}
+
+/* Exterior panels */
+div.mask
+{
+	background-color: <$lightgreen>;
+}
+
+div.panel div.hd
+{
+	background-color: <$llgreen>;
+}
+
+/* Wait */
+#wait .bd
+{
+	text-align: center;
+}
+
+/* Summary */
+#summary
+{
+	visibility: hidden;
+}
+
+.summary
+{
+	overflow: auto !important;
+	overflow-y: auto !important;
+	overflow-x: hidden !important;
+	cursor: help;
+	max-height: 90px;
+	min-height: 90px;
+	_height: 90px;
+}
+
+/* Info */
+#info
+{
+	visibility: hidden;
+}
+/* Exterior panels - end */
+
+#bodyContent
+{
+	visibility: hidden;
+	background-image: url(<$gradient_bg>);
+	background-position: 600px <$header_height>px;
+	background-repeat: no-repeat;
+	height: <$header_height+$gradient_height>px;
+	z-index: 1;
+}
+
+/* header */
+#headerContainer
+{
+	height: <$header_height+50>px;
+}
+
+#headerCenter
+{
+	background-image: url(<$header_bg>);
+	background-position: <$banner_width>px 0px;
+	width: <$body_width>px;
+	background-repeat: repeat-x;
+}
+
+#headerRight
+{
+	background-image: url(<$header_bg>);
+	background-position: <$banner_width-$body_width>px 0px;
+	background-repeat: repeat-x;
+}
+
+#banner
+{
+	width: <$banner_width>px;
+	height: <$header_height>px;
+	background-image: url(<$banner_bg>);
+	float: left;
+}
+/* Header - end */
+
+/* Page */
+#pageContainer
+{
+	visibility: hidden;
+	border-color: <$lightorange>;
+	overflow: auto;
+	_overflow-x: hidden;
+}
+
+#pageContent
+{
+	margin-left: <$menu_width>px;
+	padding: 0px;
+	background-color: <$white>;
+}
+
+#pageContentHeader
+{
+}
+
+#pageContentBody
+{
+	padding: 10px;
+	padding-top: 0px;
+}
+
+#initialPageContent
+{
+	display: none;
+}
+/* Page - end */
+
+/* Footer 
+#footerContainer
+{
+	visibility: hidden;
+	border-color: <$wateryellow>;
+	background-color: <$wateryellow>;
+}
+ Footer - end */

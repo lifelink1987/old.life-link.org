@@ -1,0 +1,35 @@
+/* CSS Document */
+
+hr
+{
+	border: 0 none <$lightgreen>;
+	padding: 0;
+	color: <$lightgreen>;
+	background-color: <$lightgreen>;
+	height: 2px;
+	margin: 2px;
+}
+
+hr.white
+{
+	color: <$white>;
+}
+
+p,
+.panel .bd p
+{
+	margin-bottom: 0.5em;
+	text-align: justify;
+	display: block;
+}
+
+.textsmall
+{
+	font-size: 85%;
+}
+
+/* Tooltip */
+.tt
+{
+	z-index: 600;
+}

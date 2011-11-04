@@ -1,0 +1,148 @@
+/* CSS Document */
+
+#sidebar
+{
+	width: <$sidebar_width>px;
+	_height: <$sidebar_height>px;
+	min-height: <$sidebar_height>px;
+	background-image: url(<$sidebar>);
+	background-repeat: no-repeat;
+	position: absolute;
+	left: <$page_width>px;
+	top: 0px;
+	padding-left: 10px;
+}
+
+#sidebar-content
+{
+	padding-top: 150px;
+	width: <$sidebar_content_width-1-10>px;
+	border-right: 1px solid <$lightgrey>;
+	margin-left: 5px;
+	overflow: hidden;
+	color: <$grey>;
+	font-family: <$font_family>;
+}
+
+#sidebar-header
+{
+	height: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	position: absolute;
+	width: <$sidebar_content_width-1-15>px;
+}
+
+#template-level
+{
+	width: <$sidebar_content_width-1-15>px;
+	position: absolute;
+	background-color: <$white>;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+	font-size: 85%;
+	text-align: right;
+}
+
+#sidebar-content .block h2
+{
+	font-family: <$font_family_heading>;
+	font-size: 122%;
+	color: <$orange>;
+	background-color: <$black>;
+	padding-left: 10px;
+	margin-top: 10px;
+	padding-bottom: 1px;
+}
+
+#sidebar-content .block h2 a
+{
+	color: <$white>;
+	border-bottom: none;
+}
+
+#sidebar-content .block h2 a:hover
+{
+	text-decoration: underline;
+	border-bottom: none;
+}
+
+#sidebar-content .block ul,
+#sidebar-content .block dl dd
+{
+	padding-left: 20px;
+}
+
+#sidebar-content .block ul ul,
+#sidebar-content .block dl dt
+{
+	padding-left: 10px;
+}
+
+#sidebar-content .block strong
+{
+	color: <$black>;
+}
+
+/* Related */
+
+#sidebar-content #related h2
+{
+	background-color: <$lightgrey>;
+	color: <$black>;
+}
+
+/* Website */
+
+#sidebar-content #website
+{
+	font-size: 84%;
+}
+
+#sidebar-content #website h2
+{
+	font-size: 100%;
+}
+
+/* Agenda */
+#sidebar-content #recent-agenda,
+#sidebar-content #future-agenda,
+#sidebar-content #live
+{
+	font-size: 92%;
+}
+
+#sidebar-content #recent-agenda div.h2,
+#sidebar-content #future-agenda div.h2,
+#sidebar-content #live div.h2
+{
+	font-size: 114%;
+}
+
+/* Sitemap */
+#sidebar-content #sitemap ul li
+{
+	color: <$black>;
+	text-transform: uppercase;
+}
+
+#sidebar-content #sitemap ul li ul li
+{
+	color: <$grey>;
+	text-transform: none;
+}
+
+/* Scroller */
+#sidebar-content dl.scroll
+{
+	clip: rect(0, <$sidebar_content_width-1-10>, 100, 0);
+	height: 100px;
+	overflow: hidden;
+}
+
+#sidebar-content dl.scroll dt,
+#sidebar-content dl.scroll dd
+{
+	display: none;
+}

@@ -1,0 +1,15 @@
+/* CSS Document */
+
+.campaign_logo,
+.conference_logo
+{
+	border-left: 1px solid #B0D0B0;
+	border-bottom: 1px solid #B0D0B0;
+	float: right;
+	padding: 5px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	margin-right: -10px;
+	margin-top: -10px;
+	background-color: #FFFFFF;
+}

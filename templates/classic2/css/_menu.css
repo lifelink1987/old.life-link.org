@@ -1,0 +1,109 @@
+/* CSS Document */
+
+#mainmenu
+{
+	clear: left;
+	z-index: 10;
+}
+
+div.yuimenu a,
+div.yuimenubar a
+{
+	border: none;
+}
+
+div.yuimenu a:hover,
+div.yuimenubar a:hover
+{
+	border: none;
+}
+
+div.yuimenubar
+{
+	background-color: <$white>;
+	color: <$llgreen>;
+}
+
+div.yuimenu
+{
+	background-color: <$llgreen>;
+	border: 1px <$white> solid;
+	color: <$white>;
+}
+
+div.yuimenu ul,
+div.yuimenubar ul
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+div.yuimenu li.yuimenuitem,
+div.yuimenubar li.yuimenubaritem
+{
+	margin: 0px;
+	padding: 2px 14px;
+}
+
+div.yuimenu li.yuimenuitem img,
+div.yuimenubar li.yuimenubaritem img
+{
+	margin-left: 0px;
+	margin-right: -6px;
+}
+
+div.yuimenubar li a
+{
+	color: <$llgreen>;
+	font-weight: bold;
+}
+
+div.yuimenu li a
+{
+	color: <$white>;
+	font-weight: normal;
+}
+
+div.yuimenubar li.yuimenubaritem
+{
+	border: 0px;
+}
+
+div.yuimenubar li.selected
+{
+	background-color: <$llgreen>;
+}
+
+div.yuimenubar li.selected a.selected
+{
+	color: <$white>;
+}
+
+/* Exception - sectionlinks menu */
+
+div div.sectionlinks div.bd
+{
+	padding: 0px;
+}
+
+/*
+div div.sectionlinks
+{
+	background-color: <$wateryellow>;
+	border-color: <$orange>;
+}
+
+div div.sectionlinks li a
+{
+	color: <$black>;
+}
+
+div div.sectionlinks li.selected
+{
+	background-color: <$white>;
+}
+
+div div.sectionlinks li.selected a.selected
+{
+	color: <$black>;
+}*/

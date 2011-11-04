@@ -1,0 +1,191 @@
+/* CSS Document */
+
+#captcha
+{
+	text-transform: uppercase;
+}
+
+button
+{
+	white-space: pre;
+	margin: 0;
+	padding: 0px 5px;
+	_vertical-align: middle;
+}
+
+input, select
+{
+	_vertical-align: middle;
+}
+
+input.focus,
+textarea.focus,
+select.focus,
+select.focus option
+{
+	background-color: <$llgreen>;
+	color: <$white>;
+}
+
+input.compulsory,
+textarea.compulsory,
+select.compulsory
+{
+	margin-left: 16px;
+}
+
+label
+{
+	margin: 0;
+	border-bottom: 1px dashed <$lightgreen>;
+	color: <$llgreen>;
+}
+
+form input.checkbox,
+form input.radio
+{
+	width: auto !important;
+}
+
+.simpleForm label,
+.marginForm label,
+.columnarForm label,
+.verticalForm label,
+.horizontalForm label
+{
+	border-bottom: none;
+}
+
+/*
+label.column
+{
+	margin-top: 3px;
+	float: left;
+	display: block;
+	text-align: right;
+	border: none;
+}
+
+select,
+input,
+textarea
+{
+	font-family: <$font_family>;
+	font-size: <$font_size>px;
+	font-weight: bold;
+	border: none;
+	border-bottom: 1px solid <$llgreen>;
+	margin: 2px;
+	margin-bottom: 0;
+	color: <$llgreen>;
+}
+
+input,
+textarea
+{
+	padding: 1px;
+	padding-bottom: 0;
+}
+
+textarea
+{
+	border: 1px solid <$llgreen>;
+}
+
+input.focus,
+textarea.focus,
+select.focus
+{
+	background-color: <$llgreen> !important;
+	color: <$white> !important;
+}
+
+select
+{
+	text-align: center;
+	padding: 0;
+}*/
+
+/*gets replaced by event selectors; input[type=checkbox]*/
+/*input.checkbox,
+input.radio
+{
+	border: none;
+	margin: 0;
+	_margin-bottom: -2px;
+	background-color: transparent;
+}
+
+input.radio
+{
+	margin-bottom: -3px;
+}
+
+select.compulsory,
+input.compulsory,
+textarea.compulsory
+{
+	border-bottom: 1px solid #FF0000;
+}
+
+option
+{
+	text-align: left;
+	background-color: <$watergreen>;
+	color: <$llgreen>;
+	font-weight: normal;
+}
+
+optgroup
+{
+	text-align: left;
+	font-weight: bold;
+	font-style: normal;
+	font-family: <$font_family>;
+	font-size: <$font_size>px;
+	padding: 0px;
+	background-color: <$lightgreen>;
+	color: <$llgreen>;
+	padding-left: 2px;
+}
+
+optgroup option
+{
+	padding-left: 10px;
+	word-spacing: normal;
+}
+
+fieldset
+{
+	background-color: <$watergrey>;
+	border: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+fieldset .LL_box
+{
+	padding: 1px 10px;
+	display: block;
+	text-align: left;
+}
+
+.suggest_results
+{
+	background-color: <$white>;
+	border: 1px solid <$lightgreen>;
+	padding: 2px;
+	display: none;
+	max-height: <$font_size*5+10>px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-left: 10px;
+}
+
+.suggest_results a
+{
+	margin-left: 10px;
+}*/

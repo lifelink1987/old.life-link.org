@@ -1,0 +1,74 @@
+<small><a href="<{$tpl.links.home}>?llschoolnumber=0">Please take me to the Visitors' Homepage.</a> I am not a member of Life-Link Friendship-Schools, nor my school is.</small>
+<span class="llclear"></span>
+<{include file="`$tpl.current`highlights.tpl"}>
+
+<span class="llclear h30"></span>
+<div class="yui-gb">
+	<div class="yui-u first">
+		<div class="h1">News</div>
+		<dl>
+		<{foreach from=$live.news item=post}>
+			<dt><{$post.post_date_gmt|date_format:$tpl.date_format}></dt>
+			<dd><a href="<{$post.guid}>"><{$post.post_title}></a></dd>
+		<{/foreach}>
+		</dl>
+	</div>
+	<div class="yui-u">
+		<div class="h1">Newsletters</div>
+		<dl>
+		<{foreach from=$live.newsletters item=post}>
+			<{if $post.attachments}>
+				<{foreach from=$post.attachments item=attachment}>
+					<dt><a href="<{$attachment.guid}>" class="<{$attachment.post_extension}>"><{$post.post_date_gmt|date_format:$tpl.date_format}></a> (<{$attachment.post_title|replace:'Newsletter ':''}>)</dt>
+				<{/foreach}>
+			<{else}>
+				<dt><a href="<{$post.guid}>"><{$post.post_date_gmt|date_format:$tpl.date_format}></a> (<{$post.post_title}>)</dt>
+			<{/if}>
+		<{/foreach}>
+		</dl>
+	</div>
+	<div class="yui-u">
+		<div class="h1">Board Meetings</div>
+		<dl>
+		<{foreach from=$live.appendix item=post}>
+			<{foreach from=$post.attachments item=attachment}>
+			<{if $post.attachments}>
+				<{foreach from=$post.attachments item=attachment}>
+					<dt><a href="<{$attachment.guid}>" class="<{$attachment.post_extension}>"><{$post.post_date_gmt|date_format:$tpl.date_format}></a></dt>
+				<{/foreach}>
+			<{else}>
+				<dt><a href="<{$post.guid}>"><{$post.post_date_gmt|date_format:$tpl.date_format}></a></dt>
+			<{/if}>
+			<{/foreach}>
+		<{/foreach}>
+		</dl>
+	</div>
+</div>
+
+<span class="llclear h30"></span>
+<div class="h1">Agenda</div>
+<span class="llclear h05"></span>
+<div class="yui-g">
+	<div class="yui-u first">
+		<h3>Recently on the Agenda</h3>
+		<{foreach from=$tpl.website.recent_agenda item=event}>
+		<{include file="pages/event.tpl"}>
+		<{/foreach}>
+	</div>
+	<div class="yui-u">
+		<h3>Next on the Agenda</h3>
+		<{foreach from=$tpl.website.future_agenda item=event}>
+		<{include file="pages/event.tpl"}>
+		<{/foreach}>
+	</div>
+</div>
+
+<span class="llclear h30"></span>
+<div class="h1 llbordernone"><strong>My School</strong></div>
+<{include file="pages/member.short.tpl"}>
+
+<span class="llclear h30"></span>
+<div class="h1 llbordernone"><small><strong>Most Recent Action Report from My School</strong></small></div>
+<{if $report}>
+	<{include file="pages/report.tpl"}>
+<{/if}>

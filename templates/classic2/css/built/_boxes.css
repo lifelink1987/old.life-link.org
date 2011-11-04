@@ -1,0 +1,317 @@
+/* CSS Document */
+
+/* grey */
+
+.llboxwhite
+{
+	background-color: #FFFFFF;
+	border-color: #000000;
+}
+
+.llboxwatergrey
+{
+	background-color: #FDFDFD;
+	border-color: #EFEFEF;
+}
+
+.llboxlightgrey
+{
+	background-color: #EFEFEF;
+	border-color: #888888;
+}
+
+.llboxgrey
+{
+	background-color: #888888;
+	border-color: #000000;
+}
+
+.llboxblack
+{
+	background-color: #000000;
+}
+
+/* green */
+.llboxwatergreen
+{
+	background-color: #F7FBF7;
+	border-color: #B0D0B0;
+}
+
+.llboxlightgreen
+{
+	background-color: #B0D0B0;
+	border-color: #006A33;
+}
+
+.llboxllgreen
+{
+	background-color: #006A33;
+}
+
+/* orange */
+.llboxyellow
+{
+	background-color: #FCF90D;
+	border-color: #FCC90D;
+}
+
+.llboxlightyellow
+{
+	background-color: #FDFFB4;
+	border-color: #FCC90D;
+}
+
+.llboxlightorange
+{
+	background-color: #FCC90D;
+	border-color: #FC990D;
+}
+
+.llboxorange
+{
+	background-color: #FC990D;
+	border-color: #000000;
+}
+
+/* box - others */
+.llboxbd
+{
+	padding: 8px;
+}
+.llboxbdsmall
+{
+	padding: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.llboxtextwhite,
+.llboxtextwhite a
+{
+	color: #FFFFFF;
+}
+
+.llboxtextblack,
+.llboxtextblack a
+{
+	color: #000000;
+}
+
+/* others */
+
+.llborderb
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.llbordert
+{
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.llborderl
+{
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+.llborderr
+{
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.llborder
+{
+	border-style: solid;
+	border-width: 1px;
+}
+
+.llbordernone
+{
+	border: none !important;
+}
+
+/* Official CSS elements follow */
+
+.LL_box0
+{
+	background-color: #006A33;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: #FFFFFF;
+}
+
+.LL_box0counter
+{
+	background-color: #FFFFFF;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: #000000;
+}
+
+.LL_box1
+{
+	background-color: #B0D0B0;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: #000000;
+}
+
+.LL_box1counter
+{
+	background-color: #FFFFFF;
+	margin: 5px 0px;
+	/*width: 100%;*/
+	color: #000000;
+}
+
+/* End */
+
+.LL_box2
+{
+	background-color: #B0D0B0;
+	border: 1px solid #FFFFFF;
+	margin: 5px -1px;
+	/*width: 100%;*/
+	color: #FFFFFF;
+}
+
+.LL_box3
+{
+	background-color: #F7FBF7;
+	border: 1px solid #B0D0B0;
+	margin: 5px -1px;
+	/*width: 100%;*/
+	color: #000000;
+}
+
+.LL_box4
+{
+	background-color: #FDFDFD;
+	border: 1px solid #EFEFEF;
+	margin: 5px -1px;
+	/*width: 100%;*/
+	color: #000000;
+}
+
+.LL_box0 a,
+.LL_box2 a
+{
+	color: #FFFFFF;
+	border-bottom: 1px dashed #FFFFFF;
+}
+
+.LL_box0counter a,
+.LL_box1counter a,
+.LL_box1 a,
+.LL_box3 a,
+.LL_box4 a
+{
+	color: #006A33;
+	border-bottom: 1px dashed #B0D0B0;
+}
+
+.LL_box0 .LL_box,
+.LL_box1 .LL_box,
+.LL_box0counter .LL_box,
+.LL_box1counter .LL_box,
+.LL_box2 .LL_box,
+.LL_box3 .LL_box,
+.LL_box4 .LL_box
+{
+	padding: 0px 10px;
+	display: block;
+}
+
+.LL_box2 .LL_box,
+.LL_box3 .LL_box,
+.LL_box4 .LL_box
+{
+	padding: 10px;
+}
+
+.LL_box0 .bottom,
+.LL_box1 .bottom,
+.LL_box0counter .bottom,
+.LL_box1counter .bottom
+{
+	position: absolute;
+	margin-top: 5px;
+}
+
+.LL_box2 .bottom,
+.LL_box3 .bottom,
+.LL_box4 .bottom
+{
+	position: absolute;
+	margin-top: 10px;
+}
+
+.LL_box0 div.bottom,
+.LL_box1 div.bottom,
+.LL_box2 div.bottom,
+.LL_box3 div.bottom,
+.LL_box4 div.bottom
+{
+	color: #000000;
+	padding: 1px;
+}
+
+.LL_box0counter div.bottom,
+.LL_box1counter div.bottom
+{
+	color: #FFFFFF;
+	padding: 1px;
+}
+
+.LL_box0 div.bottom a,
+.LL_box1 div.bottom a,
+.LL_box2 div.bottom a,
+.LL_box3 div.bottom a,
+.LL_box4 div.bottom a,
+.LL_box0 a.bottom,
+.LL_box1 a.bottom,
+.LL_box2 a.bottom,
+.LL_box3 a.bottom,
+.LL_box4 a.bottom
+{
+	color: #006A33 !important;
+	border-bottom: 1px dashed #B0D0B0;
+	font-size: 85%;
+}
+
+.LL_box0 div.bottom a:hover,
+.LL_box1 div.bottom a:hover,
+.LL_box2 div.bottom a:hover,
+.LL_box3 div.bottom a:hover,
+.LL_box4 div.bottom a:hover,
+.LL_box0 a.bottom:hover,
+.LL_box1 a.bottom:hover,
+.LL_box2 a.bottom:hover,
+.LL_box3 a.bottom:hover,
+.LL_box4 a.bottom:hover
+{
+	border-bottom: 1px solid #B0D0B0;
+}
+
+.LL_box0counter div.bottom a,
+.LL_box1counter div.bottom a,
+.LL_box0counter a.bottom,
+.LL_box1counter a.bottom
+{
+	color: #FFFFFF !important;
+	border-bottom: 1px dashed #FFFFFF;
+	font-size: 85%;
+}
+
+.LL_box0counter div.bottom a:hover,
+.LL_box1counter div.bottom a:hover,
+.LL_box0counter a.bottom:hover,
+.LL_box1counter a.bottom:hover
+{
+	border-bottom: 1px none #FFFFFF;
+}

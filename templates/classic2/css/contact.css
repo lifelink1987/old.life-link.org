@@ -1,0 +1,23 @@
+/* CSS Document */
+
+label.column
+{
+	width: 125px;
+}
+
+input,
+select
+{
+	width: 300px;
+}
+
+#captcha
+{
+	width: 100px;
+}
+
+textarea
+{
+	width: 492px;
+	height: 200px;
+}

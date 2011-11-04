@@ -1,0 +1,5 @@
+<{if $smarty.session.llschoolnumber == 0}>
+	<{include file="`$tpl.current`visitor.tpl"}>
+<{else}>
+	<{include file="`$tpl.current`member.tpl"}>
+<{/if}>

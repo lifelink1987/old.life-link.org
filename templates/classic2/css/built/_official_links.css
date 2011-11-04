@@ -1,0 +1,35 @@
+/* CSS Document */
+
+a.llbutton
+{
+	border: 0px !important;
+	padding: 0px;
+	display: -moz-inline-box;
+	display: inline-block;
+	cursor: default;
+	margin-bottom: -8px;
+}
+
+a.llbutton a
+{
+	border: 0;
+	padding: 0;
+	cursor: hand;
+}
+
+a.llbutton table
+{
+	position: relative;
+	top: 5px;
+}
+
+a.llbutton td.link
+{
+	background-image: url(/templates/classic2/buttons/bar1_center.gif);
+	background-repeat: repeat-x;
+	font-weight: bold;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	vertical-align: top;
+	padding-top: 3px;
+}
