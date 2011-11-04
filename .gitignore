@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /aspnet
 /esd
 /gallery_actions
@@ -7,3 +8,15 @@
 /admin
 /data
 /statistics
+=======
+/libs/image_data/*
+/libs/magpierss_data/*
+/libs/smarty_data/*
+/libs/logs/*
+/tpl.main/css/master.css
+/tpl.main/css/generated/*
+/tpl.main/css/source/vars_dynamic.css
+/tpl.main/js_css_cache/*
+/.htaccess
+*.bak
+>>>>>>> b70fd9f215696545adfc0fa474c361ac1757093a
