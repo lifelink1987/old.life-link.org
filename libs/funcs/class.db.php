@@ -21,9 +21,10 @@ class Db extends mysqli {
 
 	public function __construct($host = null, $user = null, $pass = null, $schema = null, $port = null, $debug = FALSE) {
 		$this->_debug = $debug;
-		
-		parent::__construct("p:$host", $user, $pass, $schema);
-		
+
+		//FIXME parent::__construct("p:$host", $user, $pass, $schema);
+		parent::__construct($host, $user, $pass, $schema);
+
 		//On error
 		if (PHP_VERSION_ID < 502090) {
 			if (mysqli_connect_errno($this) && $this->_debug) {
@@ -34,7 +35,7 @@ class Db extends mysqli {
 				trigger_error('SQL Error#' . $this->connect_errno . ': ' . $this->connect_error, E_USER_ERROR);
 			}
 		}
-		
+
 		$this->set_charset('UTF8');
 		$this->schema_prefix = "`$schema`.";
 	}
@@ -44,15 +45,15 @@ class Db extends mysqli {
 		if ($this->_debug) {
 			trigger_error("SQL \t" . trim_ws($sql), E_USER_NOTICE);
 		}
-		
+
 		//Execute query
 		$result = parent::query($sql);
-		
+
 		//On error
 		if ($result === FALSE && $this->_debug) {
 			trigger_error('SQL Error#' . $this->errno . ': ' . $this->error, E_USER_ERROR);
 		}
-		
+
 		//Return result
 		return $result;
 	}
@@ -74,7 +75,7 @@ class Db extends mysqli {
 	public function execute($sql) {
 		$this->query($sql);
 	}
-	
+
 	public function last_insert_id() {
 		$result = $this->query("SELECT LAST_INSERT_ID()");
 		return array_shift($result->fetch_assoc());
