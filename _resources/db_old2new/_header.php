@@ -3,9 +3,9 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-define('LL_DB_HOST', 'sql.life-link.se');
-define('LL_DB_USER', 'lifelink');
-define('LL_DB_PASS', 'mPGcHar2');
+define('LL_DB_HOST', 'sql.life-link.org');
+define('LL_DB_USER', '');
+define('LL_DB_PASS', '');
 
 function esc($text) {
 	global $link;
@@ -26,16 +26,16 @@ mysql_query('SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECK
 function trim_ws($item) {
 	//Remove outside spaces
 	$item = trim($item);
-	
+
 	//Remove inside spaces when more than 1
 	$item = preg_replace("/ {2,}/", " ", $item);
-	
+
 	//Remove inside spaces when more than 1
 	$item = preg_replace("/\t{2,}/", "\t", $item);
-	
+
 	//Change double quotes to single quotes - why?!?!
 	//$item = preg_replace("/\"/", "'", $item);
-	
+
 
 	//Remove new lines when more than 2
 	$item = preg_replace("/\n{3,}/", "\n\n", $item);

@@ -9,7 +9,7 @@ define('LL_TIMEZONE', 'Europe/Stockholm');
  * Host
  */
 define('LL_SERVERS', 'www.life-link.org,life-link.org');
-define('LL_DEBUG_SERVERS', 'localhost,andrei-macpro,beta.life-link.se');
+define('LL_DEBUG_SERVERS', 'localhost,beta.life-link.org');
 define('LL_AT_HOME', in_array($_SERVER['SERVER_NAME'], explode(',', LL_SERVERS)));
 define('LL_AT_HOME_DEBUG', in_array($_SERVER['SERVER_NAME'], explode(',', LL_DEBUG_SERVERS)));
 if ($_GET['force_debug']) {
