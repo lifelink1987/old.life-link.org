@@ -7,3 +7,6 @@
 [submodule "libs/nicedog"]
 	path = libs/nicedog
 	url = git://github.com/andreineculau/nicedog.git
+[submodule "tpl.main/js/jquery"]
+	path = tpl.main/js/jquery
+	url = git://github.com/jquery/jquery.git
