@@ -74,7 +74,7 @@ define('MAGPIE_CACHE_DIR', LL_ROOT . '/libs/magpierss_data/');
 /*
  * Image Cache location
  */
-define('IMAGE_CACHE_DIR', LL_ROOT . '/libs/image_data/');
+define('IMAGE_CACHE_DIR', LL_ROOT . '/libs/image_data');
 
 /*
  * Major and minor version (revision)
