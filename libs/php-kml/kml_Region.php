@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_Region extends kml_Object {
 
-    var $tagName = 'Region';
+    protected $tagName = 'Region';
 
     var $LatLonAltBox;
     var $Lod;

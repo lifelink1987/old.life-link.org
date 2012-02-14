@@ -1,9 +1,8 @@
 <?php
-include_once('kml_root.php');
 
 class kml_Object extends kml_root {
 
-    var $tagName = 'Object';
+    protected $tagName = 'Object';
 
     var $id;
     var $targetId;

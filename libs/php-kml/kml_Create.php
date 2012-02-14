@@ -1,9 +1,8 @@
 <?php
-include_once('kml_root.php');
 
 class kml_Create extends kml_root {
 
-    var $tagName = 'Create';
+    protected $tagName = 'Create';
 
     var $Object;
 

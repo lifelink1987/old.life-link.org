@@ -1,10 +1,8 @@
 <?php
-include_once('kml_SchemaField.php');
-
 
 class kml_ObjArrayField extends kml_SchemaField {
 
-    var $tagName = 'ObjArrayField';
+    protected $tagName = 'ObjArrayField';
 
 
     /* Constructor */

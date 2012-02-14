@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Overlay.php');
-
 
 class kml_GroundOverlay extends kml_Overlay {
 
-    var $tagName = 'GroundOverlay';
+    protected $tagName = 'GroundOverlay';
 
     var $altitude;
     var $altitudeMode;

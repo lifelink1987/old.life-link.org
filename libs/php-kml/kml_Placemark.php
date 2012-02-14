@@ -1,30 +1,33 @@
 <?php
-include_once('kml_Feature.php');
-
+/** <Placemark> A visible object.
+ *
+ * This class represents a <Placemark>
+ *
+ */
 
 class kml_Placemark extends kml_Feature {
 
-    var $tagName = 'Placemark';
+    protected $tagName = 'Placemark';
 
-    var $Geometries;
+    var $Geometry;
 
     /* Constructor */
     function kml_Placemark($name = null, $Geometry = null) {
         parent::kml_Feature($name);
-        if ($Geometry !== null) $this->add_Geometry($Geometry);
+        if ($Geometry !== null) $this->set_Geometry($Geometry);
     }
 
     /* Assignments */
-    function add_Geometry($Geometry) { $this->Geometries[] = $Geometry; }
+    function set_Geometry($Geometry) { $this->Geometry = $Geometry; }
 
     /* Render */
     function render($doc) {
         $X = parent::render($doc);
 
-        if (isset($this->Geometries))
-            foreach($this->Geometries as $G)
-                $X->appendChild($G->render($doc));
+        if (isset($this->Geometry))
+            $X->appendChild($this->Geometry->render($doc));
 
         return $X;
     }
 }
+

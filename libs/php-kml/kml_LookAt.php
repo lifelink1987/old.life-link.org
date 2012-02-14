@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_LookAt extends kml_Object {
 
-    var $tagName = 'LookAt';
+    protected $tagName = 'LookAt';
 
     var $longitude;
     var $latitude;

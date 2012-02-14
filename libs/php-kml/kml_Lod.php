@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Lod extends kml_root {
 
-    var $tagName = 'Lod';
+    protected $tagName = 'Lod';
 
     var $minLodPixels;
     var $maxLodPixels;

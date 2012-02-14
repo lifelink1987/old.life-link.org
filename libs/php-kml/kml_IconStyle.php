@@ -1,10 +1,8 @@
 <?php
-include_once('kml_ColorStyle.php');
-
 
 class kml_IconStyle extends kml_ColorStyle {
 
-    var $tagName = 'IconStyle';
+    protected $tagName = 'IconStyle';
 
     var $scale;
     var $heading;

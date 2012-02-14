@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Update extends kml_root {
 
-    var $tagName = 'Update';
+    protected $tagName = 'Update';
 
     var $targetHref;
     var $updates;

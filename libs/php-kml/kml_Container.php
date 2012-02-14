@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Feature.php');
-
 
 class kml_Container extends kml_Feature {
 
-    var $tagName = 'Conainter';
+    protected $tagName = 'Conainter';
 
     var $Features;
 

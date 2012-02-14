@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_TimePrimitive extends kml_Object {
 
-    var $tagName = 'TimePrimitive';
+    protected $tagName = 'TimePrimitive';
 
 
     /* Constructor */
@@ -20,7 +18,4 @@ class kml_TimePrimitive extends kml_Object {
     }
 }
 
-/*
-$a = new kml_TimePrimitive();
-$a->dump(false);
-*/
+

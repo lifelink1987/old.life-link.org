@@ -1,10 +1,8 @@
 <?php
-include_once('kml_StyleSelector.php');
-
 
 class kml_Style extends kml_StyleSelector {
 
-    var $tagName = 'Style';
+    protected $tagName = 'Style';
 
     var $IconStyle;
     var $LabelStyle;

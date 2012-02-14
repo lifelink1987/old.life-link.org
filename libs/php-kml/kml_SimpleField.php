@@ -1,10 +1,8 @@
 <?php
-include_once('kml_SchemaField.php');
-
 
 class kml_SimpleField extends kml_SchemaField {
 
-    var $tagName = 'SimpleField';
+    protected $tagName = 'SimpleField';
 
 
     /* Constructor */
@@ -24,7 +22,4 @@ class kml_SimpleField extends kml_SchemaField {
 
 }
 
-/**
-$a = new kml_SimpleField('iiii');
-$a->dump(false);
-*/
+

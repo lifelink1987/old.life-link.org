@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_Link extends kml_Object {
 
-    var $tagName = 'Link';
+    protected $tagName = 'Link';
 
     var $href;
     var $refreshMode;

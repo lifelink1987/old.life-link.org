@@ -1,9 +1,8 @@
 <?php
-include_once('kml_ColorStyle.php');
 
 class kml_PolyStyle extends kml_ColorStyle {
 
-    var $tagName = 'PolyStyle';
+    protected $tagName = 'PolyStyle';
 
     var $fill;
     var $outline;

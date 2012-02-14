@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Geometry.php');
-
 
 class kml_Model extends kml_Geometry {
 
-    var $tagName = 'Model';
+    protected $tagName = 'Model';
 
     var $Location;
     var $Orientation;

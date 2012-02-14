@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_NetworkLinkControl extends kml_root {
 
-    var $tagName = 'NetworkLinkControl';
+    protected $tagName = 'NetworkLinkControl';
 
     var $minRefreshPeriod;
     var $cookie;

@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Feature.php');
-
 
 class kml_Overlay extends kml_Feature {
 
-    var $tagName = 'Overlay';
+    protected $tagName = 'Overlay';
 
     var $color;
     var $drawOrder;

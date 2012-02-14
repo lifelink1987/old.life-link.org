@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Schema extends kml_root {
 
-    var $tagName = 'Schema';
+    protected $tagName = 'Schema';
 
     var $name;
     var $parent;

@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_ColorStyle extends kml_Object {
 
-    var $tagName = 'ColorStyle';
+    protected $tagName = 'ColorStyle';
 
     var $color;
     var $colorMode;

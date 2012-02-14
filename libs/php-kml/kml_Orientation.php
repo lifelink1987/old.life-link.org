@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Orientation extends kml_root {
 
-    var $tagName = 'Orientation';
+    protected $tagName = 'Orientation';
 
     var $heading;
     var $tilt;

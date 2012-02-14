@@ -1,14 +1,43 @@
 <?php
-include_once('kml_Geometry.php');
+/** <LinearRing>, a closed line string.
+ *
+ * Defines a closed line string, typically the outer boundary of a Polygon. 
+ * Optionally, a LinearRing can also be used as the inner boundary of a Polygon
+ * to create holes in the Polygon. A Polygon can contain multiple <LinearRing> 
+ * elements used as inner boundaries.
+ *
+ * Ex:.
+ * $path = new kml_LinearRing(array(array(3, 4), array(3, 5)));.
+ * $path->dump();.
+ *
+ * @see http://code.google.com/apis/kml/documentation/kmlreference.html#linearring
+ */
 
 
 /*******************************/
 
 class kml_LinearRing extends kml_Geometry {
 
-    var $tagName = 'LinearRing';
+    protected $tagName = 'LinearRing';
 
+    /** Boolean.
+     * Boolean value. Specifies whether to connect the LinearRing to the ground.
+     * To extrude this geometry, the <altitudeMode> must be either 
+     * relativeToGround or absolute, and the altitude component within the
+     *  <coordinates> element must be greater than 0 (that is, in the air). 
+     * Only the vertices of the LinearRing are extruded, not the center of the 
+     * geometry. The vertices are extruded toward the center of the Earth's 
+     * sphere.
+     */
     var $extrude;
+    
+    /** Boolean value.
+     * Boolean value. Specifies whether to allow the LinearRing to follow the 
+     * terrain. To enable tessellation, the value for <altitudeMode> must be 
+     * clampToGround. Very large LinearRings should enable tessellation so that
+     *  they follow the curvature of the earth (otherwise, they may go 
+     * underground and be hidden).
+     */
     var $tesselate;
     var $altitudeMode;
     var $coordinates; // list of tuples
@@ -44,9 +73,4 @@ class kml_LinearRing extends kml_Geometry {
     }
 }
 
-
-/*
-$a = new kml_LinearRing(array(array(3, 4), array(3, 5)));
-$a->dump(true);
-*/
 

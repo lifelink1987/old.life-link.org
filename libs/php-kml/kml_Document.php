@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Container.php');
-
 
 class kml_Document extends kml_Container {
 
-    var $tagName = 'Document';
+    protected $tagName = 'Document';
 
     var $Schemas;
 

@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Change extends kml_root {
 
-    var $tagName = 'Change';
+    protected $tagName = 'Change';
 
     var $Object;
 

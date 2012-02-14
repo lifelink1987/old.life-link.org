@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Geometry.php');
-
 
 class kml_Point extends kml_Geometry {
 
-    var $tagName = 'Point';
+    protected $tagName = 'Point';
 
     var $extrude;
     var $tesselate;

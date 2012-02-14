@@ -1,11 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
-
 
 class kml_ListStyle extends kml_Object {
 
-    var $tagName = 'ListStyle';
+    protected $tagName = 'ListStyle';
 
     var $bgColor;
     var $listItemType;
