@@ -5,8 +5,9 @@ register_session_var('speed_up', is_mobile() ? 'yes' : 'check');
 $config = array(
 	'js' => array(
 		'head' => array(
-			'http://shared.life-link.org/jquery/jquery.min.js', 
-			$tpl['tpl_uri'] . '/js/jquery-ui-1.8.5.custom.min.js'
+			//'http://shared.life-link.org/jquery/jquery.min.js',
+			$tpl['tpl_uri'] . '/js/jquery/dist/jquery.min.js',
+			$tpl['tpl_uri'] . '/js/jquery-ui-1.8.17.custom.min.js'
 		), 
 		'pre_body' => array(),
 		'post_body' => array()
@@ -33,7 +34,7 @@ $config = array(
 		)
 	),
 	'css' => array(
-		$tpl['tpl_uri'] . '/css/jquery-ui-1.8.5.custom.css'
+		$tpl['tpl_uri'] . '/css/jquery-ui-1.8.17.custom.css'
 	), 
 	'css_merge' => array(
 		'http://shared.life-link.org/jquery.plugins/_tooltip/jquery.tipTip-1.3/tipTip.css'
