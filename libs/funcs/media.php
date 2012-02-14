@@ -193,9 +193,9 @@ function show_png($filepath, $width_max = NULL, $aspect_ratio = NULL, $all = FAL
 	header('Content-Type: image/png');
 	imagepng($img);
 	if (defined('IMAGE_CACHE_DIR')) {
+		imagepng($img, $file_cache);
 		header_cache();
 		header_last_modified($mtime, md5_file($file_cache));
-		imagepng($img, $file_cache);
 	}
 	exit(0);
 }

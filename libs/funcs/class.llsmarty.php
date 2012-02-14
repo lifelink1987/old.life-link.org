@@ -528,7 +528,7 @@ class LLSmarty extends CustomSmarty {
 		$geoip_record = geoip_remote_addr();
 		$where = array();
 		if ($geoip_record) {
-			$where['country'] = $geopip_record->country_name;
+			$where['iso3'] = $geoip_record->country_code3;
 		}
 		$reaction = $dbReactions->get($where, 'RAND()');
 		if (! $reaction) {
