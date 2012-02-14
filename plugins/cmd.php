@@ -249,9 +249,9 @@ class CmdC extends C {
 			$country['date_report_first'] = left($country['date_report_first'], 4);
 			$title = "{$country['country']} ({$country['date_report_first']}) {$country['count_schools']}";
 			$description = "
-				Joined => {$country['date_report_first']}<br />
-				Country => {$country['country']}<br />
-				Number of Schools => {$country['count_schools']}<br />
+				Joined = {$country['date_report_first']}<br />
+				Country = {$country['country']}<br />
+				Number of Schools = {$country['count_schools']}<br />
 			";
 			$countries_kml->add_placemark($country['countries_iso'], $country['coord_lng'], $country['coord_lat'], array(
 				'title' => $title,
