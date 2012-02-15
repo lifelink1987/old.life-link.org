@@ -14,117 +14,117 @@ class LLSmarty extends CustomSmarty {
 
 	function __construct($extra = array()) {
 		global $browser_info, $uri;
-		
+
 		parent::__construct($extra);
 		$this->template_dir = $this->get_root() . '/pages';
-		
+
 		//Assign template variables
 		$tpl['host'] = LL_ROOT_URI;
 		$tpl['tpl_path'] = $this->get_root();
 		$tpl['tpl_uri'] = $this->get_root_uri();
-		
+
 		$browser_info = $browser_info ? $browser_info : browser_info();
 		$tpl['browser'] = array(
-			'name' => $browser_info['browser'], 
+			'name' => $browser_info['browser'],
 			'major' => array_shift(explode('.', $browser_info['version']))
 		);
 		$tpl['uri'] = &$uri;
-		
+
 		require_once $tpl['tpl_path'] . '/config.php';
 		$this->_tpl = array_merge_replace($tpl, $config);
-		
+
 		foreach ($this->_tpl as $key => &$value) {
 			$this->_assign_by_ref($key, $value);
 		}
-		
+
 		//Add xCSS dynamic variables
 		$css_vars = file_get_contents($tpl['tpl_path'] . '/css/source/vars.css');
 		$css_vars_append = "\$tpl_uri = {$tpl['tpl_uri']};\n";
 		$css_vars = str_replace('vars {', "vars {\n\t$css_vars_append", $css_vars);
 		file_put_contents($tpl['tpl_path'] . '/css/source/vars_dynamic.css', $css_vars);
-		
+
 		if (LL_DEBUG_SMARTY) {
 			$this->allow_php_tag = TRUE;
 		}
-		
+
 		//Register functions
 		$this->_register_template_function('js', array(
-			$this, 
+			$this,
 			'function_js'
 		));
-		
+
 		$this->_register_template_function('css', array(
-			$this, 
+			$this,
 			'function_css'
 		));
-		
+
 		$this->_register_template_function('related', array(
-			$this, 
+			$this,
 			'function_related'
 		));
-		
+
 		$this->_register_template_function('variable', array(
-			$this, 
+			$this,
 			'function_variable'
 		));
-		
+
 		$this->_register_template_function('title', array(
-			$this, 
+			$this,
 			'function_title'
 		));
-		
+
 		$this->_register_template_function('get_actions', array(
-			$this, 
+			$this,
 			'function_get_actions'
 		));
-		
+
 		$this->_register_template_function('get_months', array(
-			$this, 
+			$this,
 			'function_get_months'
 		));
-		
+
 		$this->_register_template_function('get_years', array(
-			$this, 
+			$this,
 			'function_get_years'
 		));
-		
+
 		$this->_register_template_function('get_cities', array(
-			$this, 
+			$this,
 			'function_get_cities'
 		));
-		
+
 		$this->_register_template_function('get_countries', array(
-			$this, 
+			$this,
 			'function_get_countries'
 		));
-		
+
 		$this->_register_template_function('get_contacts', array(
-			$this, 
+			$this,
 			'function_get_contacts'
 		));
-		
+
 		$this->_register_template_function('rem', array(
-			$this, 
+			$this,
 			'function_rem'
 		));
-		
+
 		$this->_register_template_function('get_random_reaction', array(
-			$this, 
+			$this,
 			'function_get_random_reaction'
 		));
-		
+
 		$this->_register_template_function('get_spotlight_days', array(
-			$this, 
+			$this,
 			'function_get_spotlight_days'
 		));
-		
+
 		$this->_register_template_function('get_spotlight_events', array(
-			$this, 
+			$this,
 			'function_get_spotlight_events'
 		));
-		
+
 		$this->_register_template_function('map', array(
-			$this, 
+			$this,
 			'function_map'
 		));
 	}
@@ -154,32 +154,32 @@ class LLSmarty extends CustomSmarty {
 		 */
 		require_once LL_ROOT . '/libs/magpierss/rss_fetch.inc';
 		$this->assign('rss_news', get_rss_news());
-		
+
 		/**
 		 * Fetch template content and attached JS/CSS/related
 		 */
 		$content = $this->fetch($what);
-		
+
 		$js = '/' . str_replace('.tpl', '.js', $what);
 		$css = '/' . str_replace('.tpl', '.css', $what);
 		$related = '/' . str_replace('.tpl', '_related.tpl', $what);
-		
+
 		/**
 		 * Resolve attached JS/CSS
 		 */
 		if (file_exists($this->template_dir . $js)) {
 			$this->function_js(array(
-				'file' => $js, 
+				'file' => $js,
 				'merge' => TRUE
 			));
 		}
 		if (file_exists($this->template_dir . $css)) {
 			$this->function_css(array(
-				'file' => $css, 
+				'file' => $css,
 				'merge' => TRUE
 			));
 		}
-		
+
 		/**
 		 * Resolve JS inside the head tag
 		 */
@@ -196,7 +196,7 @@ class LLSmarty extends CustomSmarty {
 			$this->_tpl['js']['head'] = array_unique($this->_tpl['js']['head']);
 		}
 		$this->_tpl['js']['head'][] = $this->_tpl['tpl_uri'] . '/css/xcss/';
-		
+
 		/**
 		 * Resolve JS at the beginning of the body tag
 		 */
@@ -212,7 +212,7 @@ class LLSmarty extends CustomSmarty {
 			}
 			$this->_tpl['js']['pre_body'] = array_unique($this->_tpl['js']['pre_body']);
 		}
-		
+
 		/**
 		 * Resolve JS at the end of the body tag
 		 */
@@ -228,7 +228,7 @@ class LLSmarty extends CustomSmarty {
 			}
 			$this->_tpl['js']['post_body'] = array_unique($this->_tpl['js']['post_body']);
 		}
-		
+
 		/**
 		 * Resolve CSS
 		 */
@@ -245,7 +245,7 @@ class LLSmarty extends CustomSmarty {
 			$this->_tpl['css'] = array_unique($this->_tpl['css']);
 		}
 		$this->_tpl['css'][] = $this->_tpl['tpl_uri'] . '/css/master.css';
-		
+
 		/**
 		 * Resolve xCSS
 		 */
@@ -254,20 +254,20 @@ class LLSmarty extends CustomSmarty {
 			array_walk($this->_xcss, 'urlencode2');
 			$this->_tpl['css'][] = $this->_tpl['tpl_uri'] . '/xcss.php?file[]=' . implode('&file[]=', $this->_xcss);
 		}
-		
+
 		/**
 		 * Display header & content
 		 */
 		$this->display('header.tpl');
 		echo $content;
-		
+
 		/**
 		 * Display attached related sidebar
 		 */
 		if (file_exists($this->template_dir . $related)) {
 			$this->display($related);
 		}
-		
+
 		/**
 		 * Display footer
 		 */
@@ -284,7 +284,7 @@ class LLSmarty extends CustomSmarty {
 		header('HTTP/1.0 404 Not Found');
 		$title = $title ? $title : 'Not found';
 		$message = $message ? $message : 'We couldn\'t find what you are looking for.';
-		
+
 		$this->_assign_by_ref('title', $title);
 		$this->_assign_by_ref('message', $message);
 		$this->_assign_by_ref('suggestions', $suggestions);
@@ -368,7 +368,7 @@ class LLSmarty extends CustomSmarty {
 	 */
 	public function function_variable($extra = array()) {
 		$dbVariables = DbVariables::get_instance();
-		
+
 		if (isset($extra['var'])) {
 			$this->assign($extra['var'], $dbVariables->get($extra['name']));
 		} else {
@@ -385,49 +385,49 @@ class LLSmarty extends CustomSmarty {
 	}
 
 	/**
-	 * Assign upcoming day(s) to a variable 
+	 * Assign upcoming day(s) to a variable
 	 * @param string $extra['var'] Variable name
 	 */
 	public function function_get_spotlight_days($extra = array()) {
 		$date_start = strtotime('-60 days');
 		$date_end = strtotime('+30 days');
-		
+
 		$dbDays = DbDays::get_instance();
 		$days = $dbDays->gets(array(
-			"(`month` >= " . date('n', $date_start) . " AND `month_day` >= " . date('j', $date_start) . ")", 
+			"(`month` >= " . date('n', $date_start) . " AND `month_day` >= " . date('j', $date_start) . ")",
 			"(`month` <= " . date('n', $date_end) . " AND `month_day` <= " . date('j', $date_end) . ")"
 		), '`month` ASC, `month_day` ASC');
-		
+
 		$this->assign($extra['var'], $days);
 	}
 
 	/**
-	 * Assign upcoming event(s) to a variable 
+	 * Assign upcoming event(s) to a variable
 	 * @param string $extra['var'] Variable name
 	 */
 	public function function_get_spotlight_events($extra = array()) {
 		$date_start = strtotime('-60 days');
 		$date_end = strtotime('+30 days');
-		
+
 		$dbEvents = DbEvents::get_instance();
 		$events = $dbEvents->gets("(`date_end` >= '" . date('Y-m-d', $date_start) . "' AND `date_start` <= '" . date('Y-m-d', $date_end) . "') OR `is_sticky` = 'yes'", '`date_start` DESC');
-		
+
 		$this->assign($extra['var'], $events);
 	}
 
 	/**
-	 * Assign LL Care Actions to a variable 
+	 * Assign LL Care Actions to a variable
 	 * @param string $extra['var'] Variable name
 	 */
 	public function function_get_actions($extra = array()) {
 		$dbActions = DbActions::get_instance();
 		$actions = $dbActions->cache();
-		
+
 		$this->assign($extra['var'], $actions);
 	}
 
 	/**
-	 * Assign Countries to a variable 
+	 * Assign Countries to a variable
 	 * @param string $extra['var'] Variable name
 	 * @param bool $extra['all'] Include countries without LL Schools
 	 */
@@ -439,29 +439,29 @@ class LLSmarty extends CustomSmarty {
 			$dbSchoolsCountries = DbSchoolsCountries::get_instance();
 			$countries = $dbSchoolsCountries->gets('`countries_iso` > 0', 'country');
 		}
-		
+
 		$this->assign($extra['var'], $countries);
 	}
 
 	/**
-	 * Assign Cities to a variable 
+	 * Assign Cities to a variable
 	 * @param string $extra['var'] Variable name
 	 */
 	public function function_get_cities($extra = array()) {
 		if (! $extra['country']) {
 			return array();
 		}
-		
+
 		$dbSchoolsCities = DbSchoolsCities::get_instance();
 		$cities = $dbSchoolsCities->gets(array(
 			'countries_iso' => $extra['country']
 		), 'city');
-		
+
 		$this->assign($extra['var'], $cities);
 	}
 
 	/**
-	 * Assign Months to a variable 
+	 * Assign Months to a variable
 	 * @param string $extra['var'] Variable name
 	 * @param numeric $extra['start'] Month to start with
 	 * @param numeric $extra['end'] Month to end with
@@ -469,11 +469,11 @@ class LLSmarty extends CustomSmarty {
 	 */
 	public function function_get_months($extra = array()) {
 		$months = $this->_tpl['months'];
-		
+
 		$start = $extra['start'] ? $extra['start'] : 0;
 		$end = $extra['end'] ? $extra['end'] : 11;
 		$step = $extra['step'] ? $extra['step'] : 1;
-		
+
 		$range = range($start, $end, $step);
 		foreach ($range as $key) {
 			$result[] = $months[$key];
@@ -482,7 +482,7 @@ class LLSmarty extends CustomSmarty {
 	}
 
 	/**
-	 * Assign Years to a variable 
+	 * Assign Years to a variable
 	 * @param string $extra['var'] Variable name
 	 * @param numeric $extra['start'] Year to start with
 	 * @param numeric $extra['end'] Year to end with
@@ -493,12 +493,12 @@ class LLSmarty extends CustomSmarty {
 		$end = $extra['end'] ? $extra['end'] : date('Y');
 		$step = $extra['step'] ? $extra['step'] : 1;
 		$years = range($start, $end, $step);
-		
+
 		$this->assign($extra['var'], $years);
 	}
 
 	/**
-	 * Assign Contacts to a variable 
+	 * Assign Contacts to a variable
 	 * @param string $extra['var'] Variable name
 	 * @param string $extra['department'] Restrict to a given department
 	 */
@@ -509,7 +509,7 @@ class LLSmarty extends CustomSmarty {
 			$where['department'] = $extra['department'];
 		}
 		$contacts = $dbContacts->gets($where, '`department_order` ASC, `contact` ASC');
-		
+
 		$this->assign($extra['var'], $contacts);
 	}
 
@@ -520,7 +520,7 @@ class LLSmarty extends CustomSmarty {
 	}
 
 	/**
-	 * Assign random reaction to a variable 
+	 * Assign random reaction to a variable
 	 * @param string $extra['var'] Variable name
 	 */
 	public function function_get_random_reaction($extra = array()) {
@@ -534,12 +534,12 @@ class LLSmarty extends CustomSmarty {
 		if (! $reaction) {
 			$reaction = $dbReactions->get(NULL, 'RAND()');
 		}
-		
+
 		$this->assign($extra['var'], $reaction);
 	}
 
 	/**
-	 * Assign URI of LL Countries gMap to a variable 
+	 * Assign URI of LL Countries gMap to a variable
 	 * @param string $extra['var'] Variable name
 	 * @param numeric $extra['height'] Height in pixels
 	 * @param numeric $extra['width'] Width in pixels

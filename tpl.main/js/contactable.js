@@ -1,22 +1,26 @@
 // JavaScript Document
 
+/*global jQuery:true*/
+
 /*
  * contactable 1.2.1 - jQuery Ajax contact form
  *
  * Copyright (c) 2009 Philip Beel (http://www.theodin.co.uk/)
- * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) 
+ * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
  * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
  *
  * Revision: $Id: jquery.contactable.js 2010-01-18 $
  *
  */
- 
+
 //extend the plugin
 (function($){
+    'use strict';
 
-	//define the new for the plugin ans how to call it	
+	//define the new for the plugin ans how to call it
 	$.fn.contactable = function(options) {
-		//set default options  
+
+		//set default options
 		var defaults = {
 			name: 'Your Name',
 			email: 'Your E-mail',
@@ -28,13 +32,13 @@
 			notRecievedMsg : 'Sorry but your message could not be sent, try again later',
 			disclaimer: 'Please feel free to get in touch with us!',
 			hideOnSubmit: true,
-			callback: contactable_uri,
+			callback: '',
 			topics: ['General']
 		};
 
 		//call in the default otions
 		var options = $.extend(defaults, options);
-		//act upon the element that is passed into the design    
+		//act upon the element that is passed into the design
 		return this.each(function(options) {
 			topics_options = '';
 			for (var i in defaults.topics) {
@@ -46,23 +50,23 @@
 			hide_function = function() {
 				$('#contactable').click();
 			}
-			
+
 			overlay = $('#overlay');
 			contactable = $('#contactable');
 			contactFrom = $('#contactForm');
-			
+
 			//show / hide function
 			$('#contactable').toggle(function() {
 				overlay.css({display: 'block'}).bind('click', hide_function);
-				contactable.animate({"marginLeft": "+=382px"}, "slow"); 
-				contactFrom.animate({"marginLeft": "+=390px"}, "slow"); 
+				contactable.animate({"marginLeft": "+=382px"}, "slow");
+				contactFrom.animate({"marginLeft": "+=390px"}, "slow");
 			}, function() {
 				overlay.css({display: 'none'}).unbind('click', hide_function);
 				contactFrom.animate({"marginLeft": "-=390px"}, "slow");
 				contactable.animate({"marginLeft": "-=382px"}, "slow");
 			});
-			
-			//validate the form 
+
+			//validate the form
 			$("#contactForm").validate({
 				//set the rules for the fild names
 				rules: {
@@ -83,29 +87,28 @@
 						name: "",
 						email: "",
 						comment: ""
-					},			
+					},
 
 				submitHandler: function() {
 					$('.holder').hide();
 					$('#loading').show();
 					$.post(defaults.callback,{subject:defaults.subject, name:$('#contactForm .name').val(), email:$('#contactForm .email').val(), topic:$('#contactForm .topic').val(), comment:$('#contactForm .comment').val()},
 					function(data){
-						$('#loading').css({display:'none'}); 
+						$('#loading').css({display:'none'});
 						if (data == 'success') {
 							$('#callback').show().append(defaults.recievedMsg);
 							if(defaults.hideOnSubmit == true) {
 								//hide the tab after successful submition if requested
 								$('#contactForm').animate({dummy:1}, 2000).animate({"marginLeft": "-=450px"}, "slow");
-								$('#contactable').animate({dummy:1}, 2000).animate({"marginLeft": "-=447px"}, "slow").animate({"marginLeft": "+=5px"}, "fast"); 
-								$('#overlay').css({display: 'none'});	
+								$('#contactable').animate({dummy:1}, 2000).animate({"marginLeft": "-=447px"}, "slow").animate({"marginLeft": "+=5px"}, "fast");
+								$('#overlay').css({display: 'none'});
 							}
 						} else {
 							$('#callback').show().append(defaults.notRecievedMsg);
 						}
-					});		
+					});
 				}
 			});
 		});
 	};
 })(jQuery);
- 
