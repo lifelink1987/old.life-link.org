@@ -641,7 +641,10 @@ class Logger extends ExtendedClass {
 			E_USER_ERROR => 'E_USER_ERROR',
 			E_USER_WARNING => 'E_USER_WARNING',
 			E_USER_NOTICE => 'E_USER_NOTICE',
-			E_STRICT => 'E_STRICT'
+			E_STRICT => 'E_STRICT',
+            E_RECOVERABLE_ERROR => 'E_RECOVERABLE_ERROR',
+            E_DEPRECATED => 'E_DEPRECATED',
+            E_USER_DEPRECATED => 'E_USER_DEPRECATED'
 		);
 		$errtype_long = array(
 			E_ERROR => 'Error',
@@ -655,7 +658,10 @@ class Logger extends ExtendedClass {
 			E_USER_ERROR => 'User Error',
 			E_USER_WARNING => 'User Warning',
 			E_USER_NOTICE => 'User Notice',
-			E_STRICT => 'Runtime Notice'
+			E_STRICT => 'Runtime Notice: Strict',
+            E_RECOVERABLE_ERROR => 'Catchable Fatal Error',
+            E_DEPRECATED => 'Runtime Notice: Deprecated',
+            E_USER_DEPRECATED => 'Runtime Notice: User Deprecated'
 		);
 		$warnings = E_WARNING | E_CORE_WARNING | E_COMPILE_WARNING | E_USER_WARNING;
 		$notices = E_NOTICE | E_USER_NOTICE;
