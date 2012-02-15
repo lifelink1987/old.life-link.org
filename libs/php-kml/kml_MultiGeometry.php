@@ -1,16 +1,15 @@
 <?php
-include_once('kml_Geometry.php');
-
 
 class kml_MultiGeometry extends kml_Geometry {
 
-    var $tagName = 'MultiGeometry';
+    protected $tagName = 'MultiGeometry';
 
-    var $Geometries;
+    var $Geometries = array();
 
     /* Constructor */
-    function kml_MultiGeometry() {
+    function kml_MultiGeometry($Geometries = null) {
         parent::kml_Geometry();
+        if ($Geometries !== null) $this->Geometries = $Geometries;
     }
 
 
@@ -22,11 +21,8 @@ class kml_MultiGeometry extends kml_Geometry {
     function render($doc) {
         $X = parent::render($doc);
 
-        if (isset($this->Geometries))
-        {
-            foreach($this->Geometries as $Geometry)
-                $X->appendChild($Geometry->render($doc));
-        }
+        foreach($this->Geometries as $Geometry)
+            $X->appendChild($Geometry->render($doc));
 
         return $X;
     }

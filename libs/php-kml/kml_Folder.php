@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Container.php');
-
 
 class kml_Folder extends kml_Container {
 
-    var $tagName = 'Folder';
+    protected $tagName = 'Folder';
 
 
     /* Constructor */

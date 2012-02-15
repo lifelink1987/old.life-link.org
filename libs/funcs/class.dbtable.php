@@ -540,7 +540,7 @@ class DbTable extends ExtendedClass {
 	}*/
 	
 	protected function _get_quoted_fields() {
-		$from = '`' . $this->_table . '`';
+		$from = '`' . $this->_view . '`';
 		$from = $this->_db->schema_prefix ? $this->_db->schema_prefix . $from : $from;
 		
 		$sql = "

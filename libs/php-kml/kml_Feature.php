@@ -1,11 +1,15 @@
 <?php
-include_once('kml_Object.php');
+/**<Feature> rendering class.
+ * @class kml_Feature
+ * .... 
+ * 
+ * $Rev$
+ */
 
 
+abstract class kml_Feature extends kml_Object {
 
-class kml_Feature extends kml_Object {
-
-    var $tagName = 'Feature';
+    protected $tagName = 'Feature';
 
     var $name;
     var $visibility;

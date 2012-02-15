@@ -1,10 +1,8 @@
 <?php
-include_once('kml_SchemaField.php');
-
 
 class kml_SimpleArrayField extends kml_SchemaField {
 
-    var $tagName = 'SimpleArrayField';
+    protected $tagName = 'SimpleArrayField';
 
 
     /* Constructor */

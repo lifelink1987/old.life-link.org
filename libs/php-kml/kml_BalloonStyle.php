@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_BalloonStyle extends kml_Object {
 
-    var $tagName = 'BalloonStyle';
+    protected $tagName = 'BalloonStyle';
 
     var $bgColor;
     var $textColor;

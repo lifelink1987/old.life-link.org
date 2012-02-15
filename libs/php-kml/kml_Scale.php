@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Scale extends kml_root {
 
-    var $tagName = 'Scale';
+    protected $tagName = 'Scale';
 
     var $x;
     var $y;

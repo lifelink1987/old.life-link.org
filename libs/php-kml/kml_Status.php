@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Status extends kml_root {
 
-    var $tagName = 'Status';
+    protected $tagName = 'Status';
 
     var $code;
     var $request = 'geocode';

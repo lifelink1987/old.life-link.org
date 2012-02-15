@@ -1,12 +1,10 @@
 <?php
-include_once('kml_root.php');
-
 
 /*******************************/
 
 class kml_Location extends kml_root {
 
-    var $tagName = 'Location';
+    protected $tagName = 'Location';
 
     var $longitude;
     var $latitude;

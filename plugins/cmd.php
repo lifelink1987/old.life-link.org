@@ -113,7 +113,7 @@ class CmdC extends C {
 		$this->statistics_monthly();
 	}
 
-	private function update_delicious() {
+	public function update_delicious() {
 		global $db;
 		$dbDelicious = DbDelicious::get_instance();
 		$dbTags = DbTags::get_instance();
@@ -165,7 +165,7 @@ class CmdC extends C {
 
 	}
 
-	private function update_kml() {
+	public function update_kml() {
 		$this->create_schools_kml();
 		$this->create_countries_kml();
 	}
@@ -180,8 +180,8 @@ class CmdC extends C {
 		$schools = $dbSchools->gets('`datetime_approval` IS NOT NULL');
 
 		$schools_kml = new KML();
-		$schools_kml->add_icon_style('school', 'http://localhost/beta.life-link.org/tpl.main/img/layout/leaf_dark.png');
-		$schools_kml->set_description('Listing of schools within Life-Link Friendship-Schools<br/>Data from <a href="http://www.life-link.org">www.life-link.org</a><br/>Updated ' . date('Y-m-d'));
+		$schools_kml->add_icon_style('school', 'http://beta.life-link.org/tpl.main/img/layout/leaf_dark.png');
+		$schools_kml->kml->set_description('Listing of schools within Life-Link Friendship-Schools<br/>Data from <a href="http://www.life-link.org">www.life-link.org</a><br/>Updated ' . date('Y-m-d'));
 
 		while ($school = @array_shift(each($schools))) {
 			if ($school['coord_accuracy'] < 4) {
@@ -242,16 +242,16 @@ class CmdC extends C {
 		$countries = $dbSchoolsCountries->gets('`coord_lat` AND `coord_lng`');
 
 		$countries_kml = new KML();
-		$countries_kml->add_icon_style('country', 'http://localhost/beta.life-link.org/tpl.main/img/layout/leaf_dark.png');
-		$countries_kml->set_description('Listing of countries within Life-Link Friendship-Schools<br/>Data from <a href="http://www.life-link.org">www.life-link.org</a><br/>Updated ' . date('Y-m-d'));
+		$countries_kml->add_icon_style('country', 'http://beta.life-link.org/tpl.main/img/layout/leaf_dark.png');
+		$countries_kml->kml->set_description('Listing of countries within Life-Link Friendship-Schools<br/>Data from <a href="http://www.life-link.org">www.life-link.org</a><br/>Updated ' . date('Y-m-d'));
 
 		foreach ($countries as $country) {
 			$country['date_report_first'] = left($country['date_report_first'], 4);
 			$title = "{$country['country']} ({$country['date_report_first']}) {$country['count_schools']}";
 			$description = "
-				Joined => {$country['date_report_first']}<br />
-				Country => {$country['country']}<br />
-				Number of Schools => {$country['count_schools']}<br />
+				Joined = {$country['date_report_first']}<br />
+				Country = {$country['country']}<br />
+				Number of Schools = {$country['count_schools']}<br />
 			";
 			$countries_kml->add_placemark($country['countries_iso'], $country['coord_lng'], $country['coord_lat'], array(
 				'title' => $title,

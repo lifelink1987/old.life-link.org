@@ -1,10 +1,8 @@
 <?php
-include_once('kml_ColorStyle.php');
-
 
 class kml_LineStyle extends kml_ColorStyle {
 
-    var $tagName = 'LineStyle';
+    protected $tagName = 'LineStyle';
 
     var $width;
 

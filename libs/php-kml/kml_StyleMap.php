@@ -1,10 +1,8 @@
 <?php
-include_once('kml_StyleSelector.php');
-
 
 class kml_StyleMap extends kml_StyleSelector {
 
-    var $tagName = 'StyleMap';
+    protected $tagName = 'StyleMap';
 
     var $Pairs = array();
 

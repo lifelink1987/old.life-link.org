@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_Geometry extends kml_Object {
 
-    var $tagName = 'Geometry';
+    protected $tagName = 'Geometry';
 
     /* Constructor */
     function kml_Geometry() {

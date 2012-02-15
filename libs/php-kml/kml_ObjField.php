@@ -1,10 +1,8 @@
 <?php
-include_once('kml_SchemaField.php');
-
 
 class kml_ObjField extends kml_SchemaField {
 
-    var $tagName = 'ObjField';
+    protected $tagName = 'ObjField';
 
 
     /* Constructor */
@@ -24,7 +22,3 @@ class kml_ObjField extends kml_SchemaField {
 
 }
 
-/**
-$a = new kml_ObjField('iiii');
-$a->dump(false);
-*/

@@ -1,17 +1,15 @@
 <?php
-include_once('kml_Geometry.php');
-
 
 class kml_Polygon extends kml_Geometry {
 
-    var $tagName = 'Polygon';
+    protected $tagName = 'Polygon';
 
     var $extrude;
     var $tesselate;
     var $altitudeMode;
 
     var $outerBoundaryIs;
-    var $innerBoundaryIss;
+    var $innerBoundaryIs = array();
 
 
     /* Constructor */
@@ -27,7 +25,7 @@ class kml_Polygon extends kml_Geometry {
     function set_altitudeMode($altitudeMode) { $this->altitudeMode = $altitudeMode; }
 
     function set_outerBoundaryIs($outerBoundaryIs) { $this->outerBoundaryIs = $outerBoundaryIs; }
-    function add_innerBoundaryIs($innerBoundaryIs) { $this->innerBoundaryIss[] = $innerBoundaryIs; }
+    function add_innerBoundaryIs($innerBoundaryIs) { $this->innerBoundaryIs[] = $innerBoundaryIs; }
 
 
    /* Render */
@@ -41,10 +39,10 @@ class kml_Polygon extends kml_Geometry {
         $b = $X->appendChild($doc->createElement('outerBoundaryIs'));
         $b->appendChild($this->outerBoundaryIs->render($doc));
 
-        if (isset($this->innerBoundaryIss))
+        if ( $this->innerBoundaryIs )
         {
             $b = $X->appendChild($doc->createElement('innerBoundaryIs'));
-            foreach($this->innerBoundaryIss as $innerBoundaryIs)
+            foreach($this->innerBoundaryIs as $innerBoundaryIs)
                 $b->appendChild($innerBoundaryIs->render($doc));
         }
 
@@ -53,8 +51,4 @@ class kml_Polygon extends kml_Geometry {
 }
 
 
-/*
-$a = new kml_Polygon(array(array(3, 4), array(3, 5)));
-$a->dump(true);
-*/
 

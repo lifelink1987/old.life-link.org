@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Object.php');
-
 
 class kml_StyleSelector extends kml_Object {
 
-    var $tagName = 'StyleSelector';
+    protected $tagName = 'StyleSelector';
 
 
     /* Constructor */
@@ -20,7 +18,4 @@ class kml_StyleSelector extends kml_Object {
     }
 }
 
-/*
-$a = new kml_StyleSelector();
-$a->dump(false);
-*/
+

@@ -1,9 +1,8 @@
 <?php
-include_once('kml_root.php');
 
 class kml_Delete extends kml_root {
 
-    var $tagName = 'Delete';
+    protected $tagName = 'Delete';
 
     var $Object;
 

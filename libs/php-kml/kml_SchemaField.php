@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_SchemaField extends kml_root {
 
-    var $tagName = 'SchemaField';
+    protected $tagName = 'SchemaField';
 
     var $name;
     var $type;

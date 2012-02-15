@@ -1,9 +1,8 @@
 <?php
-include_once('kml_root.php');
 
 class kml_Snippet extends kml_root {
 
-    var $tagName = 'Snippet';
+    protected $tagName = 'Snippet';
 
     var $maxLines;
     var $Snippet;

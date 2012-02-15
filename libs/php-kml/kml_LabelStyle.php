@@ -1,10 +1,8 @@
 <?php
-include_once('kml_ColorStyle.php');
-
 
 class kml_LabelStyle extends kml_ColorStyle {
 
-    var $tagName = 'LabelStyle';
+    protected $tagName = 'LabelStyle';
 
     var $scale;
 

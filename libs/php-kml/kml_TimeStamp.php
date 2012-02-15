@@ -1,10 +1,8 @@
 <?php
-include_once('kml_TimePrimitive.php');
-
 
 class kml_TimeSptamp extends kml_TimePrimitive {
 
-    var $tagName = 'TimeSptamp';
+    protected $tagName = 'TimeSptamp';
 
     var $when;
 

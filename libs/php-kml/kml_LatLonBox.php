@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_LatLonBox extends kml_root {
 
-    var $tagName = 'LatLonBox';
+    protected $tagName = 'LatLonBox';
 
     var $north;
     var $south;

@@ -1,10 +1,8 @@
 <?php
-include_once('kml_root.php');
-
 
 class kml_Pair extends kml_root {
 
-    var $tagName = 'Pair';
+    protected $tagName = 'Pair';
 
     var $key;
     var $styleUrl;

@@ -1,12 +1,18 @@
 <?php
-include_once('kml_Geometry.php');
+/** <LineString> class.
+ *
+ * This class renders <LineString> elements.
+ *
+ * Ex:
+ * $path = new kml_LineString(array(array(3, 4), array(3, 5)));
+ * $path->dump();
+ */
 
 
-/*******************************/
 
 class kml_LineString extends kml_Geometry {
 
-    var $tagName = 'LineString';
+    protected $tagName = 'LineString';
 
     var $extrude;
     var $tesselate;
@@ -14,14 +20,17 @@ class kml_LineString extends kml_Geometry {
     var $coordinates; // list of tuples
 
 
-    /* Constructor */
+    /** Constructor.
+     *
+     * @param $coordinates an array of tuples
+     */
     function kml_LineString($coordinates) {
         parent::kml_Geometry();
         $this->set_coordinates($coordinates);
     }
 
 
-    /* Assignments */
+    /** Assignments */
     function set_extrude($extrude) { $this->extrude = (int)$extrude; }
     function set_tesselate($tesselate) { $this->tesselate = (int)$tesselate; }
     function set_altitudeMode($altitudeMode) { $this->altitudeMode = $altitudeMode; }
@@ -45,8 +54,4 @@ class kml_LineString extends kml_Geometry {
 }
 
 
-/*
-$a = new kml_LineString(array(array(3, 4), array(3, 5)));
-$a->dump(true);
-*/
 

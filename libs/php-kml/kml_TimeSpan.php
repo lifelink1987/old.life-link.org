@@ -1,10 +1,8 @@
 <?php
-include_once('kml_TimePrimitive.php');
-
 
 class kml_TimeSpan extends kml_TimePrimitive {
 
-    var $tagName = 'TimeSpan';
+    protected $tagName = 'TimeSpan';
 
     var $begin;
     var $end;

@@ -1,9 +1,8 @@
 <?php
-include_once('kml_root.php');
 
 class kml_ItemIcon extends kml_root {
 
-    var $tagName = 'ItemIcon';
+    protected $tagName = 'ItemIcon';
 
     var $state;
     var $href;

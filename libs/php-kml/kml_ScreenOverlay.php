@@ -1,10 +1,8 @@
 <?php
-include_once('kml_Overlay.php');
-
 
 class kml_ScreenOverlay extends kml_Overlay {
 
-    var $tagName = 'ScreenOverlay';
+    protected $tagName = 'ScreenOverlay';
 
     var $overlayXY;
     var $screenXY;
