@@ -51,14 +51,13 @@ define('LL_FACEBOOK_UID', 1780871734);
 define('LL_REPORT_MEDIA', realpath(LL_ROOT . '/../files/action_photos'));
 
 /* Google Maps, Delicious API */
+define('LL_GMAPS_KEY', 'AIzaSyDMUjjzgXybDtNOhjo3qR7UOloxRuQuFwY');
 if (LL_AT_HOME) {
 	//life-link.org
-	define('LL_GMAPS_KEY', 'ABQIAAAAkmZu1AlWmeRAC_XJ5GP6nxQabb5xD6fA3hvWMxqKNSz_1BWAYRTf4Hjk9Q7oavMHJh1Gra62Yn_WPA');
 	define('LL_YAHOO_KEY', 'dj0yJmk9QUROYUFOS3ZKeWIzJmQ9WVdrOVREWTJXVnBFTXpBbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD02Mw');
 	define('LL_YAHOO_SECRET', 'd36946247f2d268f9fb75fcbee76646aa3a8e4fa');
 } else {
 	//life-link.se
-	define('LL_GMAPS_KEY', 'ABQIAAAAkmZu1AlWmeRAC_XJ5GP6nxTRtbkmDoGqKKa8WLcTkwIH8AS2aRR9hetPxdmgL-sO0huRqW77pXKyOw');
 }
 
 require_once 'config/auto_post.php';
