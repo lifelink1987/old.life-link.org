@@ -47,25 +47,27 @@ class EventC extends C {
 		$dbEvents = DbEvents::get_instance();
 		$event = $dbEvents->get($event_id);
 		
-		if ($event) {
-			$smarty->assign('title', $event['event_nice']);
-			
-			$smarty->_assign_by_ref('event', $event);
-			
-			$dbTags = DbTags::get_instance();
-			$tag = $dbTags->get(array('events_id_fk'=> $event['events_id']));
-			$tag = $tag['tag'];
-			
-			$dbSchools = DbSchools::get_instance();
-			$schools = $dbSchools->tagged($tag, '`country` DESC, `city` DESC');
-			$smarty->_assign_by_ref('schools', $schools);
-			
-			$smarty->display_wrap('events/event.tpl');
-		} else {
+		if (! $event) {
 			/*
 			 * @todo build message with possible events
 			 */
-			$smarty->display_404('Event not found', $message);
+			return $smarty->display_404('Event not found', $message);
 		}
+		
+		$smarty->assign('title', $event['event_nice']);
+		
+		$smarty->_assign_by_ref('event', $event);
+		
+		$dbTags = DbTags::get_instance();
+		$tag = $dbTags->get(array(
+			'events_id_fk' => $event['events_id']
+		));
+		$tag = $tag['tag'];
+		
+		$dbSchools = DbSchools::get_instance();
+		$schools = $dbSchools->tagged($tag, '`country` DESC, `city` DESC');
+		$smarty->_assign_by_ref('schools', $schools);
+		
+		$smarty->display_wrap('events/event.tpl');
 	}
 }

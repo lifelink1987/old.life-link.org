@@ -1,0 +1,53 @@
+/* Admin */
+
+.admin {
+	#content section .row_school.pending {
+		font-weight:bold;
+	}
+	
+	#content section .row_school {
+		self {
+			width:850px;
+		}
+	
+		.approved {
+			width:150px;
+		}
+	}
+	
+	form {
+		label {
+			font-weight:bold;
+		}
+		
+		label.optional {
+			font-weight:normal;
+			font-style:italic;
+		}
+		
+		label.highlight {
+			background-color:#fafa99;
+			outline:5px solid #fafa99;
+		}
+		
+		label input:focus + span {
+			visibility:visible;
+		}
+		
+		label:hover input + span {
+			visibility:visible;
+		}
+		
+		label input + span {
+			font-size:11px;
+			color:$grey;
+			padding:0px 5px;
+			font-weight:normal;
+			visibility:hidden;
+		}
+		
+		input[readonly] {
+			border:0px;
+		}
+	}
+}

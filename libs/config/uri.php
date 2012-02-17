@@ -70,6 +70,12 @@ $uri['icon_flag_48'] = '/icon/flag_48/';
 
 $uri['contactable'] = '/contact/send';
 
+$uri['admin'] = $uri['admin_fs'] = '/admin/friendship-schools';
+$uri['admin_fs_schools'] = $uri['admin_fs'] . '/schools';
+$uri['admin_fs_school'] = $uri['admin_fs'] . '/school/';
+$uri['admin_fs_reports'] = $uri['admin_fs'] . '/reports';
+$uri['admin_fs_report'] = $uri['admin_fs'] . '/report/';
+
 array_walk($uri, create_function('&$v,$k', '$v = LL_ROOT_URI . $v;'));
 
 $uri['icon_quartz'] = 'http://shared.life-link.org/icons/quartz/';

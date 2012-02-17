@@ -9,6 +9,19 @@ class MailC extends C {
 		$comment = stripcslashes($_POST['comment']);
 		$topic = stripcslashes($_POST['topic']);
 		$subject = stripcslashes($_POST['subject']);
+	
+		if (!$name) {
+			echo ('Your name is required!');
+			exit(0);
+		}
+		if (!$email) {
+			echo ('A message is required!');
+			exit(0);
+		}
+		if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)) {
+			echo ('A valid email address is required!');
+			exit(0);
+		}
 		
 		switch (strtolower($topic)) {
 			case 'general':
@@ -22,13 +35,11 @@ class MailC extends C {
 			Message: $comment
 		";
 		
-		//validate the email address on the server side
-		if (eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)) {
-			//if successful lets send the message
-			mail($to, $subject, $comment);
+		//if successful lets send the message
+		if (mail($to, $subject, $comment)) {
 			echo ('success'); //return success callback
 		} else {
-			echo ('An invalid email address was entered'); //email was not valid
+			echo ('An error occured while sending your message. Please try again!');
 		}
 		exit(0);
 	}

@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-
+{js file="/sidebar.js"}
 <aside id="sidebar" class="column width1">
 	{get_spotlight_events var="spotlight_events"}
 	{if $spotlight_events}

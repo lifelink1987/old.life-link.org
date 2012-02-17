@@ -141,6 +141,7 @@ class DbTable extends ExtendedClass {
 	}
 
 	public function gets($where = array(), $orderby = NULL, $limit = NULL) {
+		$what = '*';
 		//Build WHERE conditions
 		$cond = '';
 		$where = (array) $where;
@@ -165,9 +166,14 @@ class DbTable extends ExtendedClass {
 		}
 		
 		//Build LIMIT
-		if ($limit) {
+		if ($limit == 'count') {
+			$what = 'COUNT(*)';
+			$limit = '';
+		} elseif ($limit) {
 			if (is_numeric($limit)) {
 				$limit = "0, $limit";
+			} elseif (is_array($limit)) {
+				$limit = implode(', ', $limit);
 			}
 			$limit = "LIMIT $limit";
 		}
@@ -177,7 +183,7 @@ class DbTable extends ExtendedClass {
 		
 		//Build complete SQL query
 		$sql = "
-			SELECT *
+			SELECT $what
 			FROM $from
 			WHERE 1=1$cond
 			$orderby
@@ -192,6 +198,11 @@ class DbTable extends ExtendedClass {
 			$items = $this->clean_results($items);
 		}
 		return $items;
+	}
+
+	public function count($where = array()) {
+		$result = $this->gets($where, NULL, 'count');
+		return (int) @array_shift(@array_shift($result));
 	}
 
 	public function add($data, $or_update = TRUE) {
@@ -574,5 +585,9 @@ class DbTable extends ExtendedClass {
 		}
 		
 		$this->_quoted_fields = $quoted_fields;
+	}
+	
+	public function _($string) {
+		return $this->_db->real_escape_string($string);
 	}
 }

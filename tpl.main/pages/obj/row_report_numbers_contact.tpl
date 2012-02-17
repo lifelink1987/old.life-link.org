@@ -4,7 +4,7 @@
 </div>
 {if $report_contact}
 	<a class="secondary contact" href="mailto:{$report_contact_email}">
-		<span>{$report_contact}</span>
+		<span{if strlen($report_contact) > 15} title="{$report_contact|escape}"{/if}>{$report_contact}</span>
 	</a>
 {else}
 	<div class="line secondary contact">

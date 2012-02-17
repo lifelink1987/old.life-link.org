@@ -16,8 +16,8 @@ function walk_twitter_rss(&$item) {
 	$item['title_link'] = preg_replace('/www\.(\S+)/u', '</a><a href="http://www.\1">\1</a><a href="'.$item['link'].'">', $item['title_link']);
 	$item['title_link'] = '<a href="'.$item['link'].'">' . $item['title_link'] . '</a>';*/
 	
-	$item['title'] = preg_replace('/(https?:\/\/\S+)/u', '<a href="\1">\1</a>', $item['title']);
-	$item['title'] = preg_replace('/www\.(\S+)/u', '<a href="http://www.\1">\1</a>', $item['title']);
+	//$item['title'] = preg_replace('/(https?:\/\/\S+)/u', '<a href="\1">\1</a>', $item['title']);
+	//$item['title'] = preg_replace('/www\.(\S+)/u', '<a href="http://www.\1">\1</a>', $item['title']);
 }
 
 function walk_facebook_rss(&$item) {
@@ -34,8 +34,8 @@ function walk_facebook_rss(&$item) {
 	$item['title_link'] = preg_replace('/www\.(\S+)/u', '</a><a href="http://www.\1">\1</a><a href="'.$item['link'].'">', $item['title_link']);
 	$item['title_link'] = '<a href="'.$item['link'].'">' . $item['title_link'] . '</a>';*/
 	
-	$item['title'] = preg_replace('/(https?:\/\/\S+)/u', '<a href="\1">\1</a>', $item['title']);
-	$item['title'] = preg_replace('/www\.(\S+)/u', '<a href="http://www.\1">\1</a>', $item['title']);
+	//$item['title'] = preg_replace('/(https?:\/\/\S+)/u', '<a href="\1">\1</a>', $item['title']);
+	//$item['title'] = preg_replace('/www\.(\S+)/u', '<a href="http://www.\1">\1</a>', $item['title']);
 	
 	$item['link'] = preg_replace('/&comments$/u', '', $item['link']);
 }

@@ -28,8 +28,8 @@ $config = array(
 			'http://shared.life-link.org/jquery.plugins/_preview/jquery.colorbox-1.3.9/colorbox/jquery.colorbox.fix.js', 
 			'http://shared.life-link.org/jquery.plugins/_tooltip/jquery.tipTip-1.3/jquery.tipTip.minified.js',
 
-			$tpl['tpl_uri'] . '/js/menu.js', 
-			$tpl['tpl_uri'] . '/js/sidebar.js', 
+			/*$tpl['tpl_uri'] . '/js/menu.js', 
+			$tpl['tpl_uri'] . '/js/sidebar.js',*/ 
 			$tpl['tpl_uri'] . '/js/layout.js'
 		)
 	),
@@ -50,7 +50,10 @@ $config = array(
 		'results_in_search' => 20, 
 		'reports_in_school' => 3, 
 		'reports_in_action' => 3, 
-		'schools_in_country' => 5
+		'schools_in_country' => 5,
+	 
+		'schools_in_admin' => 50, 
+		'reports_in_admin' => 50
 	), 
 	'date_format' => '%B %#d, %Y', 
 	'short_date_format' => '%b %#d, \'%y', 

@@ -3,23 +3,23 @@
 class CountryC extends C {
 
 	private $worldbank_indicators = array(
-		'population_total' => 'SP.POP.TOTL',
+		'population_total' => 'SP.POP.TOTL', 
 		//'population_growth_percent' => 'SP.POP.GROW',
-		'population_urban_percent' => 'SP.URB.TOTL.IN.ZS',
+		'population_urban_percent' => 'SP.URB.TOTL.IN.ZS', 
 		//'population_urban_growth_percent' => 'SP.URB.GROW',
-		'population_rural_percent' => 'SP.RUR.TOTL.ZS',
+		'population_rural_percent' => 'SP.RUR.TOTL.ZS', 
 		//'population_rural_growth_percent' => 'SP.RUR.TOTL.ZG',
-		'internet_users_per_100' => 'IT.NET.USER.P2',
-		'land_area' => 'AG.LND.TOTL.K2',
-		'forest_area' => 'AG.LND.FRST.K2',
-		'energy_use_per_capita' => 'EG.USE.PCAP.KG.OE',
-		'co2_per_capita' => 'EN.ATM.CO2E.PC',
-		'water_pollution_chemical_percent' => 'EE.BOD.CHEM.ZS',
-		'water_pollution_food_percent' => 'EE.BOD.FOOD.ZS',
-		'water_pollution_metal_percent' => 'EE.BOD.MTAL.ZS',
-		'water_pollution_textile_percent' => 'EE.BOD.TXTL.ZS',
-		'water_pollution_wood_percent' => 'EE.BOD.WOOD.ZS',
-		'freshwater_annual_total' => 'ER.H2O.FWTL.K3',
+		'internet_users_per_100' => 'IT.NET.USER.P2', 
+		'land_area' => 'AG.LND.TOTL.K2', 
+		'forest_area' => 'AG.LND.FRST.K2', 
+		'energy_use_per_capita' => 'EG.USE.PCAP.KG.OE', 
+		'co2_per_capita' => 'EN.ATM.CO2E.PC', 
+		'water_pollution_chemical_percent' => 'EE.BOD.CHEM.ZS', 
+		'water_pollution_food_percent' => 'EE.BOD.FOOD.ZS', 
+		'water_pollution_metal_percent' => 'EE.BOD.MTAL.ZS', 
+		'water_pollution_textile_percent' => 'EE.BOD.TXTL.ZS', 
+		'water_pollution_wood_percent' => 'EE.BOD.WOOD.ZS', 
+		'freshwater_annual_total' => 'ER.H2O.FWTL.K3', 
 		//'freshwater_annual_percent' => 'ER.H2O.FWTL.ZS',
 		'freshwater_renewable_total' => 'ER.H2O.INTR.K3'
 	);
@@ -40,7 +40,7 @@ class CountryC extends C {
 			foreach ($json as $yearly_value) {
 				if (! empty($yearly_value['value'])) {
 					return array(
-						'value' => $yearly_value['value'],
+						'value' => $yearly_value['value'], 
 						'year' => $yearly_value['date']
 					);
 				}
@@ -95,74 +95,74 @@ class CountryC extends C {
 			redirect($uri['country'] . $country['country_short'], TRUE);
 		}
 		
-		if ($country) {
-			$type = 'country';
-			$smarty->assign('title', "Life-Link Friendship-Schools in {$country['country']}");
-			$smarty->_assign_by_ref('country', $country);
-			
-			$where = array(
-				'`datetime_approval` IS NOT NULL',
-				'countries_iso' => $country['countries_iso']
-			);
-			$order = "`count_reports` DESC";
-			if ($city) {
-				$type = 'city';
-				$city_low = strtolower($city);
-				$where[] = "(LOWER(`city`) = '$city_low' OR `city` SOUNDS LIKE '$city')";
-				$order = "LOWER(`city`) = '$city_low', `city` SOUNDS LIKE '$city', $order";
-			}
-			
-			$dbSchools = DbSchools::get_instance();
-			$schools = $dbSchools->gets($where, $order, $_GET['all'] ? NULL : ($smarty->_tpl['pagination']['schools_in_country'] + 1));
-			$smarty->_assign_by_ref('schools', $schools);
-			
-			if (! $city) {
-				$dbEvents = DbEvents::get_instance();
-				$events = $dbEvents->gets(array(
-					'countries_iso' => $country['countries_iso']
-				), '`date_end` DESC', 3);
-				$smarty->_assign_by_ref('events', $events);
-			}
-			
-			if ($city && ! $schools) {
-				/*
-				 * @todo build message with possible cities
-				 */
-				$smarty->display_404($country, $message);
-			} else {
-				$where = array(
-					'`datetime_approval` IS NOT NULL',
-					'countries_iso' => $country['countries_iso']
-				);
-				$order = '`date` DESC';
-				if ($city) {
-					$city_low = strtolower($city);
-					$where[] = "(LOWER(`city`) = '$city_low' OR `city` SOUNDS LIKE '$city')";
-					$order = "LOWER(`city`) = '$city_low', `city` SOUNDS LIKE '$city', $order";
-				}
-				
-				$dbReports = DbReports::get_instance();
-				$latest_reports = $dbReports->gets($where, $order, 5);
-				$smarty->_assign_by_ref('latest_reports', $latest_reports);
-				
-				$where[] = "`attachments` LIKE '%jpg%'";
-				$latest_reports_with_photos = $dbReports->gets($where, $order, 5);
-				$smarty->_assign_by_ref('latest_reports_with_photos', $latest_reports_with_photos);
-				
-				$worldbank = $this->worldbank($country['iso2']);
-				$smarty->_assign_by_ref('worldbank', $worldbank);
-				
-				$smarty->_assign_by_ref('type', $type);
-				$smarty->display_wrap('friendship_schools/country.tpl');
-			}
-		} else {
+		if (! $country) {
 			$dbCountries = DbCountries::get_instance();
 			$countries = $dbCountries->gets("`country` SOUNDS LIKE '$country' OR `country_short` SOUNDS LIKE '$country'");
 			
 			/*
 			 * @todo build message with possible countries
 			 */
-			$smarty->display_404($country, $message);
+			return $smarty->display_404($country, $message);
 		}
+		
+		$type = 'country';
+		$smarty->assign('title', "Life-Link Friendship-Schools in {$country['country']}");
+		$smarty->_assign_by_ref('country', $country);
+		
+		$where = array(
+			'`datetime_approval` IS NOT NULL', 
+			'countries_iso' => $country['countries_iso']
+		);
+		$order = "`count_reports` DESC";
+		if ($city) {
+			$type = 'city';
+			$city_low = strtolower($city);
+			$where[] = "(LOWER(`city`) = '$city_low' OR `city` SOUNDS LIKE '$city')";
+			$order = "LOWER(`city`) = '$city_low', `city` SOUNDS LIKE '$city', $order";
+		}
+		
+		$dbSchools = DbSchools::get_instance();
+		$schools = $dbSchools->gets($where, $order, $_GET['all'] ? NULL : ($smarty->_tpl['pagination']['schools_in_country'] + 1));
+		$smarty->_assign_by_ref('schools', $schools);
+		
+		if (! $city) {
+			$dbEvents = DbEvents::get_instance();
+			$events = $dbEvents->gets(array(
+				'countries_iso' => $country['countries_iso']
+			), '`date_end` DESC', 3);
+			$smarty->_assign_by_ref('events', $events);
+		}
+		
+		if ($city && ! $schools) {
+			/*
+			 * @todo build message with possible cities
+			 * */
+			return $smarty->display_404($country, $message);
+		}
+		
+		$where = array(
+			'`datetime_approval` IS NOT NULL', 
+			'countries_iso' => $country['countries_iso']
+		);
+		$order = '`date` DESC';
+		if ($city) {
+			$city_low = strtolower($city);
+			$where[] = "(LOWER(`city`) = '$city_low' OR `city` SOUNDS LIKE '$city')";
+			$order = "LOWER(`city`) = '$city_low', `city` SOUNDS LIKE '$city', $order";
+		}
+		
+		$dbReports = DbReports::get_instance();
+		$latest_reports = $dbReports->gets($where, $order, 5);
+		$smarty->_assign_by_ref('latest_reports', $latest_reports);
+		
+		$where[] = "`attachments` LIKE '%jpg%'";
+		$latest_reports_with_photos = $dbReports->gets($where, $order, 5);
+		$smarty->_assign_by_ref('latest_reports_with_photos', $latest_reports_with_photos);
+		
+		$worldbank = $this->worldbank($country['iso2']);
+		$smarty->_assign_by_ref('worldbank', $worldbank);
+		
+		$smarty->_assign_by_ref('type', $type);
+		$smarty->display_wrap('friendship_schools/country.tpl');
 	}
 }

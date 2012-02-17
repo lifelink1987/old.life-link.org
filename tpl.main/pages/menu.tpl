@@ -1,3 +1,4 @@
+{js file="/menu.js"}
 <ul id="ldd_menu" class="ldd_menu">
 	<li> <span><a href="{$uri.home}" title="Go to the home page">Life-Link</a></span> </li>
 	<li> <span><em>in</em> Practice</span>

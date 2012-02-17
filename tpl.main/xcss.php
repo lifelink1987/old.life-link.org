@@ -23,6 +23,7 @@ $files_md5 = $files;
 sort($files_md5);
 $files_md5 = md5(implode(',', $files_md5));
 $files_cache = CACHE_DIR . "/$files_md5.css";
+$input_xcss = '';
 
 if (file_exists($files_cache) && (time() - filemtime($files_cache) < CACHE_LIFE)) {
 	$timestamp = 0;
@@ -43,7 +44,6 @@ if (file_exists($files_cache) && (time() - filemtime($files_cache) < CACHE_LIFE)
 	}
 }
 
-$input_xcss = '';
 foreach ($files as $key => $file) {
 	$input_xcss = $input_xcss . file_get_contents($file);
 }

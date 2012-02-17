@@ -148,7 +148,7 @@ class LLSmarty extends CustomSmarty {
 		parent::display($what);
 	}
 
-	function display_wrap($what) {
+	function display_wrap($what, $prefix = '') {
 		/**
 		 * Load Life-Link RSS news
 		 */
@@ -258,7 +258,7 @@ class LLSmarty extends CustomSmarty {
 		/**
 		 * Display header & content
 		 */
-		$this->display('header.tpl');
+		$this->display($prefix . 'header.tpl');
 		echo $content;
 
 		/**
@@ -271,7 +271,11 @@ class LLSmarty extends CustomSmarty {
 		/**
 		 * Display footer
 		 */
-		$this->display('footer.tpl');
+		$this->display($prefix . 'footer.tpl');
+	}
+	
+	function display_wrap_admin($what) {
+		$this->display_wrap($what, 'admin/');
 	}
 
 	/**

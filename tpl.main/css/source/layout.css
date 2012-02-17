@@ -92,7 +92,7 @@ h5 em {
 /* ColorBox */
 #cboxContent {
 	.secret {
-		display:inherit;
+		display:inherit !important;
 	}
 	
 	p {

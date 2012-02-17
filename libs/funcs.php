@@ -42,6 +42,8 @@ session_start();
 /**
  * Stop Notices/Warnings
  */
+//error_reporting(E_ALL ^ E_NOTICE ^ E_USER_NOTICE ^ E_DEPRECATED);
+//ini_set('error_reporting', E_ALL ^ E_NOTICE ^ E_USER_NOTICE ^ E_DEPRECATED);
 error_reporting(E_ALL ^ E_NOTICE);
 ini_set('error_reporting', E_ALL ^ E_NOTICE);
 
