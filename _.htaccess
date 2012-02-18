@@ -1,25 +1,47 @@
-#<FilesMatch "^index.php$">
-#	Order Deny,Allow
-#	Deny from all
-#	AuthName "Restricted Access"
-#	AuthType Basic
-#	AuthUserFile /home/lifelink/.htpasswd
-#	Require valid-user
-#	Allow from 213.101.210.81
-#	Allow from 193.15.69.40
-#	Allow from 127.0.0.1
-#	Allow from ::1
-#	Satisfy Any
-#</FilesMatch>
+SetEnv TZ Europe/Stockholm
+Options +ExecCGI -Indexes +FollowSymLinks
 
-<Files ~ "\.tpl$">
-	Order Allow,Deny
-	Deny from all
-</Files>
+# ACCESS SET
+SetEnvIf Request_URI "^/admin.*$" do_auth=true
+SetEnvIf Request_URI "^/office.*$" do_auth=true
+SetEnvIf Request_URI "^/_resources.*$" do_auth=true
 
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
-</IfModule> 
+# ACCESS CORE
+Order Deny,Allow
+Satisfy Any
+
+# BEGIN BanIP
+Deny from 178.73.
+Deny from 31.41.
+Deny from 31.144.
+Deny from 178.137.
+Deny from 31.33.
+Deny from 31.133.
+Deny from 177.71.
+# END BanIP
+
+# FOR do_auth = true
+Deny from env=do_auth
+Deny from env=REDIRECT_do_auth
+AuthName "Restricted Access"
+AuthType Basic
+AuthBasicProvider file
+AuthUserFile /home/lifelink/.htpasswd
+AuthGroupFile /dev/null
+Require valid-user
+
+# DON'T ALLOW ANYTHING BUT JS/CSS/IMG/KML
+<FilesMatch ".*">
+Order Deny,Allow
+Deny from All
+</FilesMatch>
+<FilesMatch "\.(js|css|png|gif|jpe?g|ico|xml|kml)$">
+Order Deny,Allow
+Allow from All
+</FilesMatch>
+
+# NICEDOG REWRITE
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
