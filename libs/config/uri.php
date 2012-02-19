@@ -89,6 +89,7 @@ $uri['contact'] = "javascript:$('#contactable').click();";
 $uri['twitter'] = 'http://twitter.life-link.org';
 $uri['flickr'] = 'http://flickr.life-link.org';
 $uri['wikipedia'] = 'http://en.wikipedia.org/wiki';
+$uri['rss'] = LL_FACEBOOK_RSS;
 
 /*
 

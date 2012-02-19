@@ -7,4 +7,6 @@ define('LL_DEBUG_JS', LL_DEBUG === TRUE || (is_array(LL_DEBUG) ? in_array('js', 
 define('LL_DEBUG_CSS', LL_DEBUG === TRUE || (is_array(LL_DEBUG) ? in_array('css', LL_DEBUG) : in_array('css', explode(',', LL_DEBUG))));
 define('LL_DEBUG_SQL', LL_DEBUG === TRUE || (is_array(LL_DEBUG) ? in_array('sql', LL_DEBUG) : in_array('sql', explode(',', LL_DEBUG))));
 define('LL_DEBUG_PHP', LL_DEBUG === TRUE || (is_array(LL_DEBUG) ? in_array('php', LL_DEBUG) : in_array('php', explode(',', LL_DEBUG))));
+define('LL_DEBUG_PHP_ALL', LL_DEBUG === TRUE || (is_array(LL_DEBUG) ? in_array('php_all', LL_DEBUG) : in_array('php_all', explode(',', LL_DEBUG))));
 define('LL_DEBUG_SMARTY', LL_DEBUG === TRUE || (is_array(LL_DEBUG) ? in_array('smarty', LL_DEBUG) : in_array('smarty', explode(',', LL_DEBUG))));
+define('LL_DEBUG_SMARTY_ALL', LL_DEBUG === TRUE || (is_array(LL_DEBUG) ? in_array('smarty_all', LL_DEBUG) : in_array('smarty_all', explode(',', LL_DEBUG))));

@@ -1,11 +1,12 @@
 <?php
 
+require '../libs/config.php';
 require '../libs/funcs/web.php';
 require '../libs/jsmin/jsmin.php';
 define('CACHE_DIR', realpath('./js_css_cache'));
 define('CACHE_LIFE', 3600 * 24 * 7);
 
-$files = (array) $_GET['file'];
+$files = isset($_GET['file']) ? (array) $_GET['file'] : array();
 
 foreach ($files as $key => $file) {
 	$file = urldecode($file);
@@ -32,7 +33,7 @@ foreach ($files as $key => $file) {
 	$input_js = $input_js . "\r\n" . file_get_contents($file);
 }
 
-$js = JSMin::minify($input_js);
+$js = LL_DEBUG_JS ? $input_js : JSMin::minify($input_js);
 file_put_contents($files_cache, $js);
 
 header('Content-Type: text/javascript');

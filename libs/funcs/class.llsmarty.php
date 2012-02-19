@@ -195,7 +195,7 @@ class LLSmarty extends CustomSmarty {
 			}
 			$this->_tpl['js']['head'] = array_unique($this->_tpl['js']['head']);
 		}
-		$this->_tpl['js']['head'][] = $this->_tpl['tpl_uri'] . '/css/xcss/';
+		$this->_tpl['js']['head'][] = $this->_tpl['tpl_uri'] . '/xcss.php';
 
 		/**
 		 * Resolve JS at the beginning of the body tag
@@ -244,7 +244,7 @@ class LLSmarty extends CustomSmarty {
 			}
 			$this->_tpl['css'] = array_unique($this->_tpl['css']);
 		}
-		$this->_tpl['css'][] = $this->_tpl['tpl_uri'] . '/css/master.css';
+		$this->_tpl['css'][] = $this->_tpl['tpl_uri'] . '/js_css_cache/master.css';
 
 		/**
 		 * Resolve xCSS

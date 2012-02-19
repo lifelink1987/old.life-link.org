@@ -1,7 +1,7 @@
 <?php
 
 $ll_version_date = `git show -s --format="%ct" HEAD`;
-$ll_version_date = date('Y-m-d', $ll_version_date);
+$ll_version_date = date('Y-m-d', (int) $ll_version_date);
 $ll_version_hash = `git show -s --format="%h" HEAD`;
 
 define('LL_VERSION_STATUS', 'beta');

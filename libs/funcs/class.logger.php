@@ -150,41 +150,41 @@ class Logger extends ExtendedClass {
 				$this->$param = $value;
 			}
 		}
-		
+
 		$this->_destination = (array) $this->_destination;
 		$this->_dir = $extra['dir'] = realpath(rtrim($this->_dir ? $this->_dir : dirname(__FILE__) . '/logs', '/\\'));
 		$this->_extra = $extra;
-		
+
 		if ($this->_root) {
 			$this->_root = realpath($this->_root);
 		}
-		
+
 		//Check/create directory
 		if (! file_exists($this->_dir)) {
 			mkdir($this->_dir, ($this->_dir_permissions ? $this->_dir_permissions : 0777), TRUE);
 		}
-		
+
 		//Open log file for writing
 		$this->_file = $this->_dir . '/' . $this->_prefix . date('Ymd-His') . $this->_suffix . '.txt';
 		$this->_file = fopen($this->_file, 'w');
-		
+
 		//Open log_plus file for writing
 		if ($this->_log_plus) {
 			$this->_file_plus = $this->_dir . '/' . $this->_prefix . date('Ymd-His') . $this->_suffix . '.plus.txt';
 			$this->_file_plus = fopen($this->_file_plus, 'w');
 		}
-		
+
 		//Turn output buffering on
 		if (ob_get_level() == 0) {
 			ob_start();
 		}
-		
+
 		//Switch screen/buffer to FirePHP if available
 		if (class_exists('FirePHP') && ($this->_firephp = FirePHP::getInstance(TRUE)) && (in_array('firephp', $this->_destination) || in_array('screen', $this->_destination))) {
 			$this->_destination[] = 'firephp';
 			unset($this->_destination['screen']);
 		}
-		
+
 		//Register shutdown function
 		if (in_array('buffer', $this->_destination)) {
 			register_shutdown_function(array(
@@ -192,7 +192,7 @@ class Logger extends ExtendedClass {
 				'_echo_buffer'
 			));
 		}
-		
+
 		//Register as custom error handler
 		if ($this->_error_handler) {
 			set_error_handler(array(
@@ -200,9 +200,9 @@ class Logger extends ExtendedClass {
 				'error_handler'
 			));
 		}
-		
+
 		$this->log_info('Logger was initialized');
-		
+
 		self::$_instance[get_class($this)] = $this;
 	}
 
@@ -247,7 +247,7 @@ class Logger extends ExtendedClass {
 					'DEBUG',
 					self::DEBUG
 				);
-			
+
 			case self::PHP_INFO:
 			case self::SQL_INFO:
 			case self::SMARTY_INFO:
@@ -256,7 +256,7 @@ class Logger extends ExtendedClass {
 					'INFO',
 					self::INFO
 				);
-			
+
 			case self::PHP_WARN:
 			case self::SQL_WARN:
 			case self::SMARTY_WARN:
@@ -265,7 +265,7 @@ class Logger extends ExtendedClass {
 					'WARN',
 					self::WARN
 				);
-			
+
 			case self::PHP_ERROR:
 			case self::SQL_ERROR:
 			case self::SMARTY_ERROR:
@@ -274,13 +274,13 @@ class Logger extends ExtendedClass {
 					'ERROR',
 					self::ERROR
 				);
-			
+
 			case self::FATAL:
 				return array(
 					'FATAL',
 					self::FATAL
 				);
-			
+
 			default:
 				return array(
 					'LOG',
@@ -294,7 +294,7 @@ class Logger extends ExtendedClass {
 	 */
 	protected function _backtrace() {
 		$backtrace = debug_backtrace(TRUE);
-		
+
 		//Find backtrace function outside this class, and if needed part of another class
 		$backtrace_item_start = FALSE;
 		$backtrace_item_end = FALSE;
@@ -402,7 +402,7 @@ class Logger extends ExtendedClass {
 	 */
 	public function log_flow($moment, $message, $id = NULL) {
 		$moment = strtolower($moment);
-		$mem = '<b>Memory Usage</b>: ' . convert_memory(memory_get_usage()) . ' / <b>Peak</b>: ' . convert_memory(memory_get_peak_usage());
+		$mem = '__Memory Usage__: ' . convert_memory(memory_get_usage()) . ' / __Peak__: ' . convert_memory(memory_get_peak_usage());
 		switch ($moment) {
 			case 'start':
 				$id = count($this->_timings) + 1;
@@ -413,7 +413,7 @@ class Logger extends ExtendedClass {
 				$this->log(self::DEBUG, "ID#$id Started: $message ---\n$mem");
 				return $id;
 				break;
-			
+
 			case 'premature':
 				if (! $id)
 					break;
@@ -422,7 +422,7 @@ class Logger extends ExtendedClass {
 					$this->_firephp->groupEnd();
 				}
 				break;
-			
+
 			case 'end':
 				if (! $id)
 					break;
@@ -432,7 +432,7 @@ class Logger extends ExtendedClass {
 					$this->_firephp->groupEnd();
 				}
 				break;
-			
+
 			default:
 				;
 				break;
@@ -487,7 +487,7 @@ class Logger extends ExtendedClass {
 	protected function log($level, $message) {
 		if (! $this->_enabled)
 			return;
-		
+
 		if ($level == self::PHP_ERROR) {
 			if ($this->_root) {
 				$message['errfile'] = str_replace($this->_root, '', $message['errfile']);
@@ -526,7 +526,7 @@ class Logger extends ExtendedClass {
 				$warnings = E_WARNING | E_CORE_WARNING | E_COMPILE_WARNING | E_USER_WARNING;
 				$notices = E_NOTICE | E_USER_NOTICE;
 				$errors = E_ERROR | E_CORE_ERROR | E_COMPILE_ERROR | E_USER_ERROR;
-				
+
 				if ($message['errno'] & $errors) {
 					$level = self::PHP_ERROR;
 				} elseif ($message['errno'] & $warnings) {
@@ -541,9 +541,9 @@ class Logger extends ExtendedClass {
 			$backtrace = $this->_backtrace();
 		}
 		$backtrace_date = date("H:i:s") . ' ' . $backtrace;
-		
+
 		list ($level_text, $level_basic) = self::_log_level($level);
-		
+
 		if ($level == self::DUMP && is_array($message)) {
 			if ($this->_firephp) {
 				$this->_firephp->dump($message[0], $message[1]);
@@ -557,25 +557,25 @@ class Logger extends ExtendedClass {
 					if ($this->_firephp)
 						$this->_firephp->info($output);
 					break;
-				
+
 				case self::WARN:
 					if ($this->_firephp)
 						$this->_firephp->warn($output);
 					break;
-				
+
 				case self::FATAL:
 				case self::ERROR:
 					if ($this->_firephp)
 						$this->_firephp->error($output);
 					break;
-				
+
 				default:
 					if ($this->_firephp)
 						$this->_firephp->log($output);
 					break;
 			}
 		}
-		
+
 		$output = strip_tags("$backtrace_date\n$level_text - $message");
 		$logging_wanted = is_array($this->_level) ? (in_array($level, $this->_level) || in_array($level_basic, $this->_level)) : ($level_basic >= $this->_level);
 		if ($logging_wanted) {
@@ -586,7 +586,7 @@ class Logger extends ExtendedClass {
 			fwrite($this->_file_plus, $output . "\n\n");
 			fflush($this->_file_plus);
 		}
-		
+
 		$output = "$message";
 		$logging_wanted_in_browser = in_array('screen', $this->_destination) || in_array('buffer', $this->_destination);
 		if ($logging_wanted && $logging_wanted_in_browser) {
@@ -681,11 +681,11 @@ class Logger extends ExtendedClass {
 				die();
 			}
 		}
-		
+
 		if (! $errno) {
 			return;
 		}
-		
+
 	//email if in errors ?!
 	}
 }

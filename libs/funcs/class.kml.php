@@ -1,7 +1,7 @@
 <?php
 
 require_once LL_ROOT . '/libs/php-kml/kml.php';
-require_once LL_ROOT . '/libs/php-kml/kml_root.php';
+/*require_once LL_ROOT . '/libs/php-kml/kml_root.php';
 require_once LL_ROOT . '/libs/php-kml/kml_Object.php';
 require_once LL_ROOT . '/libs/php-kml/kml_SchemaField.php';
 require_once LL_ROOT . '/libs/php-kml/kml_ColorStyle.php';
@@ -14,7 +14,7 @@ require_once LL_ROOT . '/libs/php-kml/kml_Overlay.php';
 require_once LL_ROOT . '/libs/php-kml/kml_LinearRing.php';
 foreach (glob(LL_ROOT . '/libs/php-kml/kml_*.php') as $kml_plugin) {
 	require_once $kml_plugin;
-}
+}*/
 
 class KML {
 	public $kml = NULL;

@@ -1,6 +1,19 @@
 <?php
 
 /*
+ * Load config variables
+ */
+require_once 'config.php';
+
+/**
+ * Stop Notices/Warnings
+ */
+//error_reporting(E_ALL ^ E_NOTICE ^ E_USER_NOTICE ^ E_DEPRECATED);
+//ini_set('error_reporting', E_ALL ^ E_NOTICE ^ E_USER_NOTICE ^ E_DEPRECATED);
+error_reporting(E_ALL ^ E_NOTICE);
+ini_set('error_reporting', E_ALL ^ E_NOTICE);
+
+/*
  * Start output buffer; with gzip compression if available
  * IE5, IE6, IE7 and Safari are not trusted
  */
@@ -38,19 +51,6 @@ set_time_limit(500);
  * Start session
  */
 session_start();
-
-/**
- * Stop Notices/Warnings
- */
-//error_reporting(E_ALL ^ E_NOTICE ^ E_USER_NOTICE ^ E_DEPRECATED);
-//ini_set('error_reporting', E_ALL ^ E_NOTICE ^ E_USER_NOTICE ^ E_DEPRECATED);
-error_reporting(E_ALL ^ E_NOTICE);
-ini_set('error_reporting', E_ALL ^ E_NOTICE);
-
-/*
- * Load config variables
- */
-require_once 'config.php';
 
 /*
  * Set charset
@@ -91,6 +91,10 @@ require_once 'funcs/php_newer.php';
 foreach (glob(LL_ROOT . '/libs/funcs/*.php') as $library) {
 	require_once $library;
 }
+
+/*
+ * Initialize the database
+ */
 $db = new Db(LL_DB_HOST, LL_DB_USER, LL_DB_PASS, LL_DB_SCHEMA, LL_DB_PORT, LL_DEBUG_SQL);
 new DbSchools($db);
 new DbSchoolsCountries($db);
@@ -115,6 +119,7 @@ $smarty = new LLSmarty(array(
 	'debug' => LL_DEBUG_SMARTY,
 	'gzip' => LL_GZIP
 ));
+$smarty->error_reporting = LL_DEBUG_SMARTY_ALL ? E_ALL : (E_ALL ^ E_NOTICE);
 
 /**
  * Register SESSION variables; with default
