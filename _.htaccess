@@ -11,7 +11,6 @@ Order Deny,Allow
 Satisfy Any
 
 # BEGIN BanIP
-Deny from 178.73.
 Deny from 31.41.
 Deny from 31.144.
 Deny from 178.137.
@@ -31,14 +30,14 @@ AuthGroupFile /dev/null
 Require valid-user
 
 # DON'T ALLOW ANYTHING BUT JS/CSS/IMG/KML
-<FilesMatch ".*">
-Order Deny,Allow
-Deny from All
-</FilesMatch>
-<FilesMatch "\.(js|css|png|gif|jpe?g|ico|xml|kml)$">
-Order Deny,Allow
-Allow from All
-</FilesMatch>
+#<FilesMatch ".*">
+#Order Deny,Allow
+#Deny from All
+#</FilesMatch>
+#<FilesMatch "\.(js|css|png|gif|jpe?g|ico|xml|kml)$">
+#Order Deny,Allow
+#Allow from All
+#</FilesMatch>
 
 # NICEDOG REWRITE
 RewriteEngine On
