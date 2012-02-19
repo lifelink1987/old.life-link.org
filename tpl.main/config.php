@@ -5,7 +5,6 @@ register_session_var('speed_up', is_mobile() ? 'yes' : 'check');
 $config = array(
 	'js' => array(
 		'head' => array(
-			//'http://shared.life-link.org/jquery/jquery.min.js',
 			$tpl['tpl_uri'] . '/js/jquery/dist/jquery.min.js',
 			$tpl['tpl_uri'] . '/js/jquery-ui-1.8.17.custom.min.js'
 		), 
@@ -28,8 +27,6 @@ $config = array(
 			'http://shared.life-link.org/jquery.plugins/_preview/jquery.colorbox-1.3.9/colorbox/jquery.colorbox.fix.js', 
 			'http://shared.life-link.org/jquery.plugins/_tooltip/jquery.tipTip-1.3/jquery.tipTip.minified.js',
 
-			/*$tpl['tpl_uri'] . '/js/menu.js', 
-			$tpl['tpl_uri'] . '/js/sidebar.js',*/ 
 			$tpl['tpl_uri'] . '/js/layout.js'
 		)
 	),
