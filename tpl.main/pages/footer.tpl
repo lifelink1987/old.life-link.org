@@ -11,10 +11,11 @@
 			</ul>
 			<h1><em>our</em> Online Community</h1>
 			<ul class="community">
-				<li class="facebook">Join us on <a href="#">Facebook</a>. See the latest and be in touch with others.</li>
-				<li class="twitter"><a href="#">@lifelink</a> is on Twitter. If you're on Twitter too, follow for the latest.</li>
-				<li class="newsletter">If you want the latest in your E-mail, then <a href="#">register</a> for our newsletter.</li>
-				<li class="feed">You can also subscribe to our <a href="#"><acronym title="Really Simple Sindication">RSS</acronym> feed</a> if you're into feed readers.</li>
+				<li class="facebook">Join us on <a href="{$uri.facebook}">Facebook</a>. See the latest and be in touch with others.</li>
+				<li class="twitter"><a href="{$uri.twitter}">@lifelink</a> is on Twitter. If you're on Twitter too, follow for the latest.</li>
+				<li class="flickr">A <a href="{$uri.flickr}">lifelink</a> photo is worth a 1000 words.</li>
+				<!--<li class="newsletter">If you want the latest in your E-mail, then <a href="#">register</a> for our newsletter.</li>-->
+				<li class="feed">You can also subscribe to our <a href="{$uri.rss}"><acronym title="Really Simple Sindication">RSS</acronym> feed</a> if you're into feed readers.</li>
 			</ul>
 		</div>
 		<div class="column width1 sitemap">
@@ -43,12 +44,13 @@
 				Life-Link<br />
 				Friendship-Schools</h1>
 			<ul>
-				<li>Uppsala Science Park<br />
-					Uppsala SE-751 83<br />
-					Sweden</li>
+				<li><a href="http://maps.google.com/maps/place?cid=17044912778302789962">Click here for visiting address!</a></li>
+				<li>Post Address:<br />
+					Uppsala Science Park<br />
+					SE-751 83 Uppsala, Sweden</li>
 				<li><a href="mailto:friendship-schools@life-link.org">friendship-schools@life-link.org</a></li>
-				<li><em>tel</em> <a href="callto:+4618504344">+46 18 50 43 44</a></li>
-				<li><em>fax</em> <a href="callto:+4618508503">+46 18 50 85 03</a></li>
+				<li><em>tel</em> <a href="callto:+4618504344">+46 18 50 43 44</a><br />
+					<em>fax</em> <a href="callto:+4618508503">+46 18 50 85 03</a></li>
 				<li><em>or</em> <a href="{$uri.contact}">click here to write us!</a></li>
 			</ul>
 			<ul>

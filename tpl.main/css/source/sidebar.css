@@ -80,11 +80,11 @@
 	
 	> section.facebook {
 		self {
-			margin:0 -20px;
+			margin:-10px -20px;
 		}
 		
 		iframe {
-			height:72px !important;
+			height:86px !important;
 		}
 	}
 }

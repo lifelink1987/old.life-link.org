@@ -62,6 +62,10 @@
 				background: url($tpl_uri/img/social/twitter.png) no-repeat scroll 0 4px transparent;
 			}
 				
+			> li.flickr {
+				background: url($tpl_uri/img/social/flickr.png) no-repeat scroll 0 4px transparent;
+			}
+				
 			> li.newsletter {
 				background: url($tpl_uri/img/social/email.png) no-repeat scroll 0 4px transparent;
 			}

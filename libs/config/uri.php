@@ -78,14 +78,17 @@ $uri['admin_fs_report'] = $uri['admin_fs'] . '/report/';
 
 array_walk($uri, create_function('&$v,$k', '$v = LL_ROOT_URI . $v;'));
 
+$uri['media'] = 'http://flickr.com/photos/lifelink/'; // Used for gallery slugs
 $uri['icon_quartz'] = 'http://shared.life-link.org/icons/quartz/';
 $uri['files'] = 'http://files.life-link.org/';
 $uri['suggestions'] = 'http://suggestions.life-link.org/';
 $uri['board_meetings'] = $uri['files'] . '/board_meetings/';
 $uri['anual_meetings'] = $uri['files'] . '/annual_meetings/';
+$uri['facebook'] = 'http://facebook.life-link.org';
 $uri['contact'] = "javascript:$('#contactable').click();";
-$uri['media'] = 'http://media.life-link.org/';
-$uri['wikipedia'] = 'http://en.wikipedia.org/wiki/';
+$uri['twitter'] = 'http://twitter.life-link.org';
+$uri['flickr'] = 'http://flickr.life-link.org';
+$uri['wikipedia'] = 'http://en.wikipedia.org/wiki';
 
 /*
 
