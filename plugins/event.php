@@ -28,7 +28,7 @@ class EventC extends C {
 		$smarty->assign('type', 'Campaigns');
 		
 		$this->index(array(
-			'type' => 'campaigns'
+			'type' => 'campaign'
 		));
 	}
 
