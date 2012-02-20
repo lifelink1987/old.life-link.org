@@ -1,6 +1,4 @@
-{nocache}
 {title value="Care for Nature"}
-{/nocache}
 
 <section>
 	<h1>Care <em>for</em> Nature</h1>

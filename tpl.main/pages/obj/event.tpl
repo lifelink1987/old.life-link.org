@@ -1,3 +1,5 @@
+{* event *}
+
 {include
 	file="/obj/event_meta.tpl"
 	event_id=$event.events_id

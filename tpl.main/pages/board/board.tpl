@@ -1,6 +1,4 @@
-{nocache}
 {title value="Statute & Board"}
-{/nocache}
 
 <section>
 	<h1>Statute &amp; Board</h1>

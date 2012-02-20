@@ -1,7 +1,6 @@
-{nocache}
+{* template for report *}
 {js file="/obj/report.js" merge=true}
 {css file="/obj/report.css"}
-{/nocache}
 
 <div class="row_report_alone{if $show_full} row_report_alone_full{/if}">
 	<div class="row_report">

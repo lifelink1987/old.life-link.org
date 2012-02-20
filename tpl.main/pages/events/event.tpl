@@ -45,7 +45,7 @@
 	<h3 class="center">taking part <em>in</em> this event</h3>
 	{foreach from=$schools item=school name=school}
 		{include
-			file="/obj/school_city.tpl" show_country=true}
+			file="/obj/school_country.tpl"}
 	{/foreach}
 </section>
 {/if}

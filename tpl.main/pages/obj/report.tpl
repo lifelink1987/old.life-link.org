@@ -1,3 +1,5 @@
+{* report *}
+
 {include
 	file="/obj/report_meta.tpl"
 

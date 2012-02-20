@@ -1,3 +1,4 @@
+{* report with school info *}
 {include
 	file="/obj/report_school_meta.tpl"
 	school_number=$report.member_schools_number

@@ -1,3 +1,5 @@
+{* form filter - LL action *}
+
 {if $label}{$label}{else}Based on{/if}
 <select name="action" id="form-action">
 	<option value="">any Care Action</option>

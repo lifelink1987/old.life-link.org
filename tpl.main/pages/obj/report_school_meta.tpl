@@ -1,7 +1,6 @@
-{nocache}
+{* template for report with school(&country) info *}
 {js file="/obj/report.js" merge=true}
 {css file="/obj/report.css"}
-{/nocache}
 
 <div class="row_report_school">
 	<div class="row_report">

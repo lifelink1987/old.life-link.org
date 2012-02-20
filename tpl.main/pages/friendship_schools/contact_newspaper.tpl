@@ -1,6 +1,4 @@
-{nocache}
 {title value="Contact a Newspaper"}
-{/nocache}
 
 <section class="justify">
 	<h1>Contact a Newspaper</h1>

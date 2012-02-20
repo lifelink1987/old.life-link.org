@@ -1,6 +1,4 @@
-{nocache}
 {title value="Project Management"}
-{/nocache}
 
 <section class="justify">
 	<h1>Project Management</h1>

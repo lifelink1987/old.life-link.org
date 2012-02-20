@@ -1,7 +1,5 @@
-{nocache}
 {include file="/obj/js_form.tpl"}
 {title value="`$type` within Life-Link Friendship-Schools"}
-{/nocache}
 
 <section class="action">
 	<h1>{$type}</h1>

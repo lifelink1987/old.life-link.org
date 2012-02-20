@@ -1,8 +1,6 @@
-{nocache}
 {js file="http://maps.google.com/maps?file=api&v=2&sensor=false&key=`$gmaps_key`" absolute=true where=head}
 {js file="http://shared.life-link.org/gmaps-utility-library/markerclusterer/src/markerclusterer.js" absolute=true where=head}
 {title value="World Map of Life-Link Friendship-Schools"}
-{/nocache}
 
 <section>
 	<h1>World Map</h1>

@@ -1,6 +1,4 @@
-{nocache}
 {include file="/project_management/project_management_related.tpl"}
-{/nocache}
 
 <section>
 	<h1>Project Management</h1>

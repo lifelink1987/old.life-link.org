@@ -1,3 +1,5 @@
+{* link *}
+
 {include
 	file="/obj/link_meta.tpl"
 	link_title=$link.title

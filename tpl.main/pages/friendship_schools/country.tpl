@@ -1,6 +1,4 @@
-{nocache}
 {include file="/obj/js_nivoslider.tpl"}
-{/nocache}
 
 <section class="colgroup inline">
 	<h1>Schools <em>from</em>
@@ -19,7 +17,7 @@
 		{foreach from=$schools item=school name=school}
 			{if $smarty.foreach.school.iteration <= $pagination.schools_in_country or $smarty.get.all}
 			{include
-				file="/obj/school_city.tpl"}
+				file="/obj/school.tpl"}
 			{/if}
 		{/foreach}
 		{variable name="schools_counter_`$country.iso3`" var="total_schools"}

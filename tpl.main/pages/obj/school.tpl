@@ -1,6 +1,6 @@
+{* school *}
 {include
 	file="/obj/school_meta.tpl"
-	show_country=true
 	school_number=$school.member_schools_number
 	school_name=$school.school
 	school_link="`$uri.school``$school.member_schools_number`"

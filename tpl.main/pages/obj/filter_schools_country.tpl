@@ -1,3 +1,5 @@
+{* form filter - school's country *}
+
 {if $label}{$label}{else}In{/if}
 <select name="country" id="form-country">
 	<option value="">any country</option>

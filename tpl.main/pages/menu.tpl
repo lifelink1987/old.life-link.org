@@ -1,6 +1,4 @@
-{nocache}
 {js file="/menu.js"}
-{/nocache}
 
 <ul id="ldd_menu" class="ldd_menu">
 	<li> <span><a href="{$uri.home}" title="Go to the home page">Life-Link</a></span> </li>

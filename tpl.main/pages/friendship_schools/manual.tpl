@@ -1,6 +1,4 @@
-{nocache}
 {title value="Manual of the Life-Link Friendship-Schools programme"}
-{/nocache}
 
 <section class="justify">
 	<h1>Manual</h1>

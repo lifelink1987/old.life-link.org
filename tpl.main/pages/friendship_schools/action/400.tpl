@@ -1,6 +1,4 @@
-{nocache}
 {title value="Let's Get Organised!"}
-{/nocache}
 
 <section>
 	<h1>Let's Get Organised!</h1>

@@ -1,3 +1,4 @@
+{* facebook comments *}
 <section>
 	<h1>Comments</h1>
 	{include file="/obj/byline.tpl"}

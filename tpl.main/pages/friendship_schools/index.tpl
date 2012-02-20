@@ -1,6 +1,4 @@
-{nocache}
 {include file="/obj/js_nivoslider.tpl"}
-{/nocache}
 
 <section class="colgroup inline">
 	<h1>Life-Link Friendship-Schools</h1>
@@ -31,7 +29,7 @@
 	<h3 class="center">joining <em>the</em> Programme</h3>
 	{foreach from=$latest_schools item=school name=school}
 		{include
-			file="/obj/school.tpl"}
+			file="/obj/school_country.tpl"}
 	{/foreach}
 </section>
 <section>

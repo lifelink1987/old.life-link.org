@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en" xlm:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-	{nocache}
 	<title>
 	{$title}
 	</title>
@@ -38,16 +37,13 @@
 	{foreach from=$css item=css_item}
 	<link rel="stylesheet" href="{$css_item}" type="text/css" media="screen">
 	{/foreach}
-	{/nocache}
 </head>
 
 <body class="{$browser.name} {$browser.name}_{$browser.major}">
-{nocache}
 <!-- BODY JS files -->
 {foreach from=$js.pre_body item=js_item}
 <script type="text/javascript" src="{$js_item}"></script>
 {/foreach}
-{/nocache}
 <div id="contact"></div>
 <div id="overlay"></div>
 <div id="page">

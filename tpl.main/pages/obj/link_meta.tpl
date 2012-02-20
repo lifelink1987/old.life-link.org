@@ -1,6 +1,5 @@
-{nocache}
+{* template for link *}
 {css file="/pages/obj/link.css"}
-{/nocache}
 
 <div class="link">
 	<div class="title"><a href="{$link_link}" title="{$link_description}">{$link_title|truncate:100:'...'}</a></div>

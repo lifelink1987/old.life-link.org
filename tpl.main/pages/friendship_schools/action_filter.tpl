@@ -6,7 +6,7 @@
 </label>
 <div class="first"></div>
 <label for="form-period" class="width1 double first">
-	{include file="/obj/filter_reports_period.tpl"}
+	{include file="/obj/filter_period.tpl" label="Performed between"}
 </label>
 <label for="form-photos" class="unitx1">
 	{include file="/obj/filter_reports_photo.tpl"}

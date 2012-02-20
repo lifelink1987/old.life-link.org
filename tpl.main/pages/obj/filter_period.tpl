@@ -1,6 +1,5 @@
-{nocache}
+{* form filter - period *}
 {js file="/obj/filter_period.js" merge=true}
-{/nocache}
 
 {if $label}{$label}{else}Between{/if}<br />
 <select name="after" id="form-after">

@@ -1,6 +1,4 @@
-{nocache}
 {title value="What is Life-Link"}
-{/nocache}
 
 <section class="justify">
 	<h1>What is Life-Link</h1>

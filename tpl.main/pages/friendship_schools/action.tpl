@@ -1,11 +1,9 @@
-{nocache}
 {include file="/obj/js_nivoslider.tpl"}
 {include file="/obj/js_form.tpl"}
 {related tag="`$action.theme.actions_number`"}
 {if $action.tags}
 	{related tags=$action.tags multiple=true}
 {/if}
-{/nocache}
 
 <section class="colgroup inline theory_step">
 	<h1>{$action.actions_number_nice} {$action.action|escape}</h1>

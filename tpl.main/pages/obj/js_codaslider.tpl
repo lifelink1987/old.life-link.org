@@ -1,3 +1,4 @@
+{* content slider *}
 {js file="http://shared.life-link.org/jquery.plugins/_util/jquery.scrollto-1.4.2/jquery.scrollTo-min.js" absolute=true merge=true where="head"}
 {js file="http://shared.life-link.org/jquery.plugins/_util/jquery.localscroll-1.2.7/jquery.localScroll-min.js" absolute=true merge=true where="head"}
 {js file="http://shared.life-link.org/jquery.plugins/_util/jquery.serialscroll-1.2.2/jquery.serialScroll-min.js" absolute=true merge=true where="head"}

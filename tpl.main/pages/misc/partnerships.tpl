@@ -1,6 +1,4 @@
-{nocache}
 {title value="Partnerships"}
-{/nocache}
 
 <section class="justify">
 	<h1>Partnerships</h1>

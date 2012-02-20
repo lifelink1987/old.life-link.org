@@ -1,6 +1,4 @@
-{nocache}
 {title value="Thank you for your valuable donation!"}
-{/nocache}
 
 <section class="justify">
 	<h1>Make a Donation</h1>
