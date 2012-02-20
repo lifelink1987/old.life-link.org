@@ -78,6 +78,7 @@ class CustomSmarty extends Smarty {
 		$this->config_dir = SMARTY_DIR . '../../smarty_data/configs/';
 		$this->cache_dir = SMARTY_DIR . '../../smarty_data/cache/';
 		if ($this->_cache) {
+			$this->cache_id = md5($_SERVER['SCRIPT_FILENAME'] . (isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : ''));
 			$this->caching = 1;
 			$this->cache_lifetime = 3600;
 			$this->cache_modified_check = TRUE;
