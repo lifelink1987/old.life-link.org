@@ -1,4 +1,7 @@
+{nocache}
 {include file="/obj/js_nivoslider.tpl"}
+{/nocache}
+
 <section class="colgroup inline">
 	<h1>Life-Link Friendship-Schools</h1>
 	{include file="/obj/byline.tpl"}

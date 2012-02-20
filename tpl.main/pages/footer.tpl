@@ -1,5 +1,7 @@
 	</article>
+	{nocache}
 	{include file="sidebar.tpl"}
+	{/nocache}
 	<!-- Footer -->
 	<footer id="footer" class="colgroup first">
 		<div class="column width1 first latest">
@@ -98,9 +100,11 @@
 	</footer>
 </div>
 <div id="fb-root"></div>
+{nocache}
 <!-- BODY JS files -->
 {foreach from=$js.post_body item=js_item}
 <script type="text/javascript" src="{$js_item}"></script>
 {/foreach}
+{/nocache}
 </body>
 </html>

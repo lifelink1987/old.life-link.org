@@ -1,8 +1,11 @@
+{nocache}
 {include file="/obj/js_nivoslider.tpl"}
 {include file="/obj/js_form.tpl"}
 {if $school.tags}
 	{related tags=$school.tags multiple=true}
 {/if}
+{/nocache}
+
 <section class="sidebar contact">
 	<h1>Contact <em>this</em> School</h1>
 	<div>

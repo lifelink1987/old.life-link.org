@@ -1,4 +1,6 @@
+{nocache}
 {title value="Make a donation to Life-Link Friendship-Schools"}
+{/nocache}
 
 <section class="justify">
 	<h1>Make a Donation</h1>

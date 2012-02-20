@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en" xlm:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
+	{nocache}
 	<title>
 	{$title}
 	</title>
@@ -9,8 +10,6 @@
 	<link rel="icon" href="{$host}/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="{$host}/favicon.ico" type="image/x-icon">
 	<link href="{$fb_rss}" rel="alternate" type="application/rss+xml" title="Life-Link Friendship-Schools" />
-	<!-- Cache instructions, if any -->
-	{cache}
 	<!-- Fix Internet Explorer -->
 	<!--[if lt IE 7]>
 		<script src="http://shared.life-link.org/ie7/IE7.js">var IE7_PNG_SUFFIX = ".png";</script>
@@ -39,13 +38,16 @@
 	{foreach from=$css item=css_item}
 	<link rel="stylesheet" href="{$css_item}" type="text/css" media="screen">
 	{/foreach}
+	{/nocache}
 </head>
 
 <body class="{$browser.name} {$browser.name}_{$browser.major}">
+{nocache}
 <!-- BODY JS files -->
 {foreach from=$js.pre_body item=js_item}
 <script type="text/javascript" src="{$js_item}"></script>
 {/foreach}
+{/nocache}
 <div id="contact"></div>
 <div id="overlay"></div>
 <div id="page">
@@ -67,4 +69,3 @@
 	</nav>
 	<!-- Content -->
 	<article id="content" class="column width3 first">
-	

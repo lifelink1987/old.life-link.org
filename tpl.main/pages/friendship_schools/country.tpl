@@ -1,4 +1,7 @@
+{nocache}
 {include file="/obj/js_nivoslider.tpl"}
+{/nocache}
+
 <section class="colgroup inline">
 	<h1>Schools <em>from</em>
 		{if $type eq 'city'}{$schools.0.city}, {/if}{$country.country} <img src="{$uri.icon_flag_32}{$country.iso2}" class="icon" />

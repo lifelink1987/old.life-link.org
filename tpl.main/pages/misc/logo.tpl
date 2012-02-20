@@ -1,4 +1,6 @@
+{nocache}
 {title value="Logo"}
+{/nocache}
 
 <section class="justify">
 	<h1>Logo</h1>

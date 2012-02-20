@@ -1,4 +1,7 @@
+{nocache}
 {title value="Care for Myself"}
+{/nocache}
+
 <section>
 	<h1>Care <em>for</em> Myself</h1>
 	{include file="/obj/byline.tpl"}

@@ -1,4 +1,7 @@
+{nocache}
 {js file="/obj/filter_schools_city.js" merge=true}
+{/nocache}
+
 {if $label}{$label}{else}in the city of{/if}
 <select name="city" id="form-city">
 	{get_cities var=cities country=$smarty.get.country}

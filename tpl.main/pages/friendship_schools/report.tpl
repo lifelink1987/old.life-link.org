@@ -1,5 +1,8 @@
+{nocache}
 {include file="/obj/js_nivoslider.tpl"}
 {include file="/obj/js_form.tpl"}
+{/nocache}
+
 <section class="sidebar contact">
 	<h1>Contact <em>the</em> School</h1>
 	<div>

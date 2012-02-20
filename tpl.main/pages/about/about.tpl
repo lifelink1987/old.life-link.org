@@ -1,5 +1,7 @@
+{nocache}
 {title value="About Life-Link Friendship-Schools"}
 {css file="/about/about.css"}
+{/nocache}
 
 <section>
 	<h1 id="the_organisation">Life-Link Friendship-Schools</h1>

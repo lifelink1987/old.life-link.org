@@ -1,4 +1,7 @@
+{nocache}
 {title value="Care Actions"}
+{/nocache}
+
 <section>
 	<h1>Care Actions</h1>
 	{include file="/obj/byline.tpl"}

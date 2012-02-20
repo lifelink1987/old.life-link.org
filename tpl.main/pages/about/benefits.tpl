@@ -1,5 +1,7 @@
+{nocache}
 {title value="Benefits of the Life-Link Friendship-Schools programme"}
 {css file="/about/benefits.css"}
+{/nocache}
 
 <section class="colgroup inline">
 	<h1>Who Benefits <em>and</em> How</h1>

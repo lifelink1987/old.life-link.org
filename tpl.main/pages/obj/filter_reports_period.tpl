@@ -1,4 +1,7 @@
+{nocache}
 {js file="/obj/filter_reports_period.js" merge=true}
+{/nocache}
+
 {if $label}{$label}{else}Performed between{/if}<br />
 <select name="after" id="form-after">
 	{get_months var=months}
