@@ -1,4 +1,4 @@
-{js file="/menu.js"}
+{js file="/menu.js" merge=true}
 
 <ul id="ldd_menu" class="ldd_menu">
 	<li> <span><a href="{$uri.home}" title="Go to the home page">Life-Link</a></span> </li>
