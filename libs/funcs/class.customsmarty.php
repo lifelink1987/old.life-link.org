@@ -80,6 +80,7 @@ class CustomSmarty extends Smarty {
 		if ($this->_cache) {
 			$this->caching = 1;
 			$this->cache_lifetime = 3600;
+			$this->cache_modified_check = TRUE;
 		} else {
 			$this->caching = FALSE;
 			$this->_version_major == 2 ? $this->clear_compiled_tpl() : $this->cache->clearAll();

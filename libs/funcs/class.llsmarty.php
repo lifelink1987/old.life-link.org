@@ -183,7 +183,7 @@ class LLSmarty extends CustomSmarty {
 		/**
 		 * Resolve JS inside the head tag
 		 */
-		if ($this->_tpl['js']['head'] || $this->_tpl['js_merge']['head']) {
+		if (/*$this->_tpl['js']['head'] || */$this->_tpl['js_merge']['head']) {
 			if ($this->_tpl['js_merge']['head']) {
 				$this->_tpl['js_merge']['head'] = array_unique($this->_tpl['js_merge']['head']);
 				if (! LL_DEBUG_JS) {
@@ -200,7 +200,7 @@ class LLSmarty extends CustomSmarty {
 		/**
 		 * Resolve JS at the beginning of the body tag
 		 */
-		if ($this->_tpl['js']['pre_body'] || $this->_tpl['js_merge']['pre_body']) {
+		if (/*$this->_tpl['js']['pre_body'] || */$this->_tpl['js_merge']['pre_body']) {
 			if ($this->_tpl['js_merge']['pre_body']) {
 				$this->_tpl['js_merge']['pre_body'] = array_unique($this->_tpl['js_merge']['pre_body']);
 				if (! LL_DEBUG_JS) {
@@ -216,7 +216,7 @@ class LLSmarty extends CustomSmarty {
 		/**
 		 * Resolve JS at the end of the body tag
 		 */
-		if ($this->_tpl['js']['post_body'] || $this->_tpl['js_merge']['post_body']) {
+		if (/*$this->_tpl['js']['post_body'] || */$this->_tpl['js_merge']['post_body']) {
 			if ($this->_tpl['js_merge']['post_body']) {
 				$this->_tpl['js_merge']['post_body'] = array_unique($this->_tpl['js_merge']['post_body']);
 				if (! LL_DEBUG_JS) {
@@ -232,7 +232,7 @@ class LLSmarty extends CustomSmarty {
 		/**
 		 * Resolve CSS
 		 */
-		if ($this->_tpl['css'] || $this->_tpl['css_merge']) {
+		if (/*$this->_tpl['css'] || */$this->_tpl['css_merge']) {
 			if ($this->_tpl['css_merge']) {
 				$this->_tpl['css_merge'] = array_unique($this->_tpl['css_merge']);
 				if (! LL_DEBUG_CSS) {
