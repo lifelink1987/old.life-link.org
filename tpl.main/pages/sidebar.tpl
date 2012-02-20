@@ -47,21 +47,16 @@
 			<a href="{$uri.reactions}#{$random_reaction.country_short}">Read more</a>
 		</div>
 	</section>
-	<section>
+	<!--<section>
 		<h1>Suggestion Box</h1>
 		<div>
 			If you have ideas for improving this website, please speak your mind on <a href="{$uri.suggestions}">suggestions.life-link.org</a>
 		</div>
-	</section>
-	<section>
-		<h1>NOTICE!</h1>
-		<div>
-			This website is a testing version. Error or blank pages may show up. If you see fit, please <a href="mailto:webmaster@life-link.org">email the webmaster</a>.
-		</div>
-	</section>
+	</section>-->
 	<section class="facebook">
 		<div>
-			<fb:like-box href="http://www.facebook.com/lifelinkorg" width="220" connections="0" header="false" stream="false"></fb:like-box>
+			<fb:like-box class="likebox" href="http://www.facebook.com/lifelinkorg" width="220" connections="0" header="false" stream="false"></fb:like-box>
+			<fb:activity class="activity" site="life-link.org" app_id="236062617449" width="195" height="200" header="false" font="tahoma" recommendations="false"></fb:activity>
 		</div>
 	</section>
 </aside>

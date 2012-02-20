@@ -56,10 +56,12 @@
 		{if $school.teachers}<h3>cca. {$school.teachers} Teachers</h3>{/if}
 	</div>
 	<h2>Nearby schools</h2>
+		{assign var="original_school" value=$school}
 		{foreach from=$nearby_schools item=school name=school}
 			{include
 				file="/obj/school_country.tpl"}
 		{/foreach}
+		{assign var="school" value=$original_school}
 </section>
 <section>
 	<h1><a href="#">Report new action</a> or <a href="#">update school information</a>.</h1>

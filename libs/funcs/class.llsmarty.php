@@ -156,8 +156,10 @@ class LLSmarty extends CustomSmarty {
 		$this->assign('rss_news', get_rss_news());
 
 		/**
-		 * Fetch template content and attached JS/CSS/related
+		 * Fetch templates and attached JS/CSS/related
 		 */
+		$content_header = $this->fetch($prefix . 'header.tpl', $this->cache_id . 'tmp');
+		$content_footer = $this->fetch($prefix . 'header.tpl', $this->cache_id . 'tmp');
 		$content = $this->fetch($what);
 
 		$js = '/' . str_replace('.tpl', '.js', $what);

@@ -79,12 +79,20 @@
 	}
 	
 	> section.facebook {
-		self {
-			margin:-10px -20px;
-		}
+		.likebox {
+			self {
+				margin:-10px -20px 0px -20px;
+			}
 		
-		iframe {
-			height:86px !important;
+			iframe {
+				height:86px !important;
+			}
+		}	
+		
+		.activity {
+			self {
+				margin:0px 0px -10px 0px;
+			}
 		}
 	}
 }
