@@ -1,3 +1,4 @@
+{nocache}
 {if !$smarty.get.skip and !$smarty.get.all}
 	<script type="text/javascript">
 		more_results_from = 0;
@@ -17,3 +18,4 @@
 		</div>
 	{/if}
 {/if}
+{/nocache}

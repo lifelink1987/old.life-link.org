@@ -1,4 +1,7 @@
-{css file="/css/source/report.css"}
+{nocache}
+{css file="/obj/report.css"}
+{/nocache}
+
 <div class="row_school">
 	<a href="{$school_link}" class="first school">
 		<span>{$school_number}</span>

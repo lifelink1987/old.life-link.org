@@ -1,4 +1,7 @@
+{nocache}
 {css file="/pages/obj/event.css"}
+{/nocache}
+
 <div class="event">
 	<div class="title"><a href="{$event_link}">{$event_name|truncate:100:'...'}</a></div>
 	<div class="type">{$event_type}</div>

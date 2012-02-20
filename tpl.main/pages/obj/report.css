@@ -1,0 +1,210 @@
+/* Report */
+
+/* Report&School Row */
+#content section .row_report,
+#content section .row_school {
+	self {
+		width:587px;
+		font-size:13px;
+	}
+	
+	> a,
+	> div.line {
+		display:inline-block;
+		height:24px;
+		padding:0 5px;
+	}
+	
+	> div.line {
+		border-bottom:1px dotted $lightgrey;
+		background-color:$white;
+		border-radius:2px;
+		-webkit-border-radius:2px;
+		-moz-border-radius:2px;
+	}
+
+	> a > span,
+	> div.line > span {
+		display:inline-block;
+		overflow:hidden;
+		white-space:nowrap;
+		position:relative;
+		top:0.2em;
+		vertical-align:top;
+	}
+	
+	/* Column 1 */
+	> a.first,
+	> div.line.first {
+		> span:first-child {
+			text-align:right;
+			width:40px;
+			font-weight:bold;
+			padding-right:5px;
+		}
+		
+		> span:first-child + span {
+			width:265px;
+		}
+	}
+	
+	/* Column 2 */
+	> a.first + a:not(.first),
+	> div.line.first + a:not(.first),
+	> div.line.first + div.line:not(.first) {
+		> span {
+			text-align:right;
+			width:96px;
+		}
+	}
+	
+	/* Column 3 */
+	> a.first + a:not(.first) + a:not(.first),
+	> div.line.first + div.line:not(.first) + div.line:not(.first) {
+		> span {
+			width:139px;
+		}
+	}
+	
+	/* Secondary Row */
+	> a.secondary,
+	> div.line.secondary {
+		> span {
+			font-size:11px;
+			line-height:21px;
+		}
+		
+		> span:first-child {
+		}
+		
+		> span:first-child + span {
+		}
+	}
+	
+	> a.first.secondary,
+	> div.line.first.secondary {
+		> span:first-child {
+			color:$lightgrey;
+		}
+	}
+}
+
+/* Report Specifics */
+#content section .row_report {
+	> div.date {
+		display:block;
+		position:relative;
+		top:0.2em;
+		vertical-align:top;
+		width:200px;
+		left:440px;
+		color:$darkgrey;
+	}
+	
+	> div.logo {
+		background-color:$watergrey;
+		border:1px solid $lightgrey;
+		float:right;
+		clear:right;
+		width:148px;
+		height:73px;
+		font-size:48px;
+		line-height:73px;
+		color:$lightgrey;
+		text-align:center;
+		overflow:hidden;
+		opacity:0.75;
+		cursor:pointer;
+	}
+	
+	> a.report > span:first-child + span,
+	> div.line.report > span:first-child + span {
+		width:376px;
+		font-weight:bold;
+	}
+	
+	> div.line.numbers,
+	> div.line.feedback {
+		> span:first-child {
+			font-size:11px;
+			line-height:21px;
+			color:$grey;
+		}
+		
+		> span:first-child + span {
+			color:$darkgrey;
+		}
+	}
+	
+	> div.line.feedback {
+		> span:first-child + span {
+			font-size:13px;
+			color:$black;
+		}
+	}
+}
+
+/* Report Block */
+#content section .row_report_alone,
+#content section .row_report_school {
+	self {
+		margin:0 5px;
+		margin-bottom:2em;
+	}
+	
+	> .row_report {
+		> .date,
+		> .feedback,
+		> .feedback_date,
+		> .numbers,
+		> .contact,
+		> .attachments {
+			opacity:0.5;
+		}
+	}
+}
+
+#content section .row_report_school {
+	> .row_school {
+		> .school,
+		> .city,
+		> .country {
+			opacity:0.5;
+		}
+	}
+}
+
+#content section .row_report_alone_full {
+	> .row_report a,
+	> .row_report div {
+		opacity:1 !important;
+	}
+	
+	> .row_report > a.report,
+	> .row_report > div.line.report {
+		self {
+			white-space:inherit;
+			height:auto;
+			border-bottom:0px;
+			margin-bottom:1em;
+			min-height:73px;
+		}
+		
+		> span {
+			white-space:inherit;
+		}
+		
+		> span:first-child + span {
+			font-weight:normal;
+			font-size:16px;
+		}
+	}
+}
+
+/* Report Block - Hover */
+#content section .row_report_alone:hover a,
+#content section .row_report_alone:hover div,
+#content section .row_report_school:hover a,
+#content section .row_report_school:hover div {
+	opacity:1 !important;
+}

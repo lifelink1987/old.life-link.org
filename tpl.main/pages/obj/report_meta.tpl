@@ -1,5 +1,8 @@
+{nocache}
 {js file="/obj/report.js" merge=true}
-{css file="/css/source/report.css"}
+{css file="/obj/report.css"}
+{/nocache}
+
 <div class="row_report_alone{if $show_full} row_report_alone_full{/if}">
 	<div class="row_report">
 		{include file="/obj/row_report_date_logo.tpl"}
