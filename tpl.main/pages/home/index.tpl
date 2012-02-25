@@ -81,8 +81,8 @@
 					{/foreach}
 				</div>
 				<div class="secret title">
-					{$report.date|relativedate} &mdash; <a href="{$report.actions_full.0.link}">{$report.actions_full.0.actions_number_nice} - {$report.actions_full.0.action}</a><br />
-					<a href="{$uri.school}{$report.member_schools_number}">{$report.school}</a>, {$report.city}, <a href="{$uri.country}{$report.country}">{$report.country}</a> <img src="{$uri.icon_flag_16}{$report.iso2}" class="icon" />
+					<a href="{$report.link}">Read about</a> <a href="{$uri.school}{$report.member_schools_number}">{$report.school}</a>, {$report.city}, <a href="{$uri.country}{$report.country}">{$report.country}</a> <img src="{$uri.icon_flag_16}{$report.iso2}" class="icon" /><br />
+					<em>engaging in</em> <a href="{$report.actions_full.0.link}">{$report.actions_full.0.actions_number_nice} - {$report.actions_full.0.action}</a> 	<em>on</em> {$report.date|relativedate}
 				</div>
 			</li>
 			{/foreach}
