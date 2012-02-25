@@ -70,13 +70,13 @@
 				<span class="date">{$report.datetime_registration|relativedate}</span>
 				<a href="{$report.link}">
 					<div class="logo img_center" title="{$report.actions_full.0.action} in {$report.city}, {$report.country}">
-						<img src="{$report.media_front.uri_thumb}" longdesc="{$report.media_front.uri}" rel="action_photos_{$report.actions_number}" />
+						<img src="{$report.media_front.uri_thumb}" longdesc="{$report.media_front.uri}" rel="report_{$report.member_reports_id}" />
 					</div>
 				</a>
 				<div class="secret images">
 					{foreach from=$report.media item=media name=media}
 					{if $smarty.foreach.media.index > 0}
-					<img src="{$tpl_uri}/img/layout/blank.gif" longdesc="{$media.uri}" rel="action_photos_{$report.actions_number}" class="hidden" />
+					<img src="{$tpl_uri}/img/layout/blank.gif" longdesc="{$media.uri}" rel="report_{$report.member_reports_id}" class="hidden" />
 					{/if}
 					{/foreach}
 				</div>

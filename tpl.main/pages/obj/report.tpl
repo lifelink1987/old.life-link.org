@@ -22,8 +22,7 @@
 	report_contact=$report.contact
 	report_contact_email=$report.email_contact
 	
-	report_front_thumb=$report.media_front.uri_thumb
-	report_front=$report.media_front.uri_image
+	report_front=$report.media_front
 	report_media=$report.media
 	
 	report_feedback=$report.feedback

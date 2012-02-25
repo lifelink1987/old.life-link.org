@@ -24,7 +24,7 @@ $config = array(
 			'http://shared.life-link.org/jquery.plugins/_form/jquery.contactable-1.2.1/jquery.validate.min.js',  //need to change to another form validation plugin, and then adjust contactable
 			
 			'http://shared.life-link.org/jquery.plugins/_util/jquery.imgcenter-1.0/jquery.imgcenter.minified.js', 
-			'http://shared.life-link.org/jquery.plugins/_preview/jquery.colorbox-1.3.9/colorbox/jquery.colorbox.fix.js', 
+			'http://shared.life-link.org/jquery.plugins/_preview/jquery.colorbox-1.3.19/colorbox/jquery.colorbox.fix.js', 
 			'http://shared.life-link.org/jquery.plugins/_tooltip/jquery.tipTip-1.3/jquery.tipTip.minified.js',
 
 			$tpl['tpl_uri'] . '/js/layout.js'

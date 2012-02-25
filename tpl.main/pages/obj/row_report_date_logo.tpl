@@ -1,7 +1,7 @@
 <div class="date">{$report_date}</div>
-{if $report_front_thumb neq ''}
+{if $report_front.uri_thumb neq ''}
 <div class="logo img_center" title="{$report_action} in {$school_city}, {$school_country}">
-	<img src="{$report_front_thumb}" longdesc="{$report_front}" rel="action_photos_{$report_id}" />
+	<img src="{$report_front.uri_thumb}" longdesc="{$report_front.uri}" rel="action_photos_{$report_id}" />
 </div>
 <div class="secret images">
 	{foreach from=$report_media item=media name=media}

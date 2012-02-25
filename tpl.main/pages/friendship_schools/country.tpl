@@ -25,14 +25,14 @@
 			{if $type eq 'country'}
 				{include
 					file="/obj/row_school.tpl"
-					school_name="View all the school from `$school.country_short`"
+					school_name="View all the schools from `$school.country_short`"
 					school_link="`$uri.country``$school.country_short`?all"
 					school_city='&raquo;'
 					school_city_link="`$uri.country``$school.country_short`?all"}
 			{elseif $type eq 'city'}
 				{include
 					file="/obj/row_school.tpl"
-					school_name="View all the school from `$school.country_short`, `$school.city`"
+					school_name="View all the schools from `$school.country_short`, `$school.city`"
 					school_link="`$uri.country``$school.country_short`/`$school.city`?all"
 					school_city='&raquo;'
 					school_city_link="`$uri.country``$school.country_short`/`$school.city`?all"}
