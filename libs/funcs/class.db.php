@@ -22,8 +22,8 @@ class Db extends mysqli {
 	public function __construct($host = null, $user = null, $pass = null, $schema = null, $port = null, $debug = FALSE) {
 		$this->_debug = $debug;
 
-		//FIXME parent::__construct("p:$host", $user, $pass, $schema);
-		parent::__construct($host, $user, $pass, $schema);
+		parent::__construct("p:$host", $user, $pass, $schema);
+		//parent::__construct($host, $user, $pass, $schema);
 
 		//On error
 		if (PHP_VERSION_ID < 502090) {
