@@ -1,4 +1,6 @@
-{css file="/css/source/report.css"}
+{* report *}
+
+{css file="/pages/obj/report.css"}
 <div class="row_school{if $school_approved eq ''} pending{/if}">
 	<div class="line first school">
 		<span>{$school_number}</span>

@@ -6,9 +6,15 @@ require_once 'config/auto_pre.php';
  * General settings
  */
 define('LL_TEMPLATE', 'main');
-@define('LL_DEBUG', LL_AT_HOME_DEBUG ? 'css,js,php,sql,smarty' : 'php,sql,smarty'); //js, css, php, sql and/or smarty (csv string)
-define('LL_DEBUG_OUTPUT', LL_AT_HOME_DEBUG ? 'firephp' : 'file'); //screen, buffer, file and/or mail (csv string)
-define('LL_CACHE', LL_AT_HOME);
+//if (true == false) {
+  @define('LL_DEBUG', LL_AT_HOME_DEBUG ? 'css,js,php,sql,smarty' : 'php,sql,smarty'); //js, css, php, sql and/or smarty (csv string)
+  define('LL_DEBUG_OUTPUT', LL_AT_HOME_DEBUG ? 'firephp' : 'file'); //screen, buffer, file and/or mail (csv string)
+  define('LL_CACHE', LL_AT_HOME);
+/*} else {
+  @define('LL_DEBUG', 'php'); //js, css, php, sql and/or smarty (csv string)
+  define('LL_DEBUG_OUTPUT', 'firephp'); //screen, buffer, file and/or mail (csv string)
+  define('LL_CACHE', false);
+}*/
 
 /*
  * Database settings

@@ -114,7 +114,7 @@
 		{if $school.datetime_update}
 			<label class="unitx1">
 				Updated on
-				<input type="text" value="{$school.datetime_update|dateformat:'%Y-%m-%d %H-%i'}" readonly="readonly">
+				<input type="text" value="{$school.datetime_update|dateformat:'%Y-%m-%d'}" readonly="readonly">
 			</label>
 		{/if}
 		{if $reports|@count > 0}
