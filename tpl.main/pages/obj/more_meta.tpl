@@ -11,7 +11,8 @@
 {/foreach}
 {if ($items|@count gt $max_items) and !$smarty.get.all}
 	<script type="text/javascript">
-		more_results_from = {$smarty.get.skip + $max_items};
+		{assign var=items_count value=$items|@count}
+		more_results_from = {$smarty.get.skip + $items_count};
 	</script>
 	{if !$smarty.get.skip}
 		<div id="more_results">

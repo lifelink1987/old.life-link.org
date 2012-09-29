@@ -82,7 +82,7 @@ switch ($_GET['action']) {
 		foreach ($schools as $school) {
 			$schools_simple[] = array(
 				'label' => '#' . $school['member_schools_number'] . ' ' . $school['school'] . ', ' . $school['city'] . ', ' . $school['country_short'], 
-				'value' => $action['member_schools_number']
+				'value' => $school['member_schools_number']
 			);
 		}
 		echo json_encode($schools_simple);

@@ -46,7 +46,7 @@ class ActionC extends C {
 		$smarty->_assign_by_ref('action', $action);
 		
 		$dbReports = DbReports::get_instance();
-		$limit = mysql_limit($_GET['skip'], $smarty->_tpl['pagination']['reports_in_action'] + 1, $_GET['all']);
+		$limit = mysql_limit($_GET['skip'], $smarty->_tpl['pagination']['reports_in_action'] + 1 + (! $_GET['ajax']), $_GET['all']);
 		
 		$where = array(
 			'`datetime_approval` IS NOT NULL', 
