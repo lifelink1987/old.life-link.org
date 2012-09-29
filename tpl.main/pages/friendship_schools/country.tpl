@@ -43,7 +43,7 @@
 		<h3>{variable name="schools_counter_`$country.iso3`"} Schools</h3>{if $type eq 'city'}in {$country.country}<br />{/if} out of {variable name="schools_counter"}<br />
 		<h3>{variable name="reports_counter_`$country.iso3`"} Reports</h3> out of {variable name="reports_counter"}<br />
 		<h3>{variable name="actions_counter_`$country.iso3`"} Care Actions</h3> out of {variable name="actions_counter"}<br />
-		<h3>Active since<br />{variable name="date_report_first_`$country.iso3`"}</h3> until {variable name="date_report_last_`$country.iso3`"}
+		<h3>Active since<br />{variable name="date_report_first_`$country.iso3`"}</h3><!-- until {variable name="date_report_last_`$country.iso3`"}-->
 	</div>
 </section>
 

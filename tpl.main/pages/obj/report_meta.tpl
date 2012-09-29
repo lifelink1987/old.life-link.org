@@ -5,6 +5,7 @@
 <div class="row_report_alone{if $show_full} row_report_alone_full{/if}">
 	<div class="row_report">
 		{include file="/obj/row_report_date_logo.tpl"}
+		{include file="/obj/row_report_action.tpl"}
 		{if $show_full}
 		<div class="line first report">
 			<span><a href="{$report_link}">{$report_id}</a></span>
@@ -13,7 +14,6 @@
 		{else}
 		{include file="/obj/row_report_description.tpl"}
 		{/if}
-		{include file="/obj/row_report_action.tpl"}
 		{include file="/obj/row_report_numbers_contact.tpl"}
 		{if $report_feedback}
 			{include file="/obj/row_report_feedback.tpl"}

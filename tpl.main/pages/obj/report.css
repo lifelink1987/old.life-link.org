@@ -161,6 +161,10 @@
 		> .attachments {
 			opacity:0.5;
 		}
+
+		> .action > span:first-child {
+		        font-weight:normal;
+		}
 	}
 }
 

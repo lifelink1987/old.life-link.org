@@ -55,6 +55,7 @@
 		<h3>{$school.count_actions} Care Action{if $school.count_actions > 1}s{/if}</h3> out of {variable name="actions_counter"}<br />
 		{if $school.students}<h3>cca. {$school.students} Student{if $school.students > 1}s{/if}</h3>{if $school.students_age}aged {$school.students_age}<br />{/if}{/if}
 		{if $school.teachers}<h3>cca. {$school.teachers} Teacher{if $school.teachers > 1}s{/if}</h3>{/if}
+		<h3>Active since<br />{$school.date_report_first}</h3><!-- until {$school.date_report_last}-->
 	</div>
 </section>
 
