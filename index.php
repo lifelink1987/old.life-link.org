@@ -21,8 +21,8 @@ R('office')->controller('AdminFsSchoolC')->action('browse')->on('GET');
 R('office/friendship\-schools')->controller('AdminFsSchoolC')->action('browse')->on('GET');
 R('office/friendship\-schools/schools')->controller('AdminFsSchoolC')->action('browse')->on('GET');
 R('office/friendship\-schools/school/(?P<school>[0-9]+)')->controller('AdminFsSchoolC')->action('school')->on('GET');
-/*R('office/friendship\-schools/reports')->controller('AdminFsReportC')->action('browse')->on('GET');
-R('office/friendship\-schools/report/(?P<report>[0-9]+)')->controller('AdminFsReportC')->action('report')->on('GET');*/
+R('office/friendship\-schools/reports')->controller('AdminFsReportC')->action('browse')->on('GET');
+R('office/friendship\-schools/report/(?P<report>[0-9]+)')->controller('AdminFsReportC')->action('report')->on('GET');
 
 R('icon/file/(?P<ext>[^/]+)')->controller('IconC')->action('file')->on('GET');
 R('icon/social/(?P<ext>[^/]+)')->controller('IconC')->action('social')->on('GET');
@@ -81,6 +81,7 @@ function r404() {
 	/**
 	 * @todo not found message
 	 */
+	header('HTTP/1.0 404 Not Found');
 	$smarty->display_404('Not found', '');
 }
 

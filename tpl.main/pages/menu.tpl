@@ -7,11 +7,12 @@
 			<ul>
 				<li class="ldd_heading">Networking</li>
 				<li><a href="{$uri.friendship_schools}">Schools &amp; Actions</a></li>
-				<li><a href="{$uri.friendship_schools_search}">Search</a></li>
-				<li><a href="{$uri.map}">World Map</a></li>
+				<li>&middot; <a href="{$uri.friendship_schools_search}">Search</a></li>
+				<li>&middot; <a href="{$uri.map}">World Map</a></li>
 				<li>&nbsp;</li>
 				<li><a href="{$uri.join}">JOIN NOW!</a></li>
 				<li><a href="{$uri.certificate}">Certificate</a></li>
+				<li><a href="{$uri.diploma}">Diploma</a></li>
 			</ul>
 			<ul>
 				<li class="ldd_heading">Engaging</li>

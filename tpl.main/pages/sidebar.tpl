@@ -29,13 +29,16 @@
 	</section>
 	{/if}
 	<section>
-		<h1>Type <em>to</em> Search</h1>
+		<h1><em>Your</em> school, country<br/><em>or our</em> Life-Link actions</h1>
 		<div>
 			<form id="type_to_search">
-				<input type="text" name="country" placeholder="Country" autocomplete="off">
 				<input type="text" name="school" placeholder="School Number or Name" autocomplete="off">
+				<input type="text" name="country" placeholder="Country" autocomplete="off">
 				<input type="text" name="action" placeholder="Care Action Number or Name" autocomplete="off">
 			</form>
+			<div id="advanced_search">
+				or go to the <a href="{$uri.search}">Advanced Search</a>
+			</div>
 		</div>
 	</section>
 	<section>
@@ -55,8 +58,8 @@
 	</section>-->
 	<section class="facebook">
 		<div>
-			<fb:like-box class="likebox" href="http://www.facebook.com/lifelinkorg" width="220" connections="0" header="false" stream="false"></fb:like-box>
-			<fb:activity class="activity" site="life-link.org" app_id="236062617449" width="195" height="200" header="false" font="tahoma" recommendations="false"></fb:activity>
+			<fb:like-box class="likebox" href="http://www.facebook.com/lifelinkorg" width="220" height="280" connections="6" header="false" stream="false"></fb:like-box>
+			<!--<fb:activity class="activity" site="life-link.org" app_id="236062617449" width="195" height="200" header="false" font="tahoma" recommendations="false"></fb:activity>-->
 		</div>
 	</section>
 </aside>

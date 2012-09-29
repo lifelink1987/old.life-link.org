@@ -136,7 +136,7 @@ class DbActions extends DbTable {
 			$item['tags'][] = 'action:' . $item['actions_number'];
 			$item['tags'] = implode(',', $item['tags']);
 			
-			//$item['actions_number_nice'] = left($item['actions_number']) . ':' . right($item['actions_number'], 2);
+			$item['actions_number_nice'] = left($item['actions_number']) . ':' . right($item['actions_number'], 2);
 			if (right($item['actions_number'], 2) != 0) {
 				$item['theme'] = $this->get(left($item['actions_number']) . '00');
 				$item['theme']['link'] = $uri['theme_' . left($item['actions_number'])];

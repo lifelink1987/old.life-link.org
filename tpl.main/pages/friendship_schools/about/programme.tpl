@@ -1,11 +1,12 @@
+{include file="/friendship_schools/about/about_related.tpl"}
 {title value="About Life-Link Friendship-Schools"}
-{css file="/about/about.css"}
+{css file="/friendship-schools/about/about.css"}
 
 <section class="justify">
 	<h1 class="simple" id="the_programme">Life-Link Friendship-Schools</h1>
 	{include file="/obj/byline.tpl"}
 	<h3 class="center"><em>the</em> Programme</h3>
-	{include file="/about/prog.tpl"}
+	{include file="/friendship_schools/about/prog.tpl"}
 	<p>The actions should take place at and around your school or within the nearby community, and can be initiated by a class or a club at your school.</p>
 	<p>Each performed action should be reported to Life-Link <a href="{$uri.report}">online</a> or by mail, fax or E-mail. By sending your school's first Action Report, the school will join the Life-Link network and it will be listed under our <a href="{$uri.friendship_schools}">Schools &amp; Actions</a>.</p>
 	<p></p>

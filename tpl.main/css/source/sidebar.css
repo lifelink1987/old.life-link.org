@@ -82,10 +82,16 @@
 		.likebox {
 			self {
 				margin:-10px -20px 0px -20px;
+				overflow:hidden;
 			}
-		
-			iframe {
-				height:86px !important;
+			
+			> span {
+    			self {
+        			margin:-1px;
+    			}
+    			
+    			> iframe {
+    			}
 			}
 		}	
 		
@@ -100,5 +106,12 @@
 #sidebar_country_autocomplete_menu,
 #sidebar_school_autocomplete_menu,
 #sidebar_action_autocomplete_menu {
-	width:190px !important;
+	self {
+		width:190px !important;
+		font-size:0.9em;
+	}
+	
+	> li + li > a {
+		border-top:1px solid #999;
+	}
 }

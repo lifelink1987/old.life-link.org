@@ -1,3 +1,4 @@
+{include file="/friendship_schools/about/about_related.tpl"}
 {title value="Partnerships"}
 
 <section class="justify">

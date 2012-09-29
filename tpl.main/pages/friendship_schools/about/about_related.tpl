@@ -2,6 +2,8 @@
 	<h1>Related Pages</h1>
 	<div>
 		<ul>
+			<li><a href="{$uri.about}">The Organisation</a></li>
+			<li><a href="{$uri.programme}">The Programme</a></li>
 			<li><a href="{$uri.benefits}">Who Benefits and How</a></li>
 			<li><a href="{$uri.manual}">Manual</a></li>
 			<li><a href="{$uri.actions}">Care Actions</a></li>

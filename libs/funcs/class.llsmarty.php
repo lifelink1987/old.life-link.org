@@ -159,7 +159,8 @@ class LLSmarty extends CustomSmarty {
 		 * Fetch templates and attached JS/CSS/related
 		 */
 		$content_header = $this->fetch($prefix . 'header.tpl', $this->cache_id . 'tmp');
-		$content_footer = $this->fetch($prefix . 'header.tpl', $this->cache_id . 'tmp');
+		$content_sidebar = $this->fetch($prefix . 'sidebar.tpl', $this->cache_id . 'tmp');
+		$content_footer = $this->fetch($prefix . 'footer.tpl', $this->cache_id . 'tmp');
 		$content = $this->fetch($what);
 
 		$js = '/' . str_replace('.tpl', '.js', $what);

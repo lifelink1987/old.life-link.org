@@ -15,7 +15,9 @@ class HomeC extends C {
 		$smarty->_assign_by_ref('latest_reports', $latest_reports);
 		
 		$dbHighlights = DbHighlights::get_instance();
-		$highlights = $dbHighlights->gets(NULL, '`priority` DESC');
+		$highlights = $dbHighlights->gets(array(
+			"`enabled` = 'yes'"
+		), '`priority` DESC');
 		$smarty->_assign_by_ref('highlights', $highlights);
 		
 		$geoip_record = geoip_remote_addr();

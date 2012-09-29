@@ -1,5 +1,5 @@
 {title value="About Life-Link Friendship-Schools"}
-{css file="/about/about.css"}
+{css file="/friendship-schools/about/about.css"}
 
 <section>
 	<h1 id="the_organisation">Life-Link Friendship-Schools</h1>

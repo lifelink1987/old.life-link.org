@@ -14,9 +14,10 @@ $uri['friendship_schools_search'] = '/friendship-schools/search';
 $uri['school'] = '/friendship-schools/school/';
 $uri['map'] = '/friendship-schools/world-map';
 $uri['certificate'] = '/friendship-schools/certificate';
+$uri['diploma'] = '/friendship-schools/diploma';
 
 $uri['join'] = '/friendship-schools/join';
-$uri['report'] = '/friendship-schools/report/';
+$uri['report'] = '/friendship-schools/join/';
 $uri['report_action'] = '/friendship-schools/report/action';
 $uri['report_image'] = '/friendship-schools/report/image/';
 $uri['report_thumb'] = '/friendship-schools/report/thumb/';
@@ -33,7 +34,7 @@ $uri['lets_get_organised'] = $uri['theme_4'] = '/friendship-schools/theme/lets-g
 $uri['search_schools_in_city'] = '/friendship-schools/s/schools/city/';
 $uri['search_schools_in_country'] = '/friendship-schools/s/schools/country/';
 
-$uri['project_management'] = '/project-management';
+$uri['project_management'] = '/friendship-schools/project-management';
 
 $uri['campaigns'] = '/campaigns';
 $uri['campaign'] = '/campaign/';
@@ -48,13 +49,13 @@ $uri['support'] = '/support';
 $uri['donate'] = '/support/donate';
 $uri['contact/send'] = '/contact/send';
 
-$uri['about'] = '/about';
-$uri['programme'] = '/about/programme';
-$uri['benefits'] = '/about/benefits';
+$uri['about'] = '/friendship-schools/about';
+$uri['programme'] = '/friendship-schools/about/programme';
+$uri['benefits'] = '/friendship-schools/about/benefits';
+$uri['partnerships'] = '/friendship-schools/about/partnerships';
 
 $uri['board'] = '/board';
 
-$uri['partnerships'] = '/misc/partnerships';
 $uri['logo'] = '/misc/logo';
 $uri['what_is_lifelink'] = '/friendship_schools/what_is_lifelink';
 $uri['contact_newspaper'] = '/friendship_schools/contact_a_newspaper';
@@ -90,6 +91,9 @@ $uri['twitter'] = 'http://twitter.life-link.org';
 $uri['flickr'] = 'http://flickr.life-link.org';
 $uri['wikipedia'] = 'http://en.wikipedia.org/wiki';
 $uri['rss'] = LL_FACEBOOK_RSS;
+$uri['report_gdoc'] = 'https://docs.google.com/a/life-link.org/spreadsheet/viewform?hl=en_US&formkey=dH%20pSajNMZDlyaXhob3M5T05Jd01Va3c6MQ';
+
+$uri['mail'] = 'mailto:' . LL_MAIL;
 
 /*
 

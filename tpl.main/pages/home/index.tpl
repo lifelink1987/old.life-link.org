@@ -143,7 +143,7 @@
 			<div class="headingbox">
 				<h1>Enroll your School</h1>
 				<div>
-					<a href="{$uri.report}">
+					<a href="{$uri.join}">
 						<div><img src="{$uri.icon_quartz}book.png"></div>
 						Report your first Life-Link action and join hands with other schools.
 					</a>

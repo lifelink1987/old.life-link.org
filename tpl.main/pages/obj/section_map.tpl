@@ -1,6 +1,6 @@
 {* world map *}
 <section class="center">
-	<div class="white_box" class="bcenter">
+	<div class="white_box">
 		<a href="{$uri.map}" class="simple" title="Click to see a more detailed map"><img src="{map}" /></a>
 	</div>
 	<h1 class="simple">

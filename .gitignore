@@ -8,3 +8,5 @@
 /tpl.main/js_css_cache/*
 /.htaccess
 *.bak
+*~
+/statistics

@@ -2,7 +2,7 @@
 <html lang="en" xlm:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 	<title>
-	{$title}
+	{if isset($title)}{$title}{else}Life-Link Friendship-Schools{/if}
 	</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">

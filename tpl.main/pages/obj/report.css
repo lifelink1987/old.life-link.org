@@ -192,11 +192,14 @@
 		
 		> span {
 			white-space:inherit;
+			font-weight:normal;
+			font-size:16px;
+		}
+		
+		> span:first-child {
 		}
 		
 		> span:first-child + span {
-			font-weight:normal;
-			font-size:16px;
 		}
 	}
 }

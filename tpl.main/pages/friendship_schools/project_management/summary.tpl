@@ -1,4 +1,4 @@
-{include file="/project_management/project_management_related.tpl"}
+{include file="/friendship_schools/project_management/project_management_related.tpl"}
 
 <section>
 	<h1>Project Management</h1>

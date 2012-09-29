@@ -7,7 +7,7 @@
 		{include file="/obj/row_report_date_logo.tpl"}
 		{if $show_full}
 		<div class="line first report">
-			<span>&nbsp;</span>
+			<span><a href="{$report_link}">{$report_id}</a></span>
 			<span class="justify">{$report_description|escape|nl2br|autolink}</span>
 		</div>
 		{else}

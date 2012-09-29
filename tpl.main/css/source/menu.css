@@ -107,6 +107,10 @@
 					white-space:nowrap;
 				}
 				
+				> li {
+					color:$white;				
+				}
+				
 				> li a {
 					font-family:$arial_font;
 					font-size:10px;

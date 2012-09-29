@@ -28,7 +28,7 @@ $(function(){
 			$this = $(this);
 			$this.val(ui.item.label).attr('disabled', 'disabled');
 			$('#overlay').show().addClass('bkground_loader');
-			window.location = action_uri + ui.item.value;
+			window.location = school_uri + ui.item.value;
 		}
 	}).data('autocomplete');
 	school_autocomplete.menu.element.attr('id', 'sidebar_school_autocomplete_menu');

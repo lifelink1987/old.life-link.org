@@ -19,7 +19,7 @@
 		<h3>{variable name="reports_counter"} Reports</h3><br />
 		<h3>{variable name="actions_counter"} Care Actions</h3>
 	</div>
-	{include file="/about/prog.tpl"}
+	{include file="/friendship_schools/about/prog.tpl"}
 	<h1 class="simple"><a href="{$uri.programme}">Read more on the Programme</a> and <a href="{$uri.join}">join</a>!</h1>
 </section>
 {include file="/obj/section_map.tpl"}

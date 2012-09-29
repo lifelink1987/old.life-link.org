@@ -1,5 +1,6 @@
+{include file="/friendship_schools/about/about_related.tpl"}
 {title value="Benefits of the Life-Link Friendship-Schools programme"}
-{css file="/about/benefits.css"}
+{css file="/friendship-schools/about/benefits.css"}
 
 <section class="colgroup inline">
 	<h1>Who Benefits <em>and</em> How</h1>
