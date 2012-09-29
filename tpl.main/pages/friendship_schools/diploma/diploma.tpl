@@ -5,31 +5,33 @@
     the <em>I Care Recognition</em> diploma for your school!</h1>
 	{include file="/obj/byline.tpl"}
 
+    <h1 class="simple">Downloaded from <a href="{$uri.files}diplomas">here</a></h1>
+
 	<div class="headingbox">
 		<h1>I Care <em>for</em> Myself</h1>
 		<div class="justify">
-			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_i_care_for_myself.png" height="100" class="right" />A student who has seriously considered his/her personal development and growth; Such as studies, health, life-style, or having tackled private problems.</p>
+			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_i_care_for_myself.png?downsize" height="100" class="right" />A student who has seriously considered his/her personal development and growth; Such as studies, health, life-style, or having tackled private problems.</p>
             <p>A student/pupil or 2-3 students together, who will be models at and around your school for personal growth, self-esteem, etc.</p>
 		</div>
 	</div>
 	<div class="headingbox">
 		<h1>I Care <em>for</em> Others</h1>
 		<div class="justify">
-			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_i_care_for_others.png" height="100" class="right" />A student who listens and cares for other students, inspires others to grow, creates team-work; at the school or within the schools nearby community.</p>
+			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_i_care_for_others.png?downsize" height="100" class="right" />A student who listens and cares for other students, inspires others to grow, creates team-work; at the school or within the schools nearby community.</p>
             <p>A student/pupil or 2-3 students together, who will be models for friendship and constructive collaboration.</p>
 		</div>
 	</div>
 	<div class="headingbox">
 		<h1>I Care <em>for</em> Nature</h1>
 		<div class="justify">
-			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_i_care_for_nature.png" height="100" class="right" />A student who cares for Nature, the Environment, Flora & Fauna, and a RRR friendly Life-Style (Reduce-Reuse-Recycle).</p>
+			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_i_care_for_nature.png?downsize" height="100" class="right" />A student who cares for Nature, the Environment, Flora & Fauna, and a RRR friendly Life-Style (Reduce-Reuse-Recycle).</p>
             <p>A student/pupil or 2-3 students together, who by actions and programs inspire other youth and adults into an RRR friendly and environmental sustainable life-style.</p>
 		</div>
 	</div>
 	<div class="headingbox">
 		<h1>Let's Get Organised!</h1>
 		<div class="justify">
-			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_lets_get_organised.png" height="100" class="right" />A teacher or staff person or active parent who engage at school’s curriculum and supports the students Care Actions at and around the school.</p>
+			<p><img src="{$uri.files}diplomas/i_care_recognition_diploma_lets_get_organised.png?downsize" height="100" class="right" />A teacher or staff person or active parent who engage at school’s curriculum and supports the students Care Actions at and around the school.</p>
             <p>A teacher/educator who supports actions and programs at the school in favour or <a href="{$uri.care_for_myself}">Care for Myself</a> – <a href="{$uri.care_for_others}">Care for Others</a> – <a href="{$uri.care_for_nature}">Care for Nature</a> as well as <a href="{$uri.lets_get_organised}">Project Management</a> skills.</p>
 		</div>
 	</div>

@@ -51,7 +51,7 @@
 				<li><a href="mailto:friendship-schools@life-link.org">friendship-schools@life-link.org</a></li>
 				<li><em>tel</em> <a href="callto:+4618504344">+46 18 50 43 44</a><br />
 					<em>fax</em> <a href="callto:+4618508503">+46 18 50 85 03</a></li>
-				<li><em>or</em> <a href="{$uri.contact}">click here to write us!</a></li>
+				<!--<li><em>or</em> <a href="{$uri.contact}">click here to write us!</a></li>-->
 			</ul>
 			<ul>
 				<li>&copy; 1987-{$smarty.now|date_format:"%Y"}<br />
@@ -123,7 +123,7 @@
      base        : "http://jotformeu.com/",
      background  : "#006A33",
      fontColor   : "#FFFFFF",
-     buttonSide  : "right",
+     buttonSide  : "left",
      buttonAlign : "bottom",
      type        : false,
      width       : 280,
