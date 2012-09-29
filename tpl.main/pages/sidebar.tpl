@@ -62,4 +62,10 @@
 			<!--<fb:activity class="activity" site="life-link.org" app_id="236062617449" width="195" height="200" header="false" font="tahoma" recommendations="false"></fb:activity>-->
 		</div>
 	</section>
+	<section class="twitter">
+		<div>
+			<a class="twitter-timeline" href="https://twitter.com/lifelink" data-widget-id="252065955272855552">Tweets by @lifelink</a>
+			<script src="//platform.twitter.com/widgets.js" id="twitter-wjs"></script>
+		</div>
+	</section>
 </aside>

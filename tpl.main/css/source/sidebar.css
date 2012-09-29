@@ -101,6 +101,12 @@
 			}
 		}
 	}
+
+	> section.twitter {
+	        > div {
+		        padding-left:0px;
+		}
+        }
 }
 
 #sidebar_country_autocomplete_menu,

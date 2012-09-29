@@ -47,7 +47,7 @@ class SchoolC extends C {
 				$where[] = "`attachments` LIKE '%jpg%'";
 			}
 			
-			$limit = mysql_limit($_GET['skip'], $smarty->_tpl['pagination']['reports_in_school'] + 1, $_GET['all']);
+			$limit = mysql_limit($_GET['skip'], $smarty->_tpl['pagination']['reports_in_school'] + 1 + (! $_GET['ajax']), $_GET['all']);
 			$latest_reports = $dbReports->gets($where, '`date` DESC', $limit);
 			$smarty->_assign_by_ref('latest_reports', $latest_reports);
 			

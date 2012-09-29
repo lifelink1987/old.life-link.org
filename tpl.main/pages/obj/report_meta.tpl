@@ -17,8 +17,8 @@
 		{include file="/obj/row_report_numbers_contact.tpl"}
 		{if $report_feedback}
 			{include file="/obj/row_report_feedback.tpl"}
+			{include file="/obj/row_report_attachments.tpl"}
 		{/if}
-		{include file="/obj/row_report_attachments.tpl"}
 	</div>
 	{if $show_school}
 		{include

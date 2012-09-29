@@ -5,8 +5,8 @@
 <div class="row_report_school">
 	<div class="row_report">
 		{include file="/obj/row_report_date_logo.tpl"}
-		{include file="/obj/row_report_description.tpl"}
 		{include file="/obj/row_report_action.tpl"}
+		{include file="/obj/row_report_description.tpl"}
 		{include file="/obj/row_report_numbers_contact.tpl"}
 	</div>
 	{include
