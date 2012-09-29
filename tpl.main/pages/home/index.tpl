@@ -124,13 +124,11 @@
 			</div>
 			{if $geoip_record->country_code3}
 			<div class="headingbox">
-				<h1>Life-Link in {$geoip_record->country_name}</h1>
+				<h1>Reactions from {$geoip_record->country_name}</h1>
 				<div>
-					<a href="{$uri.country}{$geoip_record->country_name|escape:'url'}">
+					<a href="{$uri.reactions}#{$geoip_record->country_name|escape:'url'}">
 						<div class="img_center flag_48"><img src="{$uri.icon_flag_48}{$geoip_record->country_code}"></div>
-						<b>{variable name="schools_counter_`$geoip_record->country_code3`"}</b> out of {variable name="schools_counter"} Schools<br />
-						<b>{variable name="reports_counter_`$geoip_record->country_code3`"}</b> out of {variable name="reports_counter"} Reports<br />
-						<b>{variable name="actions_counter_`$geoip_record->country_code3`"}</b> out of {variable name="actions_counter"} Care Actions
+						People from {$geoip_record->country_name} reacting to the Life-Link Frienship-Schools idea.
 					</a>
 				</div>
 			</div>
@@ -167,6 +165,19 @@
 					</a>
 				</div>
 			</div>
+			{if $geoip_record->country_code3}
+			<div class="headingbox">
+				<h1>Life-Link in {$geoip_record->country_name}</h1>
+				<div>
+					<a href="{$uri.country}{$geoip_record->country_name|escape:'url'}">
+						<div class="img_center flag_48"><img src="{$uri.icon_flag_48}{$geoip_record->country_code}"></div>
+						<b>{variable name="schools_counter_`$geoip_record->country_code3`"}</b> out of {variable name="schools_counter"} Schools<br />
+						<b>{variable name="reports_counter_`$geoip_record->country_code3`"}</b> out of {variable name="reports_counter"} Reports<br />
+						<b>{variable name="actions_counter_`$geoip_record->country_code3`"}</b> out of {variable name="actions_counter"} Care Actions
+					</a>
+				</div>
+			</div>
+			{/if}
 		</div>
 	</div>
 	<div class="column width1 support">
@@ -186,7 +197,7 @@
 				<div>
 					<a href="{$uri.logo}">
 						<div><img src="{$tpl_uri}/img/layout/leaf.png" width="64"></div>
-						Use the Life-Link rose leaf whenever and wherever you speak of our actions.
+						Use the Life-Link rose leaf whenever you speak about us.
 					</a>
 				</div>
 			</div>
