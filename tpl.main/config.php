@@ -20,7 +20,7 @@ $config = array(
 			'http://shared.life-link.org/jquery.plugins/_form/jquery.autosuggest-1.4/jquery.autoSuggest.minified.js', 
 			'http://shared.life-link.org/jquery.plugins/_form/jquery.html5form-1.1/jquery.html5form-min.js', 
 			
-			$tpl['tpl_uri'] . '/js/contactable.js', 
+			//$tpl['tpl_uri'] . '/js/contactable.js', 
 			'http://shared.life-link.org/jquery.plugins/_form/jquery.contactable-1.2.1/jquery.validate.min.js',  //need to change to another form validation plugin, and then adjust contactable
 			
 			'http://shared.life-link.org/jquery.plugins/_util/jquery.imgcenter-1.0/jquery.imgcenter.minified.js', 

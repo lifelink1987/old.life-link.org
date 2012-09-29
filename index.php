@@ -57,7 +57,7 @@ R('conferences')->controller('EventC')->action('conferences')->on('GET');
 R('campaigns')->controller('EventC')->action('campaigns')->on('GET');
 R('(event|campaign|conference)/(?P<event>[0-9]+)')->controller('EventC')->action('event')->on('GET');
 
-R('contact/send')->controller('MailC')->action('contactable')->on('POST');
+//R('contact/send')->controller('MailC')->action('contactable')->on('POST');
 
 //Non-controller views
 function r404() {

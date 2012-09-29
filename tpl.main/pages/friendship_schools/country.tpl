@@ -26,16 +26,16 @@
 				{include
 					file="/obj/row_school.tpl"
 					school_name="View all the schools from `$school.country_short`"
-					school_link="`$uri.country``$school.country_short`?all"
+					school_link="`$uri.country``$school.country_short`?all=1"
 					school_city='&raquo;'
-					school_city_link="`$uri.country``$school.country_short`?all"}
+					school_city_link="`$uri.country``$school.country_short`?all=1"}
 			{elseif $type eq 'city'}
 				{include
 					file="/obj/row_school.tpl"
 					school_name="View all the schools from `$school.country_short`, `$school.city`"
-					school_link="`$uri.country``$school.country_short`/`$school.city`?all"
+					school_link="`$uri.country``$school.country_short`/`$school.city`?all=1"
 					school_city='&raquo;'
-					school_city_link="`$uri.country``$school.country_short`/`$school.city`?all"}
+					school_city_link="`$uri.country``$school.country_short`/`$school.city`?all=1"}
 			{/if}
 		{/if}
 	</div>
@@ -46,6 +46,18 @@
 		<h3>Active since<br />{variable name="date_report_first_`$country.iso3`"}</h3> until {variable name="date_report_last_`$country.iso3`"}
 	</div>
 </section>
+
+<section>
+	<h1>Action Reports <em>from</em>
+		{if $type eq 'city'}{$schools.0.city}, {/if}{$country.country} <img src="{$uri.icon_flag_32}{$country.iso2}" class="icon" />
+	</h1>
+	{include file="/obj/byline.tpl"}
+	<h3 class="center"><em>in the</em> Life-Link Friendship-Schools programme</h3>
+	{foreach from=$latest_reports item=report name=report}
+		{include file="/obj/report_school.tpl"}
+	{/foreach}
+</section>
+
 {if $events}
 <section>
 	<h1>Events <em>in</em>
@@ -58,17 +70,9 @@
 	<div class="first"></div>
 </section>
 {/if}
-<section>
-	<h1>Action Reports <em>from</em>
-		{if $type eq 'city'}{$schools.0.city}, {/if}{$country.country} <img src="{$uri.icon_flag_32}{$country.iso2}" class="icon" />
-	</h1>
-	{include file="/obj/byline.tpl"}
-	<h3 class="center"><em>in the</em> Life-Link Friendship-Schools programme</h3>
-	{foreach from=$latest_reports item=report name=report}
-		{include file="/obj/report_school.tpl"}
-	{/foreach}
-</section>
+
 {include file="/obj/section_fb_comments.tpl" fb_comments_id="country_`$country.iso3`" fb_comments_url="`$uri.country``$country.country_short`"}
+
 <section class="colgroup inline">
 	<h1>
 		{$country.country}

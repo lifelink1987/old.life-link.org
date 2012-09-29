@@ -17,7 +17,7 @@ $uri['certificate'] = '/friendship-schools/certificate';
 $uri['diploma'] = '/friendship-schools/diploma';
 
 $uri['join'] = '/friendship-schools/join';
-$uri['report'] = '/friendship-schools/join/';
+$uri['report'] = '/friendship-schools/report/';
 $uri['report_action'] = '/friendship-schools/report/action';
 $uri['report_image'] = '/friendship-schools/report/image/';
 $uri['report_thumb'] = '/friendship-schools/report/thumb/';

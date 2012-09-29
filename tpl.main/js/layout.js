@@ -27,10 +27,10 @@ $(function(){
     'use strict';
 
     //Activate contact form
-    $('#contact').contactable({
-        subject: 'www.life-link.org Message',
-        callback: contactable_uri
-    });
+    // $('#contact').contactable({
+    //     subject: 'www.life-link.org Message',
+    //     callback: contactable_uri
+    // });
 
     //Add page's sidebar
     $('#content section.sidebar.related')

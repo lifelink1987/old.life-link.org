@@ -102,5 +102,34 @@
 {foreach from=$js.post_body item=js_item}
 <script type="text/javascript" src="{$js_item}"></script>
 {/foreach}
+<script src="http://max.jotfor.ms/min/g=feedback2" type="text/javascript">
+  new JotformFeedback({
+     formId     : "22723383622350",
+     buttonText : "Write us!",
+     windowTitle: "Send us a message from www.life-link.org",
+     base       : "http://jotformeu.com/",
+     background : "#006A33",
+     fontColor  : "#FFFFFF",
+     buttonSide : "right",
+     buttonAlign: "top",
+     type       : false,
+     width      : 700,
+     height     : 500
+  });
+  new JotformFeedback({
+     formId      : "22724158453353",
+     buttonText  : "Website Feedback",
+     windowTitle : "Mark up the screenshot to describe a problem or suggestion",
+     base        : "http://jotformeu.com/",
+     background  : "#006A33",
+     fontColor   : "#FFFFFF",
+     buttonSide  : "right",
+     buttonAlign : "bottom",
+     type        : false,
+     width       : 280,
+     height      : 420,
+     instant     : true
+  });
+</script>
 </body>
 </html>
