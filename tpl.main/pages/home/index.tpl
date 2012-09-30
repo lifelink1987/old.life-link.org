@@ -62,7 +62,7 @@
 		</ul>
 	</div>
 	<div class="column width50 action_photos">
-		<h2><em>in</em> Action Photos</h2>
+		<h2><em>in</em> Action</h2>
 		<ul class="links">
 			{foreach from=$latest_reports item=report name=latest_reports}
 			<li>
@@ -70,10 +70,16 @@
 				<span class="date">{$report.datetime_registration|relativedate}</span>
 				<a href="{$report.link}">
 					<div class="logo img_center" title="{$report.actions_full.0.action} in {$report.city}, {$report.country}">
-						<img src="{$report.media_front.uri_thumb}" longdesc="{$report.media_front.uri}" rel="report_{$report.member_reports_id}" />
+					     	{if $report.media_front.uri_thumb neq ''}
+						    	<img src="{$report.media_front.uri_thumb}" longdesc="{$report.media_front.uri}" rel="report_{$report.member_reports_id}" />
+						{else}
+							<div class="logo center">
+							     {$report.actions_full.0.action}
+							</div>
+						{/if}
 					</div>
 				</a>
-				<div class="secret images">
+				<!--<div class="secret images">
 					{foreach from=$report.media item=media name=media}
 					{if $smarty.foreach.media.index > 0}
 					<img src="{$tpl_uri}/img/layout/blank.gif" longdesc="{$media.uri}" rel="report_{$report.member_reports_id}" class="hidden" />
@@ -83,7 +89,7 @@
 				<div class="secret title">
 					<a href="{$report.link}">Read about</a> <a href="{$uri.school}{$report.member_schools_number}">{$report.school}</a>, {$report.city}, <a href="{$uri.country}{$report.country}">{$report.country}</a> <img src="{$uri.icon_flag_16}{$report.iso2}" class="icon" /><br />
 					<em>engaging in</em> <a href="{$report.actions_full.0.link}">{$report.actions_full.0.actions_number_nice} - {$report.actions_full.0.action}</a> 	<em>on</em> {$report.date|relativedate}
-				</div>
+				</div>-->
 			</li>
 			{/foreach}
 		</ul>

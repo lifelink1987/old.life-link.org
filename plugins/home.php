@@ -10,7 +10,6 @@ class HomeC extends C {
 		$dbReports = DbReports::get_instance();
 		$latest_reports = $dbReports->gets(array(
 			'`datetime_approval` IS NOT NULL',
-			"`attachments` LIKE '%jpg%'"
 		), '`datetime_registration` DESC', 6);
 		$smarty->_assign_by_ref('latest_reports', $latest_reports);
 		

@@ -22,14 +22,14 @@ $(function(){
 	}));
 	
 	/* Enlarge Action Photos */
-	$('#content .action_photos img[longdesc]').colorbox($.extend({}, colorbox.config, colorbox.image, colorbox.slideshow, {
+	/*$('#content .action_photos img[longdesc]').colorbox($.extend({}, colorbox.config, colorbox.image, colorbox.slideshow, {
 		href:function() {
 			return $(this).prop('longdesc') || $(this).prop('longDesc');
 		},
 		title:function() {
 			return $(this).closest('li').children('div.title').first().html();
 		}
-	}));
+	}));*/
 	
 	/* Build Slider */
 	$('.slider').codaslider();

@@ -16,6 +16,6 @@
 </div>
 {else}
 <div class="logo">
-	&bull;
+	{$report_action}
 </div>
 {/if}
