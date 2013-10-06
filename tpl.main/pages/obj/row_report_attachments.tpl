@@ -1,3 +1,3 @@
 <div class="line secondary attachments">
-	<span>@todo Attachments</span>
+	<span><!--@todo Attachments--></span>
 </div>
