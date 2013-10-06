@@ -2,7 +2,7 @@
 <html lang="en" xlm:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 	<title>
-	{if isset($title)}{$title}{else}Life-Link Friendship-Schools{/if}
+	{if isset($title)}{block name="header_title" nocache}{$title}{/block}{else}Life-Link Friendship-Schools{/if}
 	</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,6 +19,7 @@
 	<!--[if lt IE 9]>
 		<script src="http://shared.life-link.org/ie7/IE9.js"></script>
 	<![endif]-->
+	{block name="header_js_css" nocache}
 	<script type="text/javascript">
 		host = "{$host}";
 		api_uri = "{$uri.api}";
@@ -37,14 +38,17 @@
 	{foreach from=$css item=css_item}
 	<link rel="stylesheet" href="{$css_item}" type="text/css" media="screen">
 	{/foreach}
+	{/block}
 </head>
 
-<body class="{$browser.name} {$browser.name}_{$browser.major}">
+{block name="header_browser" nocache}<body class="{$browser.name} {$browser.name}_{$browser.major}">{/block}
 <!-- BODY JS files -->
+{block name="header_body_js" nocache}
 {foreach from=$js.pre_body item=js_item}
 <script type="text/javascript" src="{$js_item}"></script>
 {/foreach}
-<div id="contact"></div>
+{/block}
+<!--<div id="contact"></div>-->
 <div id="overlay"></div>
 <div id="page">
 	<!-- Header -->

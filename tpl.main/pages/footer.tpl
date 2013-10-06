@@ -53,6 +53,7 @@
 					<em>fax</em> <a href="callto:+4618508503">+46 18 50 85 03</a></li>
 				<!--<li><em>or</em> <a href="{$uri.contact}">click here to write us!</a></li>-->
 			</ul>
+			{block name="footer_version" nocache}
 			<ul>
 				<li>&copy; 1987-{$smarty.now|date_format:"%Y"}<br />
 					Life-Link Friendship-Schools<br />
@@ -60,9 +61,11 @@
 				<li>{$version}<br />
 					rev. {$version_minor}</li>
 			</ul>
+			{/block}
 		</div>
 		<div class="column width1 facts">
 			<a href="{$uri.map}" class="map" title="Life-Link on the World Map"><img src="{$tpl_uri}/img/layout/map.png"></a>
+			{block name="footer_stats" nocache}
 			<div class="headingbox">
 				<h1>Facts, Keywords &amp; Figures</h1>
 				<div class="colgroup">
@@ -94,14 +97,17 @@
 					</div>
 				</div>
 			</div>
+			{/block}
 		</div>
 	</footer>
 </div>
 <div id="fb-root"></div>
 <!-- BODY JS files -->
+{block name="footer_body_js" nocache}
 {foreach from=$js.post_body item=js_item}
 <script type="text/javascript" src="{$js_item}"></script>
 {/foreach}
+{/block}
 <script src="http://max.jotfor.ms/min/g=feedback2" type="text/javascript">
   new JotformFeedback({
      formId     : "22723383622350",

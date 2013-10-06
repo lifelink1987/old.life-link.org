@@ -1,3 +1,4 @@
+{block name="home_slider" nocache}
 {include file="/obj/js_codaslider.tpl"}
 <section class="basic">
 	<div class="slider">
@@ -23,12 +24,14 @@
 		</div>
 	</div>
 </section>
+{/block}
 <section class="basic colgroup inline">
 	<h1><em>the</em> Latest</h1>
 	{include file="/obj/byline.tpl"}
 	<div class="column width50 first news">
 		<h2><em>in</em> Words</h2>
 		<ul class="links">
+			{block name="home_latest_news" nocache}
 			{foreach from=$rss_news item=rss_news_item name=rss_news}
 			<li>
 				<span class="date">{$rss_news_item.pubdate|relativedate}</span>
@@ -44,7 +47,7 @@
 					{/if}
 					{$rss_news_item.title|truncate:100:'...'}
 				</a>
-				<div class="secret title">
+				<!--<div class="secret title">
 					{$rss_news_item.title}<br />
 					<a href="#" onclick="javascript:$('#news_{$smarty.foreach.rss_news.index}').click(); return false;">Read Article</a>
 				</div>
@@ -56,18 +59,20 @@
 						<a href="#" onclick="javascript:$('#news_{$smarty.foreach.rss_news.index}_photo').click(); return false;" title="Click to enlarge"><img src="{$rss_news_item.img_big}" /></a>
 					{/if}
 					{$rss_news_item.description}
-				</div>
+				</div>-->
 			</li>
 			{/foreach}
+			{/block}
 		</ul>
 	</div>
 	<div class="column width50 action_photos">
 		<h2><em>in</em> Action</h2>
 		<ul class="links">
+			{block name="home_latest_reports" nocache}
 			{foreach from=$latest_reports item=report name=latest_reports}
 			<li>
 				<span class="flag"><img src="{$uri.icon_flag_16}{$report.iso2}" class="icon" /></span>
-				<span class="date">{$report.datetime_registration|relativedate}</span>
+				<span class="date">{$report.datetime_registration|date_format:"%B %e"}</span>
 				<a href="{$report.link}">
 					<div class="logo img_center" title="{$report.actions_full.0.action} in {$report.city}, {$report.country}">
 					     	{if $report.media_front.uri_thumb neq ''}
@@ -92,6 +97,7 @@
 				</div>-->
 			</li>
 			{/foreach}
+			{/block}
 		</ul>
 	</div>
 </section>
@@ -128,6 +134,7 @@
 					</a>
 				</div>
 			</div>
+			{block name="home_ll_country_reactions" nocache}
 			{if $geoip_record->country_code3}
 			<div class="headingbox">
 				<h1>Reactions from {$geoip_record->country_name}</h1>
@@ -139,6 +146,7 @@
 				</div>
 			</div>
 			{/if}
+			{/block}
 		</div>
 	</div>
 	<div class="column width1 engage">
@@ -171,6 +179,7 @@
 					</a>
 				</div>
 			</div>
+			{block name="home_ll_country_stats" nocache}
 			{if $geoip_record->country_code3}
 			<div class="headingbox">
 				<h1>Life-Link in {$geoip_record->country_name}</h1>
@@ -184,6 +193,7 @@
 				</div>
 			</div>
 			{/if}
+			{/block}
 		</div>
 	</div>
 	<div class="column width1 support">
