@@ -12,6 +12,18 @@ class DbSchools extends DbTable {
 	}
 
 	function clean_results($items) {
+		global $uri;
+
+		if (! $items) {
+			return array();
+		}
+
+		$dbActions = DbActions::get_instance();
+
+		foreach ($items as &$item) {
+			$item['link'] = $uri['school'] . $item['member_schools_number'];
+		}
+
 		return $items;
 	}
 }
