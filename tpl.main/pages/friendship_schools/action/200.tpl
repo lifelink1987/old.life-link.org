@@ -6,7 +6,7 @@
 	{get_actions var=actions}
 	{foreach from=$actions item=action name=action}
 		{if $action.actions_number > 200 and $action.actions_number < 300}
-		<h2><a href="{$action.link}">{$action.actions_number}</a><a href="{$action.link}">{$action.action}</a></h2>
+		<h2><a href="{$action.link}">{$action.actions_number_nice}</a><a href="{$action.link}">{$action.action}</a></h2>
 		<ul>{$action.description_theory|escape|nl2li|autolink}</ul>
 		{/if}
 	{/foreach}
