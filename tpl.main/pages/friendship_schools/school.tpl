@@ -60,7 +60,7 @@
 </section>
 
 <section>
-	<h1><a href="{$uri.report_gdoc}&entry_19={$school.email|escape:'url'}&entry_1={$school.member_schools_number|escape:'url'}">Report new action</a> or <a href="{$uri.report_gdoc}&entry_19={$school.email|escape:'url'}&entry_1={$school.member_schools_number|escape:'url'}&entry_4=403&entry_5=NA&entry_6=NA&entry_7=NA&entry_8=NA&entry_9=NA&entry_2={$school.city|escape:'url'}&entry_3={$school.country|escape:'url'}&entry_15={$school.address|escape:'url'}&entry_16={$school.address_zipcode|escape:'url'}&entry_17={$school.tel|escape:'url'}&entry_20={$school.contact_senior|escape:'url'}&entry_18={$school.email_contact_senior|escape:'url'}&entry_24={$school.contact_junior|escape:'url'}&entry_22={$school.email_contact_junior|escape:'url'}">update school information</a>.</h1>
+	<h1><a href="{$uri.report_gdoc}&entry_19={$school.email|escape:'url'}&entry_1={$school.member_schools_number|escape:'url'}">Report new action</a> or <a href="{$uri.report_gdoc}&entry_19={$school.email|escape:'url'}&entry_1={$school.member_schools_number|escape:'url'}&entry_4=403&entry_5=NA&entry_6=NA&entry_7=NA&entry_8=NA&entry_9=NA&entry_0={$school.school|escape:'url'}&entry_2={$school.city|escape:'url'}&entry_3={$school.country|escape:'url'}&entry_15={$school.address|escape:'url'}&entry_16={$school.address_zipcode|escape:'url'}&entry_17={$school.tel|escape:'url'}&entry_20={$school.contact_senior|escape:'url'}&entry_18={$school.email_contact_senior|escape:'url'}&entry_24={$school.contact_junior|escape:'url'}&entry_22={$school.email_contact_junior|escape:'url'}">update school information</a>.</h1>
 </section>
 
 <section>
