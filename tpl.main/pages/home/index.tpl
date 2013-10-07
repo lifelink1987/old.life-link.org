@@ -72,7 +72,7 @@
 			{foreach from=$latest_reports item=report name=latest_reports}
 			<li>
 				<span class="flag"><img src="{$uri.icon_flag_16}{$report.iso2}" class="icon" /></span>
-				<span class="date">{$report.datetime_registration|date_format:"%B %e"}</span>
+				<span class="date">{$report.datetime_registration|date_format:'%B %e'}</span>
 				<a href="{$report.link}">
 					<div class="logo img_center" title="{$report.actions_full.0.action} in {$report.city}, {$report.country}">
 					     	{if $report.media_front.uri_thumb neq ''}
