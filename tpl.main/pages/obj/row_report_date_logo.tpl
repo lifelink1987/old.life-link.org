@@ -1,6 +1,6 @@
 <div class="date">{$report_date}</div>
 {if $report_front.uri_thumb neq ''}
-<div class="logo img_center" title="{$report_action} in {$school_city}, {$school_country}">
+<div class="logo img_center" title="{$report_action} in {$school.city}, {$school.country}">
 	<img src="{$report_front.uri_thumb}" longdesc="{$report_front.uri}" rel="report_{$report_id}" />
 </div>
 <div class="secret images">

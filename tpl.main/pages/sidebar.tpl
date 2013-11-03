@@ -39,7 +39,7 @@
 				<input type="text" name="action" placeholder="Care Action Number or Name" autocomplete="off">
 			</form>
 			<div id="advanced_search">
-				or go to the <a href="{$uri.search}">Advanced Search</a>
+				or go to the <a href="{$uri.friendship_schools_search}">Advanced Search</a>
 			</div>
 		</div>
 	</section>
