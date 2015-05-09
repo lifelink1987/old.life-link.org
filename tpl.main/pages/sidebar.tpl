@@ -29,13 +29,20 @@
 		</div>
 	</section>
 	{/if}
-	{/block}
-	<section>
+	<section class="search">
+	  <h1>Quick search</h1>
+	  <div>
+			<form id="type_to_search">
+				<h2>Find <em>your</em> school</h2>
+				<input type="text" name="school" placeholder="School Number or Name" autocomplete="off">
+				<h2>Find <em>your</em> country</h2>
+				<input type="text" name="country" placeholder="Country" autocomplete="off">
+				<h2>Find <em>our</em>
+			</div>
+
+
 		<h1><em>Your</em> school, country<br/><em>or our</em> Life-Link actions</h1>
 		<div>
-			<form id="type_to_search">
-				<input type="text" name="school" placeholder="School Number or Name" autocomplete="off">
-				<input type="text" name="country" placeholder="Country" autocomplete="off">
 				<input type="text" name="action" placeholder="Care Action Number or Name" autocomplete="off">
 			</form>
 			<div id="advanced_search">
