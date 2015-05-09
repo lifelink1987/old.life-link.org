@@ -39,6 +39,7 @@ function curl_get($url, $fields = '', &$handle = NULL, &$info = NULL) {
 			$fields = http_build_query2($fields, '', '&');
 		$url = "$url?$fields";
 	}
+	echo($url);
 	curl_setopt($handle, CURLOPT_HTTPGET, TRUE);
 	curl_setopt($handle, CURLOPT_URL, $url);
 	curl_setopt($handle, CURLOPT_RETURNTRANSFER, TRUE);
