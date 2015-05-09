@@ -101,9 +101,9 @@ class CmdC extends C {
 		$dbVariables->set('reactions_counter', "($sql)");
 
 		$this->update_kml();
-		$this->update_delicious();
+		//$this->update_delicious();
 
-		$this->statistics_weekly();
+		//$this->statistics_weekly();
 	}
 
 	public function statistics_yearly() {
@@ -167,7 +167,8 @@ class CmdC extends C {
 
 	public function update_kml() {
 		$this->create_schools_kml();
-		$this->create_countries_kml();
+		die('done');
+		//$this->create_countries_kml();
 	}
 
 	private function create_schools_kml() {
@@ -183,34 +184,35 @@ class CmdC extends C {
 		$schools_kml->add_icon_style('school', 'http://beta.life-link.org/tpl.main/img/layout/leaf_dark.png');
 		$schools_kml->kml->set_description('Listing of schools within Life-Link Friendship-Schools<br/>Data from <a href="http://www.life-link.org">www.life-link.org</a><br/>Updated ' . date('Y-m-d'));
 
+		reset($schools);
 		while ($school = @array_shift(each($schools))) {
-			if ($school['coord_accuracy'] < 4) {
-				$address = $school['city'];
+			if (TRUE) {
+				$address = $school['address'] . ', ' . $school['address_zipcode'] . ' ' . $school['city'];
 				if ($school['county']) {
 					$address .= ', ' . $school['county'];
 				}
 				$address .= ', ' . $school['country'];
 
 				while (TRUE) {
-					$json = curl_get("http://maps.google.com/maps/geo", array(
-						'output' => 'json',
-						'key' => LL_GMAPS_KEY,
-						'q' => $address
+					$json = curl_get("https://maps.googleapis.com/maps/api/geocode/json", array(
+						'sensor' => 'false',
+						'key' => 'AIzaSyBsFTWrwH6DhdCCfsrOED92boguQvnIjpY',
+						'address' => $address
 					));
-					$json = json_decode($json, TRUE);
+					$json = json_decode($json, TRUE);break;
 
-					if ($json['Status']['code'] == 620) {
+					/*if ($json['Status']['code'] == 620) {
 						$curl_throttle++;
 					} else {
 						break;
-					}
+					}*/
 				}
 
-				if ($json['Status']['code'] == 200 && $json['Placemark'][0]['AddressDetails']['Accuracy'] >= 4) {
+				if ($json['status'] == 'OK' && $json['results'][0]['geometry']['location_type'] != 'APPROXIMATE') {
 					$data = array(
-						'coord_lat' => $json['Placemark'][0]['Point']['coordinates'][1],
-						'coord_lng' => $json['Placemark'][0]['Point']['coordinates'][0],
-						'coord_accuracy' => $json['Placemark'][0]['AddressDetails']['Accuracy']
+						'coord_lat' => $json['results'][0]['geometry']['location']['lat'],
+						'coord_lng' => $json['results'][0]['geometry']['location']['lng'],
+						'coord_accuracy' => 4
 					);
 					$dbSchools->set($school['member_schools_number'], $data);
 
@@ -218,7 +220,7 @@ class CmdC extends C {
 				}
 			}
 
-			if ($school['coord_accuracy'] >= 4) {
+			if ($school['coord_lat'] && $school['coord_lng']) {
 				$description = "
 					{$school['school']}<br />
 					in {$school['city']}, {$school['country']}<br />
