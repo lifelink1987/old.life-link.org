@@ -12,8 +12,8 @@
 			<h1><em>our</em> Online Community</h1>
 			<ul class="community">
 				<li class="facebook">Join us on <a href="{$uri.facebook}">Facebook</a>. See the latest and be in touch with others.</li>
-				<li class="twitter"><a href="{$uri.twitter}">@lifelink</a> is on Twitter. If you're on Twitter too, follow for the latest.</li>
-				<li class="flickr">A <a href="{$uri.flickr}">lifelink</a> photo is worth a 1000 words.</li>
+				<li class="twitter"><a href="{$uri.twitter}">@lifelink1987</a> is on Twitter. If you're on Twitter too, follow for the latest.</li>
+				<li class="flickr">A <a href="{$uri.flickr}">photo</a> is worth a 1000 words. <a href="{$uri.flickr}">Take a look at ours.</a></li>
 				<!--<li class="newsletter">If you want the latest in your E-mail, then <a href="#">register</a> for our newsletter.</li>-->
 				<li class="feed">You can also subscribe to our <a href="{$uri.rss}"><acronym title="Really Simple Sindication">RSS</acronym> feed</a> if you're into feed readers.</li>
 			</ul>

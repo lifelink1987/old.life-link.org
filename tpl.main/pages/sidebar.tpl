@@ -56,13 +56,13 @@
 	</section>
 	<section class="facebook">
 		<div>
-			<fb:like-box class="likebox" href="http://www.facebook.com/lifelinkorg" width="220" height="280" connections="6" header="false" stream="false"></fb:like-box>
+			<fb:like-box class="likebox" href="http://www.facebook.com/lifelinkorg1987" width="220" height="280" connections="6" header="false" stream="false"></fb:like-box>
 			<!--<fb:activity class="activity" site="life-link.org" app_id="236062617449" width="195" height="200" header="false" font="tahoma" recommendations="false"></fb:activity>-->
 		</div>
 	</section>
 	<section class="twitter">
 		<div>
-			<a class="twitter-timeline" href="https://twitter.com/lifelink" data-widget-id="252065955272855552">Tweets by @lifelink</a>
+			<a class="twitter-timeline" href="https://twitter.com/lifelink1987" data-widget-id="252065955272855552">Tweets by @lifelink1987</a>
 			<script src="//platform.twitter.com/widgets.js" id="twitter-wjs"></script>
 		</div>
 	</section>
