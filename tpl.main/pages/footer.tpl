@@ -46,8 +46,10 @@
 			<ul>
 				<li><a href="http://maps.google.com/maps/place?cid=17044912778302789962">Click here for visiting address!</a></li>
 				<li>Post Address:<br />
-					Uppsala Science Park<br />
-					SE-751 83 Uppsala, Sweden</li>
+					c/o Sigtunaskolan<br />
+					Humanistiska Läroverket<br />
+					Manfred Björkquists Allé 8<br />
+					SE-193 31 Sigtuna, Sweden</li>
 				<li><a href="mailto:friendship-schools@life-link.org">friendship-schools@life-link.org</a></li>
 				<li><em>tel</em> <a href="callto:+4618504344">+46 18 50 43 44</a><br />
 					<em>fax</em> <a href="callto:+4618508503">+46 18 50 85 03</a></li>
