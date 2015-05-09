@@ -1,3 +1,19 @@
+<section class="basic colgroup" style="padding-bottom:0px">
+<div class="column width50 first" style="text-align:center">
+<iframe width="320" height="195" src="//www.youtube.com/embed/9udKRh6Z918?start=1038&autoplay=1" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="column width50">
+<h1>Hans Levander</h1>
+{include file="/obj/byline.tpl"}
+<h2 style="margin-top:-20px; text-align:center">1942 - 2014</h2>
+<h3 style="text-align:center">founder, former chairman, and<br>
+the heart and soul of Life-Link Friendship-Schools</h3>
+<h3 style="text-align:center"><i>Tack alla vänner! / Thank you, friends!</i><br>
+Hans, July 7, 2014</h3>
+<h3 style="text-align:center"><a href="http://files.life-link.org/misc/Hans_Levander_minnesord.pdf">Click to read Hans' obituary in Uppsala Nya Tidning</a><br>(<a href="http://www.unt.se/familjeliv/hans-levander-3257834.aspx">original Swedish</a>)</h3>
+</div>
+</section>
+
 {block name="home_slider" nocache}
 {include file="/obj/js_codaslider.tpl"}
 <section class="basic">
