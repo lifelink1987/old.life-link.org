@@ -8,7 +8,7 @@ define('LL_TIMEZONE', 'Europe/Stockholm');
 /*
  * Host
  */
-define('LL_SERVERS', 'www.life-link.org,life-link.org,beta.life-link.org');
+define('LL_SERVERS', 'www.life-link.org'/*,life-link.org,beta.life-link.org'*/);
 define('LL_DEBUG_SERVERS', 'localhost,debug.life-link.org,www.debug.life-link.org');
 define('LL_AT_HOME', in_array($_SERVER['SERVER_NAME'], explode(',', LL_SERVERS)));
 define('LL_AT_HOME_DEBUG', in_array($_SERVER['SERVER_NAME'], explode(',', LL_DEBUG_SERVERS)));
@@ -48,6 +48,7 @@ define('LL_ROOT', $root);
  * Site's URI root
  */
 define('LL_ROOT_URI', @array_shift(explode('/',strtolower($_SERVER['SERVER_PROTOCOL']))) . '://' . $_SERVER['SERVER_NAME'] . (($_SERVER['SERVER_PORT'] != 80)?':' . $_SERVER['SERVER_PORT']:'') . implode('/', $script_url));
+//define('LL_ROOT_URI', 'http://www.life-link.org');
 
 /*
  * Site's request URI

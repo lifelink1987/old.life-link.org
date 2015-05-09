@@ -2,7 +2,7 @@
 
 $uri = array();
 
-$uri['home'] = '/';
+$uri['home'] = '/?old';
 
 $uri['api'] = '/api.php?';
 
