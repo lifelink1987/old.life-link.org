@@ -83,6 +83,7 @@
 			self {
 				margin:-10px -20px 0px -20px;
 				overflow:hidden;
+				width:220px !important;height:280px !important;
 			}
 			
 			> span {
@@ -91,6 +92,7 @@
     			}
     			
     			> iframe {
+			    width:220px !important;height:280px !important;
     			}
 			}
 		}	
