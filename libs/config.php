@@ -9,7 +9,8 @@ define('LL_TEMPLATE', 'main');
 //if (true == false) {
   @define('LL_DEBUG', LL_AT_HOME_DEBUG ? 'css,js,php,sql,smarty' : 'php,sql,smarty'); //js, css, php, sql and/or smarty (csv string)
   define('LL_DEBUG_OUTPUT', LL_AT_HOME_DEBUG ? 'firephp' : 'file'); //screen, buffer, file and/or mail (csv string)
-  define('LL_CACHE', LL_AT_HOME);
+//  define('LL_CACHE', LL_AT_HOME);
+  define('LL_CACHE', false);
 /*} else {
   @define('LL_DEBUG', 'php'); //js, css, php, sql and/or smarty (csv string)
   define('LL_DEBUG_OUTPUT', 'firephp'); //screen, buffer, file and/or mail (csv string)
@@ -41,7 +42,7 @@ define('LL_MAIL_GALLERY', 'gallery@life-link.org');
 /*
  * Twitter
  */
-define('LL_TWITTER', 'http://www.twitter.com/lifelink');
+define('LL_TWITTER', 'http://www.twitter.com/lifelink1987');
 define('LL_TWITTER_RSS', 'http://twitter.com/statuses/user_timeline/18311310.rss');
 
 /*
@@ -54,7 +55,7 @@ define('LL_FACEBOOK_NOTES_RSS', 'http://www.facebook.com/feeds/notes.php?id=7259
 define('LL_FACEBOOK_UID', 1780871734);
 
 /* Reports */
-define('LL_REPORT_MEDIA', realpath(LL_ROOT . '/../files/action_photos'));
+define('LL_REPORT_MEDIA', realpath(LL_ROOT . '/../files.life-link.org/action_photos'));
 
 /* Google Maps, Delicious API */
 define('LL_GMAPS_KEY', 'AIzaSyDMUjjzgXybDtNOhjo3qR7UOloxRuQuFwY');
