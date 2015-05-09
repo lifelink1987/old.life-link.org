@@ -2,7 +2,7 @@
 
 class kml_Container extends kml_Feature {
 
-    protected $tagName = 'Conainter';
+    protected $tagName = 'Container';
 
     var $Features;
 

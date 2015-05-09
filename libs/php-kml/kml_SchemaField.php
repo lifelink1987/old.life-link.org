@@ -11,8 +11,8 @@ class kml_SchemaField extends kml_root {
     /* Constructor */
     function kml_SchemaField($name = null, $type = null) {
         parent::kml_root();
-        if ($name !== null) $this->name($name);
-        if ($type !== null) $this->type($type);
+        if ($name !== null) $this->set_name($name);
+        if ($type !== null) $this->set_type($type);
 
     }
 
@@ -33,8 +33,3 @@ class kml_SchemaField extends kml_root {
     }
 
 }
-
-/**
-$a = new kml_SchemaField('iiii');
-$a->dump(false);
-*/

@@ -89,8 +89,10 @@
  *
  */
 
+error_reporting(E_ALL);
+
 function __autoload($class_name) {
-    require_once $class_name . '.php';
+    require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . $class_name . '.php';
 }
 
 function XML_create_text_element($doc, $tagName, $content = null, $attributes = array())
@@ -153,5 +155,4 @@ define('KML_error',     'error');
 define('KML_fetching0', 'fetching0');
 define('KML_fetching1', 'fetching1');
 define('KML_fetching2', 'fetching2');
-
 

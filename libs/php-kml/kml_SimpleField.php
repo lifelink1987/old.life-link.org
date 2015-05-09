@@ -8,8 +8,8 @@ class kml_SimpleField extends kml_SchemaField {
     /* Constructor */
     function kml_SimpleField($name = null, $type = null) {
         parent::kml_SchemaField();
-        if ($name !== null) $this->name($name);
-        if ($type !== null) $this->type($type);
+        if ($name !== null) $this->set_name($name);
+        if ($type !== null) $this->set_type($type);
 
     }
 
